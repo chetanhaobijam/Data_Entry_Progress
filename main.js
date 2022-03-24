@@ -8,6 +8,8 @@ const march22 = document.querySelector("#march-22");
 const march22content = document.querySelector("#march-22-content");
 const seventeenMarch22 = document.querySelector("#seventeen-march-22");
 const twentythreeMarch22 = document.querySelector("#twentythree-march-22");
+const twentyfourMarch22 = document.querySelector("#twentyfour-march-22");
+const holiday = document.querySelector(".holiday");
 // Table
 const chetanPages = document.querySelector("#chetan-pages");
 const chetanEntry = document.querySelector("#chetan-entry");
@@ -42,17 +44,33 @@ march22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
   march22content.classList.remove("hide");
   chetanPages.innerText = 0;
-  chetanEntry.innerText = 68;
+  chetanEntry.innerText = 138;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 952;
+  kishanPages.innerText = 1510;
   kishanEntry.innerText = 0;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 680;
+  poukinPages.innerText = 1064;
   poukinEntry.innerText = 0;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 0;
-  rohelEntry.innerText = 0;
+  rohelEntry.innerText = 41;
   rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for Holiday Days
+holiday.addEventListener("click", () => {
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 0;
+  chetanRemarks.innerText = "Office Holiday";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "Office Holiday";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "Office Holiday";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "Office Holiday";
 })
 
 // Function to display the stats for 17 March 22
@@ -85,4 +103,20 @@ twentythreeMarch22.addEventListener("click", () => {
   rohelPages.innerText = 0;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "Absent";
+})
+
+// Function to display the stats for 24 March 22
+twentyfourMarch22.addEventListener("click", () => {
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 70;
+  chetanRemarks.innerText = "";
+  kishanPages.innerText = 558;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 384;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 41;
+  rohelRemarks.innerText = "";
 })
