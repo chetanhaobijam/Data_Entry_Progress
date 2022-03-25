@@ -79,3 +79,44 @@ Rohel (Entry) 41
 ## Total
 Scanned- 10245 + 558 + 384 = 11187
 Entried- 1168 + 70 + 41 = 1279
+
+# Date- 25/03/22
+Chetan (Entry) 61
+Kishan (Scanning) 228 (Entry) 46
+Poukin (Entry) 35
+Rohel (Entry) 62
+
+**Chetan**
+2328
+422 + 61 = 483
+
+**Kishan**
+3649 + 228 = 3877
+318 + 46 = 364
+
+**Poukin**
+3172
+261 + 35 = 296
+
+**Rohel**
+1742
+273 + 62 = 335
+
+### March
+**Chetan**
+0
+138 + 61 = 199
+
+**Kishan**
+1510 + 228 = 1738
+0 + 46 = 46
+**Poukin**
+1064
+0 + 35 = 35
+**Rohel**
+0
+41 + 62 = 103
+
+## Total
+Scanned- 11187 + 228 = 11415
+Entried- 1279 + 61 + 46 + 35 + 62 = 1483
