@@ -124,7 +124,7 @@ Entried- 1279 + 61 + 46 + 35 + 62 = 1483
 # Date- 26/03/22
 Chetan (Entry) 6
 Kishan (Scanning) 400 (Entry) 54
-Poukin (Scanning) 222
+Poukin (Scanning) 223
 Rohel (Scanning) 222
 
 **Chetan**
@@ -136,7 +136,7 @@ Rohel (Scanning) 222
 364 + 54 = 418
 
 **Poukin**
-3172 + 222 = 3394
+3172 + 223 = 3395
 296 
 
 **Rohel**
@@ -152,12 +152,12 @@ Rohel (Scanning) 222
 1738 + 400 = 2138
 46 + 54 = 100
 **Poukin**
-1064 + 222 = 1286
+1064 + 223 = 1287
 35
 **Rohel**
 0 + 222 = 222
 103
 
 ## Total
-Scanned- 11415 + 400 + 222 + 222 = 12259
+Scanned- 11415 + 400 + 223 + 222 = 12260
 Entried- 1483 + 6 + 54 = 1543
