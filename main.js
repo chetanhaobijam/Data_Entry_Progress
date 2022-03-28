@@ -11,9 +11,13 @@ const twentythreeMarch22 = document.querySelector("#twentythree-march-22");
 const twentyfourMarch22 = document.querySelector("#twentyfour-march-22");
 const twentyfiveMarch22 = document.querySelector("#twentyfive-march-22");
 const twentysixMarch22 = document.querySelector("#twentysix-march-22");
+const twentyeightMarch22 = document.querySelector("#twentyeight-march-22");
 
-const holiday = document.querySelector(".holiday");
+const holiday = document.querySelectorAll(".holiday");
 // Table
+const angouchaPages = document.querySelector("#angoucha-pages");
+const angouchaEntry = document.querySelector("#angoucha-entry");
+const angouchaRemarks = document.querySelector("#angoucha-remarks");
 const chetanPages = document.querySelector("#chetan-pages");
 const chetanEntry = document.querySelector("#chetan-entry");
 const chetanRemarks = document.querySelector("#chetan-remarks");
@@ -46,22 +50,29 @@ totalProgress.addEventListener("click", () => {
 march22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
   march22content.classList.remove("hide");
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 205;
+  angouchaPages.innerText = 82;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 69;
+  chetanEntry.innerText = 240;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 2138;
-  kishanEntry.innerText = 100;
+  kishanPages.innerText = 2398;
+  kishanEntry.innerText = 135;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 1287;
-  poukinEntry.innerText = 35;
+  poukinPages.innerText = 1507;
+  poukinEntry.innerText = 60;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 222;
-  rohelEntry.innerText = 103;
+  rohelEntry.innerText = 130;
   rohelRemarks.innerText = "";
 })
 
 // Function to display the stats for Holiday Days
-holiday.addEventListener("click", () => {
+holiday.forEach(date => {
+  date.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Office Holiday";
   chetanPages.innerText = 0;
   chetanEntry.innerText = 0;
   chetanRemarks.innerText = "Office Holiday";
@@ -74,10 +85,14 @@ holiday.addEventListener("click", () => {
   rohelPages.innerText = 0;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "Office Holiday";
+  })
 })
 
 // Function to display the stats for 17 March 22
 seventeenMarch22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Absent";
   chetanPages.innerText = 0;
   chetanEntry.innerText = 5;
   chetanRemarks.innerText = "Few entries due to Software Error";
@@ -94,6 +109,9 @@ seventeenMarch22.addEventListener("click", () => {
 
 // Function to display the stats for 23 March 22
 twentythreeMarch22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Absent";
   chetanPages.innerText = 0;
   chetanEntry.innerText = 68;
   chetanRemarks.innerText = "";
@@ -110,6 +128,9 @@ twentythreeMarch22.addEventListener("click", () => {
 
 // Function to display the stats for 24 March 22
 twentyfourMarch22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Absent";
   chetanPages.innerText = 0;
   chetanEntry.innerText = 70;
   chetanRemarks.innerText = "";
@@ -126,6 +147,9 @@ twentyfourMarch22.addEventListener("click", () => {
 
 // Function to display the stats for 25 March 22
 twentyfiveMarch22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Absent";
   chetanPages.innerText = 0;
   chetanEntry.innerText = 61;
   chetanRemarks.innerText = "";
@@ -142,6 +166,9 @@ twentyfiveMarch22.addEventListener("click", () => {
 
 // Function to display the stats for 26 March 22
 twentysixMarch22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Absent";
   chetanPages.innerText = 0;
   chetanEntry.innerText = 6;
   chetanRemarks.innerText = "Printing, Inserting Pages in Gazette Book";
@@ -154,4 +181,23 @@ twentysixMarch22.addEventListener("click", () => {
   rohelPages.innerText = 222;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for 28 March 22
+twentyeightMarch22.addEventListener("click", () => {
+  angouchaPages.innerText = 82;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Printing";
+  chetanPages.innerText = 69;
+  chetanEntry.innerText = 35;
+  chetanRemarks.innerText = "Printing, Inserting Barcode Pages";
+  kishanPages.innerText = 260;
+  kishanEntry.innerText = 35;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 220;
+  poukinEntry.innerText = 25;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 27;
+  rohelRemarks.innerText = "Inserting Barcode Pages";
 })
