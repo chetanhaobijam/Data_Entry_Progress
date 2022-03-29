@@ -12,6 +12,7 @@ const twentyfourMarch22 = document.querySelector("#twentyfour-march-22");
 const twentyfiveMarch22 = document.querySelector("#twentyfive-march-22");
 const twentysixMarch22 = document.querySelector("#twentysix-march-22");
 const twentyeightMarch22 = document.querySelector("#twentyeight-march-22");
+const twentynineMarch22 = document.querySelector("#twentynine-march-22");
 
 const holiday = document.querySelectorAll(".holiday");
 // Table
@@ -50,16 +51,16 @@ totalProgress.addEventListener("click", () => {
 march22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
   march22content.classList.remove("hide");
-  angouchaPages.innerText = 82;
+  angouchaPages.innerText = 285;
   angouchaEntry.innerText = 0;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 69;
-  chetanEntry.innerText = 240;
+  chetanEntry.innerText = 278;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 2398;
+  kishanPages.innerText = 2852;
   kishanEntry.innerText = 135;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 1507;
+  poukinPages.innerText = 1851;
   poukinEntry.innerText = 60;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 222;
@@ -200,4 +201,23 @@ twentyeightMarch22.addEventListener("click", () => {
   rohelPages.innerText = 0;
   rohelEntry.innerText = 27;
   rohelRemarks.innerText = "Inserting Barcode Pages";
+})
+
+// Function to display the stats for 29 March 22
+twentynineMarch22.addEventListener("click", () => {
+  angouchaPages.innerText = 203;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 38;
+  chetanRemarks.innerText = "";
+  kishanPages.innerText = 454;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 344;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "Absent";
 })

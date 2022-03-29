@@ -214,3 +214,56 @@ Rohel: Entry - 27
 ## Total
 Scanned- 12260 + 82 + 69 + 260 + 220 = 12891
 Entried- 1543 + 35 + 35 + 25 + 27 = 1665
+
+# Date- 29/03/22
+Angoucha: Scanning - 203
+Chetan: Entry - 38
+Kishan: Scanning - 454
+Poukin: Scanning - 344
+Rohel: Absent
+
+## Total per person
+**Angoucha**
+82 + 203 = 285
+0
+
+**Chetan**
+2397
+524 + 38 = 562
+
+**Kishan**
+4537 + 454 = 4991
+453
+
+**Poukin**
+3615 + 344 = 3959
+321
+
+**Rohel**
+1964
+362
+
+### March
+**Angoucha**
+82 + 203 = 285
+0
+
+**Chetan**
+69
+240 + 38 = 278
+
+**Kishan**
+2398 + 454 = 2852
+135
+
+**Poukin**
+1507 + 344 = 1851
+60
+
+**Rohel**
+222
+130
+
+## Total
+Scanned- 12891 + 203 + 454 + 344 = 13892
+Entried- 1665 + 38 = 1703
