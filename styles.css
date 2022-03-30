@@ -140,6 +140,10 @@ main .main-content .data-container h1 + p {
   margin-left: 0.5rem;
 }
 
+main .main-content .data-container h2 {
+  font-size: 1.1rem;
+}
+
 main .main-content .data-container .total-progress .total-stats {
   margin: 0 auto;
   text-align: center;

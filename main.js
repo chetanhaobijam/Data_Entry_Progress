@@ -13,6 +13,7 @@ const twentyfiveMarch22 = document.querySelector("#twentyfive-march-22");
 const twentysixMarch22 = document.querySelector("#twentysix-march-22");
 const twentyeightMarch22 = document.querySelector("#twentyeight-march-22");
 const twentynineMarch22 = document.querySelector("#twentynine-march-22");
+const thirtyMarch22 = document.querySelector("#thirty-march-22");
 
 const holiday = document.querySelectorAll(".holiday");
 // Table
@@ -51,20 +52,20 @@ totalProgress.addEventListener("click", () => {
 march22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
   march22content.classList.remove("hide");
-  angouchaPages.innerText = 285;
+  angouchaPages.innerText = 433;
   angouchaEntry.innerText = 0;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 69;
-  chetanEntry.innerText = 278;
+  chetanEntry.innerText = 327;
   chetanRemarks.innerText = "";
   kishanPages.innerText = 2852;
-  kishanEntry.innerText = 135;
+  kishanEntry.innerText = 185;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 1851;
+  poukinPages.innerText = 2055;
   poukinEntry.innerText = 60;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 222;
-  rohelEntry.innerText = 130;
+  rohelEntry.innerText = 170;
   rohelRemarks.innerText = "";
 })
 
@@ -220,4 +221,23 @@ twentynineMarch22.addEventListener("click", () => {
   rohelPages.innerText = 0;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "Absent";
+})
+
+// Function to display the stats for 30 March 22
+thirtyMarch22.addEventListener("click", () => {
+  angouchaPages.innerText = 148;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 49;
+  chetanRemarks.innerText = "";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 50;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 204;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 40;
+  rohelRemarks.innerText = "";
 })
