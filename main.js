@@ -14,6 +14,7 @@ const twentysixMarch22 = document.querySelector("#twentysix-march-22");
 const twentyeightMarch22 = document.querySelector("#twentyeight-march-22");
 const twentynineMarch22 = document.querySelector("#twentynine-march-22");
 const thirtyMarch22 = document.querySelector("#thirty-march-22");
+const thirtyoneMarch22 = document.querySelector("#thirtyone-march-22");
 
 const holiday = document.querySelectorAll(".holiday");
 // Table
@@ -52,20 +53,20 @@ totalProgress.addEventListener("click", () => {
 march22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
   march22content.classList.remove("hide");
-  angouchaPages.innerText = 433;
+  angouchaPages.innerText = 607;
   angouchaEntry.innerText = 0;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 69;
-  chetanEntry.innerText = 327;
+  chetanEntry.innerText = 378;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 2852;
-  kishanEntry.innerText = 185;
+  kishanPages.innerText = 2996;
+  kishanEntry.innerText = 232;
   kishanRemarks.innerText = "";
   poukinPages.innerText = 2055;
-  poukinEntry.innerText = 60;
+  poukinEntry.innerText = 110;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 222;
-  rohelEntry.innerText = 170;
+  rohelEntry.innerText = 220;
   rohelRemarks.innerText = "";
 })
 
@@ -239,5 +240,24 @@ thirtyMarch22.addEventListener("click", () => {
   poukinRemarks.innerText = "";
   rohelPages.innerText = 0;
   rohelEntry.innerText = 40;
+  rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for 30 March 22
+thirtyoneMarch22.addEventListener("click", () => {
+  angouchaPages.innerText = 174;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 51;
+  chetanRemarks.innerText = "Inserting Barcode Pages";
+  kishanPages.innerText = 144;
+  kishanEntry.innerText = 47;
+  kishanRemarks.innerText = "Printing Work";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 50;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 50;
   rohelRemarks.innerText = "";
 })
