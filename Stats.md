@@ -373,3 +373,56 @@ Rohel: Entry - 50
 ## Total
 Scanned- 14244 + 174 + 144 = 14562
 Entried- 11842 + 51 + 47 + 50 + 50 = 12040
+
+# Date- 01/04/22
+Angoucha: Printing Work
+Chetan: Entry - 73
+Kishan: Entry - 70
+Poukin: Entry - 43
+Rohel: Entry - 41
+
+## Total per person
+**Angoucha**
+607
+0
+
+**Chetan**
+2397
+662 + 73 = 735
+
+**Kishan**
+5135
+550 + 70 = 620
+
+**Poukin**
+4163
+371 + 43 = 414
+
+**Rohel**
+1964
+452 + 41 = 493
+
+### April
+**Angoucha**
+0
+0
+
+**Chetan**
+0
+73
+
+**Kishan**
+0
+70
+
+**Poukin**
+0
+43
+
+**Rohel**
+0
+41
+
+## Total
+Scanned- 14562
+Entried- 12040 + 73 + 70 + 43 + 41 = 12267

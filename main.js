@@ -15,7 +15,9 @@ const twentyeightMarch22 = document.querySelector("#twentyeight-march-22");
 const twentynineMarch22 = document.querySelector("#twentynine-march-22");
 const thirtyMarch22 = document.querySelector("#thirty-march-22");
 const thirtyoneMarch22 = document.querySelector("#thirtyone-march-22");
-
+const april22 = document.querySelector("#april-22");
+const april22content = document.querySelector("#april-22-content");
+const oneapril22 = document.querySelector("#one-april-22");
 const holiday = document.querySelectorAll(".holiday");
 // Table
 const angouchaPages = document.querySelector("#angoucha-pages");
@@ -35,23 +37,42 @@ const rohelEntry = document.querySelector("#rohel-entry");
 const rohelRemarks = document.querySelector("#rohel-remarks");
 
 
-totalProgressContent.classList.remove("hide");
-march22content.classList.add("hide");
 
 // Function to Trigger the Display of Aside Section
 asideTrigger.addEventListener("click", () => {
   aside.classList.toggle("hide");
 })
 
-// Function to Trigger the Display of Total Data Entry Progress
-totalProgress.addEventListener("click", () => {
+// Function to Display the Total Data Entry Progress
+const showTotalProgress = () => {
   totalProgressContent.classList.remove("hide");
   march22content.classList.add("hide");
-})
+  april22content.classList.add("hide");
+  angouchaPages.innerText = 607;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 2397;
+  chetanEntry.innerText = 735;
+  chetanRemarks.innerText = "";
+  kishanPages.innerText = 5135;
+  kishanEntry.innerText = 620;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 4163;
+  poukinEntry.innerText = 414;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 1964;
+  rohelEntry.innerText = 493;
+  rohelRemarks.innerText = "";
+}
+
+showTotalProgress();
+
+totalProgress.addEventListener("click", showTotalProgress);
 
 // Function to Trigger the Display of March 22 Data Entry Stats
 march22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
+  april22content.classList.add("hide");
   march22content.classList.remove("hide");
   angouchaPages.innerText = 607;
   angouchaEntry.innerText = 0;
@@ -243,7 +264,7 @@ thirtyMarch22.addEventListener("click", () => {
   rohelRemarks.innerText = "";
 })
 
-// Function to display the stats for 30 March 22
+// Function to display the stats for 31 March 22
 thirtyoneMarch22.addEventListener("click", () => {
   angouchaPages.innerText = 174;
   angouchaEntry.innerText = 0;
@@ -259,5 +280,46 @@ thirtyoneMarch22.addEventListener("click", () => {
   poukinRemarks.innerText = "";
   rohelPages.innerText = 0;
   rohelEntry.innerText = 50;
+  rohelRemarks.innerText = "";
+})
+
+// Function to Trigger the Display of April 22 Data Entry Stats
+april22.addEventListener("click", () => {
+  totalProgressContent.classList.add("hide");
+  march22content.classList.add("hide");
+  april22content.classList.remove("hide");
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 73;
+  chetanRemarks.innerText = "";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 70;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 43;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 41;
+  rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for 01 April 22
+oneapril22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Printing Work";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 73;
+  chetanRemarks.innerText = "";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 70;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 43;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 41;
   rohelRemarks.innerText = "";
 })
