@@ -19,6 +19,9 @@ const april22 = document.querySelector("#april-22");
 const april22content = document.querySelector("#april-22-content");
 const oneapril22 = document.querySelector("#one-april-22");
 const fourapril22 = document.querySelector("#four-april-22");
+const fiveapril22 = document.querySelector("#five-april-22");
+
+
 const holiday = document.querySelectorAll(".holiday");
 // Table
 const angouchaPages = document.querySelector("#angoucha-pages");
@@ -50,18 +53,18 @@ const showTotalProgress = () => {
   march22content.classList.add("hide");
   april22content.classList.add("hide");
   angouchaPages.innerText = 624;
-  angouchaEntry.innerText = 0;
+  angouchaEntry.innerText = 16;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 2397;
-  chetanEntry.innerText = 755;
+  chetanEntry.innerText = 809;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 5377;
+  kishanPages.innerText = 5890;
   kishanEntry.innerText = 620;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 4377;
+  poukinPages.innerText = 4592;
   poukinEntry.innerText = 414;
   poukinRemarks.innerText = "";
-  rohelPages.innerText = 2178;
+  rohelPages.innerText = 2387;
   rohelEntry.innerText = 493;
   rohelRemarks.innerText = "";
 }
@@ -289,19 +292,19 @@ april22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
   march22content.classList.add("hide");
   april22content.classList.remove("hide");
-  angouchaPages.innerText = 17;
+  angouchaPages.innerText = 33;
   angouchaEntry.innerText = 0;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 0;
-  chetanEntry.innerText = 93;
+  chetanEntry.innerText = 147;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 242;
+  kishanPages.innerText = 755;
   kishanEntry.innerText = 70;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 214;
+  poukinPages.innerText = 429;
   poukinEntry.innerText = 43;
   poukinRemarks.innerText = "";
-  rohelPages.innerText = 214;
+  rohelPages.innerText = 423;
   rohelEntry.innerText = 41;
   rohelRemarks.innerText = "";
 })
@@ -340,6 +343,25 @@ fourapril22.addEventListener("click", () => {
   poukinEntry.innerText = 0;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 214;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for 05 April 22
+fiveapril22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 16;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 54;
+  chetanRemarks.innerText = "";
+  kishanPages.innerText = 513;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 215;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 209;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "";
 })
