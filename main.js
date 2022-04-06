@@ -17,9 +17,10 @@ const thirtyMarch22 = document.querySelector("#thirty-march-22");
 const thirtyoneMarch22 = document.querySelector("#thirtyone-march-22");
 const april22 = document.querySelector("#april-22");
 const april22content = document.querySelector("#april-22-content");
-const oneapril22 = document.querySelector("#one-april-22");
-const fourapril22 = document.querySelector("#four-april-22");
-const fiveapril22 = document.querySelector("#five-april-22");
+const oneApril22 = document.querySelector("#one-april-22");
+const fourApril22 = document.querySelector("#four-april-22");
+const fiveApril22 = document.querySelector("#five-april-22");
+const sixApril22 = document.querySelector("#six-april-22")
 
 
 const holiday = document.querySelectorAll(".holiday");
@@ -52,20 +53,20 @@ const showTotalProgress = () => {
   totalProgressContent.classList.remove("hide");
   march22content.classList.add("hide");
   april22content.classList.add("hide");
-  angouchaPages.innerText = 624;
-  angouchaEntry.innerText = 16;
+  angouchaPages.innerText = 724;
+  angouchaEntry.innerText = 46;
   angouchaRemarks.innerText = "";
-  chetanPages.innerText = 2397;
-  chetanEntry.innerText = 809;
+  chetanPages.innerText = 2497;
+  chetanEntry.innerText = 815;
   chetanRemarks.innerText = "";
   kishanPages.innerText = 5890;
   kishanEntry.innerText = 620;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 4592;
+  poukinPages.innerText = 5002;
   poukinEntry.innerText = 414;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 2387;
-  rohelEntry.innerText = 493;
+  rohelEntry.innerText = 543;
   rohelRemarks.innerText = "";
 }
 
@@ -292,25 +293,25 @@ april22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
   march22content.classList.add("hide");
   april22content.classList.remove("hide");
-  angouchaPages.innerText = 33;
-  angouchaEntry.innerText = 0;
+  angouchaPages.innerText = 117;
+  angouchaEntry.innerText = 46;
   angouchaRemarks.innerText = "";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 147;
+  chetanPages.innerText = 100;
+  chetanEntry.innerText = 153;
   chetanRemarks.innerText = "";
   kishanPages.innerText = 755;
   kishanEntry.innerText = 70;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 429;
+  poukinPages.innerText = 839;
   poukinEntry.innerText = 43;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 423;
-  rohelEntry.innerText = 41;
+  rohelEntry.innerText = 91;
   rohelRemarks.innerText = "";
 })
 
 // Function to display the stats for 01 April 22
-oneapril22.addEventListener("click", () => {
+oneApril22.addEventListener("click", () => {
   angouchaPages.innerText = 0;
   angouchaEntry.innerText = 0;
   angouchaRemarks.innerText = "Printing Work";
@@ -329,7 +330,7 @@ oneapril22.addEventListener("click", () => {
 })
 
 // Function to display the stats for 04 April 22
-fourapril22.addEventListener("click", () => {
+fourApril22.addEventListener("click", () => {
   angouchaPages.innerText = 17;
   angouchaEntry.innerText = 0;
   angouchaRemarks.innerText = "Printing Work";
@@ -348,7 +349,7 @@ fourapril22.addEventListener("click", () => {
 })
 
 // Function to display the stats for 05 April 22
-fiveapril22.addEventListener("click", () => {
+fiveApril22.addEventListener("click", () => {
   angouchaPages.innerText = 0;
   angouchaEntry.innerText = 16;
   angouchaRemarks.innerText = "";
@@ -365,3 +366,23 @@ fiveapril22.addEventListener("click", () => {
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "";
 })
+
+// Function to display the stats for 06 April 22
+sixApril22.addEventListener("click", () => {
+  angouchaPages.innerText = 100;
+  angouchaEntry.innerText = 30;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 100;
+  chetanEntry.innerText = 6;
+  chetanRemarks.innerText = "Inserting Barcode Pages";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "Absent";
+  poukinPages.innerText = 410;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 50;
+  rohelRemarks.innerText = "";
+})
+
