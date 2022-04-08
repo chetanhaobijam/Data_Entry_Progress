@@ -22,6 +22,7 @@ const fourApril22 = document.querySelector("#four-april-22");
 const fiveApril22 = document.querySelector("#five-april-22");
 const sixApril22 = document.querySelector("#six-april-22");
 const sevenApril22 = document.querySelector("#seven-april-22");
+const eightApril22 = document.querySelector("#eight-april-22");
 
 
 const holiday = document.querySelectorAll(".holiday");
@@ -58,16 +59,16 @@ const showTotalProgress = () => {
   angouchaEntry.innerText = 67;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 2497;
-  chetanEntry.innerText = 878;
+  chetanEntry.innerText = 943;
   chetanRemarks.innerText = "";
   kishanPages.innerText = 6288;
-  kishanEntry.innerText = 620;
+  kishanEntry.innerText = 691;
   kishanRemarks.innerText = "";
   poukinPages.innerText = 5317;
-  poukinEntry.innerText = 414;
+  poukinEntry.innerText = 464;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 2387;
-  rohelEntry.innerText = 595;
+  rohelEntry.innerText = 645;
   rohelRemarks.innerText = "";
 }
 
@@ -298,16 +299,16 @@ april22.addEventListener("click", () => {
   angouchaEntry.innerText = 67;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 100;
-  chetanEntry.innerText = 216;
+  chetanEntry.innerText = 281;
   chetanRemarks.innerText = "";
   kishanPages.innerText = 1153;
-  kishanEntry.innerText = 70;
+  kishanEntry.innerText = 141;
   kishanRemarks.innerText = "";
   poukinPages.innerText = 1154;
-  poukinEntry.innerText = 43;
+  poukinEntry.innerText = 93;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 423;
-  rohelEntry.innerText = 143;
+  rohelEntry.innerText = 193;
   rohelRemarks.innerText = "";
 })
 
@@ -403,5 +404,24 @@ sevenApril22.addEventListener("click", () => {
   poukinRemarks.innerText = "";
   rohelPages.innerText = 0;
   rohelEntry.innerText = 52;
+  rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for 08 April 22
+eightApril22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Other work";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 65;
+  chetanRemarks.innerText = "";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 71;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 50;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 50;
   rohelRemarks.innerText = "";
 })
