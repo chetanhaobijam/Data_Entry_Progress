@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+@import "config";
+
+body {
+  font: $font-stack;
+}
+
+header {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    .nav-brand {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $purple;
+    }
+    .nav-icon {
+      i {
+        cursor: pointer;
+      }
+    }
+    .nav-user {
+      img {
+        width: 50px;
+      }
+    }
+  }
+}
+
+main {
+  background-color: $snow;
+  aside {
+    position: fixed;
+    top: 3em;
+    left: 0;
+    width: 20%;
+    padding-top: 2rem;
+    z-index: 1;
+    overflow-y: hidden;
+    height: 94vh;
+    background-color: $white;
+
+    &:hover {
+      overflow-y: auto;
+    }
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $dark-purple;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    
+    .total-progress{
+      a {
+        color: #212529;
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-decoration: none;
+        margin-left: 1rem;
+
+        &:hover {
+          color: $dark-purple;
+        }
+      }
+    }
+
+    .accordion-body {
+      padding: 0;
+
+      .list-group-item {
+        cursor: pointer;
+        &:hover {
+          background-color: $purple;
+          color: $white;
+          border-color: $white;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    margin-left: 20rem;
+    min-height: 100vh;
+    padding-top: 5rem;
+
+    .data-container {
+      background-color: $white;
+      padding: 0.5rem;
+      border-radius: 10px;
+      margin-right: 2rem;
+
+      h1 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 0.5rem;
+      }
+
+      h1+p {
+        font-size: 0.7rem;
+        font-style: italic;
+        margin-left: 0.5rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+      .total-progress {
+        .total-stats {
+          margin: 0 auto;
+          text-align: center;
+          h2 {
+            font-size: 1.2rem;
+            
+            span {
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+
+      .calendar-title {
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      .calendar-table {
+        width: 400px;
+        margin: 0.5rem auto;
+        text-align: center;
+        font-size: 0.8rem;
+        thead {
+          tr {
+            background-color: $purple;
+            color: $white;
+          }
+        }
+        tbody {
+          tr {
+            td {
+              cursor: pointer;
+
+              &:hover {
+                background-color: $dark-purple;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+
+      .data-entry {
+        width: 80%;
+        margin: 2rem auto;
+        text-align: center;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 1em;
+  font-size: 0.9rem;
+}
+
+@import "media";

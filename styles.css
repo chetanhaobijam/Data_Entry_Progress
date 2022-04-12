@@ -196,3 +196,12 @@ footer {
   right: 1em;
   font-size: 0.9rem;
 }
+
+@media screen and (max-width: 992px) {
+  main .main-content {
+    margin-left: 13rem;
+  }
+  main .main-content .data-container {
+    margin-right: 1rem;
+  }
+}

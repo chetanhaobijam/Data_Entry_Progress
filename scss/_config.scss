@@ -1,0 +1,28 @@
+// Variables
+$grey: #9ea1b8;
+$purple: #5351b0;
+$dark-purple: #4a498d;
+$white: #fff;
+$yellow: #fac211;
+$snow: #f4f7fe;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$font-stack: 500 16px 'Nunito', sans-serif;
+
+// JS Styles
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.flex-show {
+  display: flex !important;
+}
