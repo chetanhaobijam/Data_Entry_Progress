@@ -849,3 +849,115 @@ Rohel: Scan - 305
 ## Total
 Scanned- 18303 + 311 + 476 + 305 = 19395
 Entried- 3048 + 35 + 55 = 3138
+
+=========================================================
+
+# Date- 16/04/22
+Angoucha: Other Works
+Chetan: Pdf Works
+Kishan: Absent
+Poukin: Scan - 10
+Rohel: Scan - 84
+
+## Total per person
+**Angoucha**
+724
+149
+
+**Chetan**
+2497
+1053
+
+**Kishan**
+6977
+759  
+
+**Poukin**
+6001 + 10 = 6011
+503
+
+**Rohel**
+2900 + 84 = 2984
+669
+
+### April
+**Angoucha**
+117
+149
+
+**Chetan**
+100
+391
+
+**Kishan**
+1842
+209
+
+**Poukin**
+1838 + 10 = 1848
+132
+
+**Rohel**
+936 + 84 = 1020
+217
+
+## Total
+Scanned- 19395 + 10 + 84 = 19489
+Entried- 3138
+
+=========================================================
+
+# Date- 18/04/22
+Angoucha: Other Works
+Chetan: Entry - 40
+Kishan: Scan - 336
+Poukin: Scan - 80, Entry - 30
+Rohel: Scan - 142
+
+## Total per person
+**Angoucha**
+724
+149
+
+**Chetan**
+2497
+1053 + 40 = 1093
+
+**Kishan**
+6977 + 336 = 7113
+759  
+
+**Poukin**
+6011 + 80 = 6091
+503 + 30 = 533
+
+**Rohel**
+2984 + 142 = 3126
+669
+
+### April
+**Angoucha**
+117
+149
+
+**Chetan**
+100
+391 + 40 = 431
+
+**Kishan**
+1842 + 336 = 2178
+209
+
+**Poukin**
+1848 + 80 = 1928
+132 + 30 = 162
+
+**Rohel**
+1020 + 142 = 1162
+217
+
+## Total
+Scanned- 19489 + 336 + 80 + 142 = 20047
+Entried- 3138 + 40 + 30 = 3208
+
+=========================================================
