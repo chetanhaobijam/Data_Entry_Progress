@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .hide {
@@ -15,8 +14,6 @@
 }
 
 .flex-show {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
 }
 
@@ -30,21 +27,17 @@ header nav {
   left: 0;
   width: 100%;
   background-color: #fff;
-  -webkit-box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
-
 header nav .nav-brand {
   font-size: 1.3rem;
   font-weight: 500;
   color: #5351b0;
 }
-
 header nav .nav-icon i {
   cursor: pointer;
 }
-
 header nav .nav-user img {
   width: 50px;
 }
@@ -52,7 +45,6 @@ header nav .nav-user img {
 main {
   background-color: #f4f7fe;
 }
-
 main aside {
   position: fixed;
   top: 3em;
@@ -68,121 +60,97 @@ main aside {
   /* Handle */
   /* Handle on hover */
 }
-
 main aside:hover {
   overflow-y: auto;
 }
-
 main aside::-webkit-scrollbar {
   width: 5px;
 }
-
 main aside::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-
 main aside::-webkit-scrollbar-thumb {
   background: #4a498d;
 }
-
 main aside::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
-main aside .total-progress a {
+main aside .total-progress a, main aside .work-progress a {
   color: #212529;
   font-size: 1.3rem;
   font-weight: 300;
   text-decoration: none;
   margin-left: 1rem;
 }
-
-main aside .total-progress a:hover {
+main aside .total-progress a:hover, main aside .work-progress a:hover {
   color: #4a498d;
 }
-
 main aside .accordion-body {
   padding: 0;
 }
-
 main aside .accordion-body .list-group-item {
   cursor: pointer;
 }
-
 main aside .accordion-body .list-group-item:hover {
   background-color: #5351b0;
   color: #fff;
   border-color: #fff;
 }
-
 main .main-content {
   margin-left: 20rem;
   min-height: 100vh;
   padding-top: 5rem;
 }
-
 main .main-content .data-container {
   background-color: #fff;
   padding: 0.5rem;
   border-radius: 10px;
   margin-right: 2rem;
 }
-
 main .main-content .data-container h1 {
   font-size: 1.2rem;
   font-weight: 700;
   margin: 0.5rem;
 }
-
 main .main-content .data-container h1 + p {
   font-size: 0.7rem;
   font-style: italic;
   margin-left: 0.5rem;
 }
-
 main .main-content .data-container h2 {
   font-size: 1.1rem;
 }
-
 main .main-content .data-container .total-progress .total-stats {
   margin: 0 auto;
   text-align: center;
 }
-
 main .main-content .data-container .total-progress .total-stats h2 {
   font-size: 1.2rem;
 }
-
 main .main-content .data-container .total-progress .total-stats h2 span {
   font-size: 1.1rem;
 }
-
 main .main-content .data-container .calendar-title {
   text-align: center;
   font-size: 1rem;
 }
-
 main .main-content .data-container .calendar-table {
   width: 400px;
   margin: 0.5rem auto;
   text-align: center;
   font-size: 0.8rem;
 }
-
 main .main-content .data-container .calendar-table thead tr {
   background-color: #5351b0;
   color: #fff;
 }
-
 main .main-content .data-container .calendar-table tbody tr td {
   cursor: pointer;
 }
-
 main .main-content .data-container .calendar-table tbody tr td:hover {
   background-color: #4a498d;
   color: #fff;
 }
-
 main .main-content .data-container .data-entry {
   width: 80%;
   margin: 2rem auto;

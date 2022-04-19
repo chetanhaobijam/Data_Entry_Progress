@@ -1,0 +1,16 @@
+{
+  "liveSassCompile.settings.formats": [
+
+
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/",
+    }
+  ],
+  "liveSassCompile.settings.showOutputWindowOn": "Warning",
+  "liveSassCompile.settings.generateMap": false,
+  "cSpell.ignoreWords": [
+    "currentwork"
+  ]
+}

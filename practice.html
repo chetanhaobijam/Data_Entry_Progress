@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello World</h1>
+  <h2>Hola Munda</h2>
+  <h3>Namaste Prithvi</h3>
+  <h4>Mayambu Khoirumjari</h4>
+  <button id="btn">Hide</button>
+
+  <script>
+    // Get reference to the hyperlink
+    const hideBtn = document.querySelector("#btn");
+
+    // Set up click event handler for link
+    hideBtn.addEventListener("click", (e) => {
+      let elems = document.querySelectorAll("body *:not(h2)");
+      
+      Array.prototype.slice.call(elems).forEach((value) => {
+        value.classList.add("hide");
+      });
+      e.stopPropagation();
+    });
+
+    // Set up click event handler for document
+    document.addEventListener("click", function(){
+      let elems = document.querySelectorAll("body *");
+      
+      Array.prototype.slice.call(elems).forEach((value) => {
+        value.classList.remove("hide");
+      });
+      
+    });
+  </script>
+</body>
+</html>
