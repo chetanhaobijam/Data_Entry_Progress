@@ -29,6 +29,7 @@ const thirteenApril22 = document.querySelector("#thirteen-april-22");
 const sixteenApril22 = document.querySelector("#sixteen-april-22");
 const eighteenApril22 = document.querySelector("#eighteen-april-22");
 const nineteenApril22 = document.querySelector("#nineteen-april-22");
+const twentyApril22 = document.querySelector("#twenty-april-22");
 
 
 const holiday = document.querySelectorAll(".holiday");
@@ -62,16 +63,16 @@ const showTotalProgress = () => {
   march22content.classList.add("hide");
   april22content.classList.add("hide");
   angouchaPages.innerText = 724;
-  angouchaEntry.innerText = 160;
+  angouchaEntry.innerText = 163;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 2497;
-  chetanEntry.innerText = 1144;
+  chetanEntry.innerText = 1147;
   chetanRemarks.innerText = "";
   kishanPages.innerText = 7113;
   kishanEntry.innerText = 817;
   kishanRemarks.innerText = "";
   poukinPages.innerText = 6091;
-  poukinEntry.innerText = 578;
+  poukinEntry.innerText = 589;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 3126;
   rohelEntry.innerText = 700;
@@ -302,16 +303,16 @@ april22.addEventListener("click", () => {
   march22content.classList.add("hide");
   april22content.classList.remove("hide");
   angouchaPages.innerText = 117;
-  angouchaEntry.innerText = 160;
+  angouchaEntry.innerText = 163;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 100;
-  chetanEntry.innerText = 482;
+  chetanEntry.innerText = 485;
   chetanRemarks.innerText = "";
   kishanPages.innerText = 2178;
   kishanEntry.innerText = 267;
   kishanRemarks.innerText = "";
   poukinPages.innerText = 1928;
-  poukinEntry.innerText = 207;
+  poukinEntry.innerText = 218;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 1162;
   rohelEntry.innerText = 248;
@@ -544,4 +545,23 @@ nineteenApril22.addEventListener("click", () => {
   rohelPages.innerText = 0;
   rohelEntry.innerText = 31;
   rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for 20 April 22
+twentyApril22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 3;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 3;
+  chetanRemarks.innerText = "";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "Printing Works";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 11;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "No Work Done";
 })
