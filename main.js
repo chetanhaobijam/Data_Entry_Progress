@@ -1,8 +1,13 @@
 // Variables
 const aside = document.querySelector("aside");
 const asideTrigger = document.querySelector("#aside-trigger");
+const mainContent = document.querySelector(".main-content");
+const currentWork = document.querySelector("#current-work");
 const totalProgress = document.querySelector("#total-progress");
 const totalProgressContent = document.querySelector("#total-progress-content");
+const workProgress = document.querySelector("#work-progress");
+const workProgressContent = document.querySelector("#work-progress-content");
+const dataEntry = document.querySelector(".data-entry");
 // Dates
 const march22 = document.querySelector("#march-22");
 const march22content = document.querySelector("#march-22-content");
@@ -50,18 +55,19 @@ const rohelPages = document.querySelector("#rohel-pages");
 const rohelEntry = document.querySelector("#rohel-entry");
 const rohelRemarks = document.querySelector("#rohel-remarks");
 
-
-
 // Function to Trigger the Display of Aside Section
 asideTrigger.addEventListener("click", () => {
   aside.classList.toggle("hide");
+  mainContent.classList.toggle("shrink-left-margin");
 })
 
 // Function to Display the Total Data Entry Progress
 const showTotalProgress = () => {
   totalProgressContent.classList.remove("hide");
+  workProgressContent.classList.add("hide");
   march22content.classList.add("hide");
   april22content.classList.add("hide");
+  dataEntry.classList.remove("hide");
   angouchaPages.innerText = 724;
   angouchaEntry.innerText = 163;
   angouchaRemarks.innerText = "";
@@ -83,11 +89,39 @@ showTotalProgress();
 
 totalProgress.addEventListener("click", showTotalProgress);
 
+// Work Progress Section
+const workProgressColoring = () => {
+  const workTd = workProgressContent.querySelectorAll("td");
+  workTd.forEach((td) => {
+    if (td.textContent === "Yes") {
+      td.classList.add("text-success");
+    } else if (td.textContent === "No") {
+      td.classList.add("text-danger");
+    }
+  });
+}
+
+const showWorkProgress = () => {
+  totalProgressContent.classList.add("hide");
+  march22content.classList.add("hide");
+  april22content.classList.add("hide");
+  dataEntry.classList.add("hide");
+  workProgressContent.classList.remove("hide");
+}
+
+workProgress.addEventListener("click", () => {
+  showWorkProgress();
+})
+
+workProgressColoring();
+
 // Function to Trigger the Display of March 22 Data Entry Stats
 march22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
-  april22content.classList.add("hide");
+  workProgressContent.classList.add("hide");
   march22content.classList.remove("hide");
+  april22content.classList.add("hide");
+  dataEntry.classList.remove("hide");
   angouchaPages.innerText = 607;
   angouchaEntry.innerText = 0;
   angouchaRemarks.innerText = "";
@@ -300,8 +334,10 @@ thirtyoneMarch22.addEventListener("click", () => {
 // Function to Trigger the Display of April 22 Data Entry Stats
 april22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
+  workProgressContent.classList.add("hide");
   march22content.classList.add("hide");
   april22content.classList.remove("hide");
+  dataEntry.classList.remove("hide");
   angouchaPages.innerText = 117;
   angouchaEntry.innerText = 163;
   angouchaRemarks.innerText = "";
