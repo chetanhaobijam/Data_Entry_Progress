@@ -76,19 +76,19 @@ const showTotalProgress = () => {
   april22content.classList.add("hide");
   dataEntry.classList.remove("hide");
   angouchaPages.innerText = 724;
-  angouchaEntry.innerText = 203;
+  angouchaEntry.innerText = 221;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 2805;
-  chetanEntry.innerText = 1148;
+  chetanEntry.innerText = 1248;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 8271;
-  kishanEntry.innerText = 817;
+  kishanPages.innerText = 8363;
+  kishanEntry.innerText = 917;
   kishanRemarks.innerText = "";
   poukinPages.innerText = 6847;
-  poukinEntry.innerText = 665;
+  poukinEntry.innerText = 707;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 3995;
-  rohelEntry.innerText = 758;
+  rohelEntry.innerText = 797;
   rohelRemarks.innerText = "";
 }
 
@@ -348,19 +348,19 @@ april22.addEventListener("click", () => {
   april22content.classList.remove("hide");
   dataEntry.classList.remove("hide");
   angouchaPages.innerText = 117;
-  angouchaEntry.innerText = 203;
+  angouchaEntry.innerText = 221;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 408;
-  chetanEntry.innerText = 486;
+  chetanEntry.innerText = 586;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 3336;
-  kishanEntry.innerText = 267;
+  kishanPages.innerText = 3428;
+  kishanEntry.innerText = 367;
   kishanRemarks.innerText = "";
   poukinPages.innerText = 2684;
-  poukinEntry.innerText = 294;
+  poukinEntry.innerText = 336;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 2031;
-  rohelEntry.innerText = 306;
+  rohelEntry.innerText = 345;
   rohelRemarks.innerText = "";
 })
 
@@ -723,4 +723,23 @@ twentyeightApril22.addEventListener("click", () => {
   rohelPages.innerText = 0;
   rohelEntry.innerText = 26;
   rohelRemarks.innerText = "Electricity Outage";
+})
+
+// Function to display the stats for 29 April 22
+twentynineApril22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 18;
+  angouchaRemarks.innerText = "Making PDFs";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 100;
+  chetanRemarks.innerText = "Excel work, Making PDFs";
+  kishanPages.innerText = 92;
+  kishanEntry.innerText = 100;
+  kishanRemarks.innerText = "Making PDFs";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 42;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 39;
+  rohelRemarks.innerText = "";
 })
