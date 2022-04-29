@@ -39,6 +39,9 @@ const twentyoneApril22 = document.querySelector("#twentyone-april-22");
 const twentytwoApril22 = document.querySelector("#twentytwo-april-22");
 const twentyfiveApril22 = document.querySelector("#twentyfive-april-22");
 const twentysixApril22 = document.querySelector("#twentysix-april-22");
+const twentysevenApril22 = document.querySelector("#twentyseven-april-22");
+const twentyeightApril22 = document.querySelector("#twentyeight-april-22");
+const twentynineApril22 = document.querySelector("#twentynine-april-22");
 
 
 const holiday = document.querySelectorAll(".holiday");
@@ -75,17 +78,17 @@ const showTotalProgress = () => {
   angouchaPages.innerText = 724;
   angouchaEntry.innerText = 203;
   angouchaRemarks.innerText = "";
-  chetanPages.innerText = 2505;
+  chetanPages.innerText = 2805;
   chetanEntry.innerText = 1148;
   chetanRemarks.innerText = "";
   kishanPages.innerText = 8271;
   kishanEntry.innerText = 817;
   kishanRemarks.innerText = "";
   poukinPages.innerText = 6847;
-  poukinEntry.innerText = 639;
+  poukinEntry.innerText = 665;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 3995;
-  rohelEntry.innerText = 732;
+  rohelEntry.innerText = 758;
   rohelRemarks.innerText = "";
 }
 
@@ -347,17 +350,17 @@ april22.addEventListener("click", () => {
   angouchaPages.innerText = 117;
   angouchaEntry.innerText = 203;
   angouchaRemarks.innerText = "";
-  chetanPages.innerText = 108;
+  chetanPages.innerText = 408;
   chetanEntry.innerText = 486;
   chetanRemarks.innerText = "";
   kishanPages.innerText = 3336;
   kishanEntry.innerText = 267;
   kishanRemarks.innerText = "";
   poukinPages.innerText = 2684;
-  poukinEntry.innerText = 268;
+  poukinEntry.innerText = 294;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 2031;
-  rohelEntry.innerText = 280;
+  rohelEntry.innerText = 306;
   rohelRemarks.innerText = "";
 })
 
@@ -682,4 +685,42 @@ twentysixApril22.addEventListener("click", () => {
   rohelPages.innerText = 0;
   rohelEntry.innerText = 32;
   rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for 27 April 22
+twentysevenApril22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Electricity Outage";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 0;
+  chetanRemarks.innerText = "Inserting Barcode Pages, Electricity Outage";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "Inserting Barcode Pages, Electricity Outage";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "Electricity Outage";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "Electricity Outage";
+})
+
+// Function to display the stats for 28 April 22
+twentyeightApril22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Absent";
+  chetanPages.innerText = 300;
+  chetanEntry.innerText = 0;
+  chetanRemarks.innerText = "Excel work, Making PDFs, Electricity Outage";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "Absent";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 26;
+  poukinRemarks.innerText = "Electricity Outage";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 26;
+  rohelRemarks.innerText = "Electricity Outage";
 })
