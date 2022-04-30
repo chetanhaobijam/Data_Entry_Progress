@@ -42,6 +42,7 @@ const twentysixApril22 = document.querySelector("#twentysix-april-22");
 const twentysevenApril22 = document.querySelector("#twentyseven-april-22");
 const twentyeightApril22 = document.querySelector("#twentyeight-april-22");
 const twentynineApril22 = document.querySelector("#twentynine-april-22");
+const thirtyApril22 = document.querySelector("#thirty-april-22");
 
 
 const holiday = document.querySelectorAll(".holiday");
@@ -76,13 +77,13 @@ const showTotalProgress = () => {
   april22content.classList.add("hide");
   dataEntry.classList.remove("hide");
   angouchaPages.innerText = 724;
-  angouchaEntry.innerText = 221;
+  angouchaEntry.innerText = 223;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 2805;
   chetanEntry.innerText = 1248;
   chetanRemarks.innerText = "";
   kishanPages.innerText = 8363;
-  kishanEntry.innerText = 917;
+  kishanEntry.innerText = 932;
   kishanRemarks.innerText = "";
   poukinPages.innerText = 6847;
   poukinEntry.innerText = 707;
@@ -348,13 +349,13 @@ april22.addEventListener("click", () => {
   april22content.classList.remove("hide");
   dataEntry.classList.remove("hide");
   angouchaPages.innerText = 117;
-  angouchaEntry.innerText = 221;
+  angouchaEntry.innerText = 223;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 408;
   chetanEntry.innerText = 586;
   chetanRemarks.innerText = "";
   kishanPages.innerText = 3428;
-  kishanEntry.innerText = 367;
+  kishanEntry.innerText = 382;
   kishanRemarks.innerText = "";
   poukinPages.innerText = 2684;
   poukinEntry.innerText = 336;
@@ -742,4 +743,23 @@ twentynineApril22.addEventListener("click", () => {
   rohelPages.innerText = 0;
   rohelEntry.innerText = 39;
   rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for 30 April 22
+thirtyApril22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 2;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 0;
+  chetanRemarks.innerText = "Printing 496 Gazette Barcode Pages";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 15;
+  kishanRemarks.innerText = "Making PDFs, Inserting 496 Gazette Barcode Pages";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "No Work Done";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "Absent";
 })
