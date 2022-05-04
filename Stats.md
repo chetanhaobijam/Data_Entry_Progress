@@ -1456,3 +1456,113 @@ Scanned- 23230
 Entried- 3895 + 2 + 15 = 3912
 
 =======================================================
+
+# Date- 02/05/22
+Angoucha: Entry - 6
+Chetan: Other Works
+Kishan: Other Works
+Poukin: Other Works
+Rohel: Other Works
+
+## Total per person
+**Angoucha**
+724
+223 + 6 = 229
+
+**Chetan**
+2805
+1248
+
+**Kishan**
+8363
+932
+
+**Poukin**
+6847
+707
+
+**Rohel**
+3995
+797
+
+### April
+**Angoucha**
+0
+6
+
+**Chetan**
+0
+0
+
+**Kishan**
+0
+0
+
+**Poukin**
+0
+0
+
+**Rohel**
+0
+0
+
+## Total
+Scanned- 23230
+Entried- 3912 + 6 = 3918
+
+=======================================================
+
+# Date- 04/05/22
+Angoucha: Entry - 10
+Chetan: Other Works
+Kishan: Entry - 20
+Poukin: Other Works
+Rohel: Other Works
+
+## Total per person
+**Angoucha**
+724
+229 + 10 = 239
+
+**Chetan**
+2805
+1248
+
+**Kishan**
+8363
+932 + 20 = 952
+
+**Poukin**
+6847
+707
+
+**Rohel**
+3995
+797
+
+### April
+**Angoucha**
+0
+6 + 10 = 16
+
+**Chetan**
+0
+0
+
+**Kishan**
+0
+0 + 20 = 20
+
+**Poukin**
+0
+0
+
+**Rohel**
+0
+0
+
+## Total
+Scanned- 23230
+Entried- 3918 + 30 = 3948
+
+=======================================================

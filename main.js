@@ -43,7 +43,10 @@ const twentysevenApril22 = document.querySelector("#twentyseven-april-22");
 const twentyeightApril22 = document.querySelector("#twentyeight-april-22");
 const twentynineApril22 = document.querySelector("#twentynine-april-22");
 const thirtyApril22 = document.querySelector("#thirty-april-22");
-
+const may22 = document.querySelector("#may-22");
+const may22content = document.querySelector("#may-22-content");
+const twoMay22 = document.querySelector("#two-may-22");
+const fourMay22 = document.querySelector("#four-may-22");
 
 const holiday = document.querySelectorAll(".holiday");
 // Table
@@ -75,15 +78,16 @@ const showTotalProgress = () => {
   workProgressContent.classList.add("hide");
   march22content.classList.add("hide");
   april22content.classList.add("hide");
+  may22content.classList.add("hide");
   dataEntry.classList.remove("hide");
   angouchaPages.innerText = 724;
-  angouchaEntry.innerText = 223;
+  angouchaEntry.innerText = 239;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 2805;
   chetanEntry.innerText = 1248;
   chetanRemarks.innerText = "";
   kishanPages.innerText = 8363;
-  kishanEntry.innerText = 932;
+  kishanEntry.innerText = 952;
   kishanRemarks.innerText = "";
   poukinPages.innerText = 6847;
   poukinEntry.innerText = 707;
@@ -115,6 +119,7 @@ const showWorkProgress = () => {
   totalProgressContent.classList.add("hide");
   march22content.classList.add("hide");
   april22content.classList.add("hide");
+  may22content.classList.add("hide");
   dataEntry.classList.add("hide");
   workProgressContent.classList.remove("hide");
 }
@@ -347,6 +352,7 @@ april22.addEventListener("click", () => {
   workProgressContent.classList.add("hide");
   march22content.classList.add("hide");
   april22content.classList.remove("hide");
+  may22content.classList.add("hide");
   dataEntry.classList.remove("hide");
   angouchaPages.innerText = 117;
   angouchaEntry.innerText = 223;
@@ -762,4 +768,67 @@ thirtyApril22.addEventListener("click", () => {
   rohelPages.innerText = 0;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "Absent";
+})
+
+// Function to Trigger the Display of May 22 Data Entry Stats
+may22.addEventListener("click", () => {
+  totalProgressContent.classList.add("hide");
+  workProgressContent.classList.add("hide");
+  march22content.classList.add("hide");
+  april22content.classList.add("hide");
+  may22content.classList.remove("hide");
+  dataEntry.classList.remove("hide");
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 16;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 0;
+  chetanRemarks.innerText = "";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 20;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for 02 May 22
+twoMay22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 6;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 0;
+  chetanRemarks.innerText = "Other Works";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "Other Works";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "Other Works";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "Other Works";
+})
+
+// Function to display the stats for 04 May 22
+fourMay22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 10;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 0;
+  chetanRemarks.innerText = "Other Works";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 20;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "Other Works";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "Other Works";
 })
