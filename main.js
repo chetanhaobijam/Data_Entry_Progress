@@ -47,6 +47,7 @@ const may22 = document.querySelector("#may-22");
 const may22content = document.querySelector("#may-22-content");
 const twoMay22 = document.querySelector("#two-may-22");
 const fourMay22 = document.querySelector("#four-may-22");
+const fiveMay22 = document.querySelector("#five-may-22");
 
 const holiday = document.querySelectorAll(".holiday");
 // Table
@@ -81,18 +82,18 @@ const showTotalProgress = () => {
   may22content.classList.add("hide");
   dataEntry.classList.remove("hide");
   angouchaPages.innerText = 724;
-  angouchaEntry.innerText = 239;
+  angouchaEntry.innerText = 257;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 2805;
   chetanEntry.innerText = 1248;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 8363;
+  kishanPages.innerText = 8665;
   kishanEntry.innerText = 952;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 6847;
+  poukinPages.innerText = 7247;
   poukinEntry.innerText = 707;
   poukinRemarks.innerText = "";
-  rohelPages.innerText = 3995;
+  rohelPages.innerText = 4317;
   rohelEntry.innerText = 797;
   rohelRemarks.innerText = "";
 }
@@ -779,18 +780,18 @@ may22.addEventListener("click", () => {
   may22content.classList.remove("hide");
   dataEntry.classList.remove("hide");
   angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 16;
+  angouchaEntry.innerText = 34;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 0;
   chetanEntry.innerText = 0;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 0;
+  kishanPages.innerText = 302;
   kishanEntry.innerText = 20;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 0;
+  poukinPages.innerText = 400;
   poukinEntry.innerText = 0;
   poukinRemarks.innerText = "";
-  rohelPages.innerText = 0;
+  rohelPages.innerText = 322;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "";
 })
@@ -831,4 +832,23 @@ fourMay22.addEventListener("click", () => {
   rohelPages.innerText = 0;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "Other Works";
+})
+
+// Function to display the stats for 05 May 22
+fiveMay22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 18;
+  angouchaRemarks.innerText = "";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 0;
+  chetanRemarks.innerText = "Other Works";
+  kishanPages.innerText = 302;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 400;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 322;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "";
 })
