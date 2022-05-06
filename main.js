@@ -48,6 +48,7 @@ const may22content = document.querySelector("#may-22-content");
 const twoMay22 = document.querySelector("#two-may-22");
 const fourMay22 = document.querySelector("#four-may-22");
 const fiveMay22 = document.querySelector("#five-may-22");
+const sixMay22 = document.querySelector("#six-may-22");
 
 const holiday = document.querySelectorAll(".holiday");
 // Table
@@ -87,13 +88,13 @@ const showTotalProgress = () => {
   chetanPages.innerText = 2805;
   chetanEntry.innerText = 1248;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 8665;
+  kishanPages.innerText = 9091;
   kishanEntry.innerText = 952;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 7247;
+  poukinPages.innerText = 7648;
   poukinEntry.innerText = 707;
   poukinRemarks.innerText = "";
-  rohelPages.innerText = 4317;
+  rohelPages.innerText = 4589;
   rohelEntry.innerText = 797;
   rohelRemarks.innerText = "";
 }
@@ -785,13 +786,13 @@ may22.addEventListener("click", () => {
   chetanPages.innerText = 0;
   chetanEntry.innerText = 0;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 302;
+  kishanPages.innerText = 728;
   kishanEntry.innerText = 20;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 400;
+  poukinPages.innerText = 801;
   poukinEntry.innerText = 0;
   poukinRemarks.innerText = "";
-  rohelPages.innerText = 322;
+  rohelPages.innerText = 594;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "";
 })
@@ -849,6 +850,25 @@ fiveMay22.addEventListener("click", () => {
   poukinEntry.innerText = 0;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 322;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for 06 May 22
+sixMay22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Making PDFs";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 0;
+  chetanRemarks.innerText = "Excel, Making PDFs";
+  kishanPages.innerText = 426;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 401;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 272;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "";
 })

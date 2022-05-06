@@ -1621,3 +1621,58 @@ Scanned- 23230 + 302 + 400 + 322 = 24254
 Entried- 3948 + 18 = 3966
 
 =======================================================
+
+# Date- 05/05/22
+Angoucha: Making PDFs
+Chetan: Excel + Making PDFs
+Kishan: Scan - 426
+Poukin: Scan - 401
+Rohel: Scan - 272
+
+## Total per person
+**Angoucha**
+724
+257
+
+**Chetan**
+2805
+1248
+
+**Kishan**
+8665 + 426 = 9091
+952
+
+**Poukin**
+7247 + 401 = 7648
+707
+
+**Rohel**
+4317 + 272 = 4589
+797
+
+### April
+**Angoucha**
+0
+34
+
+**Chetan**
+0
+0
+
+**Kishan**
+302 + 426 = 728
+20
+
+**Poukin**
+400 + 401 = 801
+0
+
+**Rohel**
+322 + 272 = 594
+0
+
+## Total
+Scanned- 24254 + 426 + 401 + 272 = 25353
+Entried- 3966
+
+=======================================================
