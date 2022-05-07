@@ -49,6 +49,7 @@ const twoMay22 = document.querySelector("#two-may-22");
 const fourMay22 = document.querySelector("#four-may-22");
 const fiveMay22 = document.querySelector("#five-may-22");
 const sixMay22 = document.querySelector("#six-may-22");
+const sevenMay22 = document.querySelector("#seven-may-22");
 
 const holiday = document.querySelectorAll(".holiday");
 // Table
@@ -86,15 +87,15 @@ const showTotalProgress = () => {
   angouchaEntry.innerText = 257;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 2805;
-  chetanEntry.innerText = 1248;
+  chetanEntry.innerText = 1250;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 9091;
+  kishanPages.innerText = 9177;
   kishanEntry.innerText = 952;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 7648;
+  poukinPages.innerText = 8058;
   poukinEntry.innerText = 707;
   poukinRemarks.innerText = "";
-  rohelPages.innerText = 4589;
+  rohelPages.innerText = 4827;
   rohelEntry.innerText = 797;
   rohelRemarks.innerText = "";
 }
@@ -784,15 +785,15 @@ may22.addEventListener("click", () => {
   angouchaEntry.innerText = 34;
   angouchaRemarks.innerText = "";
   chetanPages.innerText = 0;
-  chetanEntry.innerText = 0;
+  chetanEntry.innerText = 2;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 728;
+  kishanPages.innerText = 814;
   kishanEntry.innerText = 20;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 801;
+  poukinPages.innerText = 1211;
   poukinEntry.innerText = 0;
   poukinRemarks.innerText = "";
-  rohelPages.innerText = 594;
+  rohelPages.innerText = 832;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "";
 })
@@ -869,6 +870,25 @@ sixMay22.addEventListener("click", () => {
   poukinEntry.innerText = 0;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 272;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for 07 May 22
+sevenMay22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Making PDFs";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 2;
+  chetanRemarks.innerText = "Excel, Making PDFs";
+  kishanPages.innerText = 86;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "Making PDFs";
+  poukinPages.innerText = 410;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 238;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "";
 })
