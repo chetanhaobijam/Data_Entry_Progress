@@ -1485,7 +1485,7 @@ Rohel: Other Works
 3995
 797
 
-### April
+### May
 **Angoucha**
 0
 6
@@ -1540,7 +1540,7 @@ Rohel: Other Works
 3995
 797
 
-### April
+### May
 **Angoucha**
 0
 6 + 10 = 16
@@ -1595,7 +1595,7 @@ Rohel: Scan - 322
 3995 + 322 = 4317
 797
 
-### April
+### May
 **Angoucha**
 0
 16 + 18 = 34
@@ -1650,7 +1650,7 @@ Rohel: Scan - 272
 4317 + 272 = 4589
 797
 
-### April
+### May
 **Angoucha**
 0
 34
@@ -1705,7 +1705,7 @@ Rohel: Scan - 238
 4589 + 238 = 4827
 797
 
-### April
+### May
 **Angoucha**
 0
 34
@@ -1760,7 +1760,7 @@ Rohel: Scan - 156 + Entry - 15
 4827 + 156 = 4983
 797 + 15 = 812
 
-### April
+### May
 **Angoucha**
 0
 34 + 12 = 46
@@ -1784,5 +1784,60 @@ Rohel: Scan - 156 + Entry - 15
 ## Total
 Scanned- 26087 + 242 + 156 = 26485
 Entried- 3968 + 12 + 15 = 3995
+
+=======================================================
+
+# Date- 10/05/22
+Angoucha: Entry - 34
+Chetan: Entry - 112
+Kishan: Entry - 109
+Poukin: Entry - 50
+Rohel: Entry - 20
+
+## Total per person
+**Angoucha**
+724
+269 + 34 = 303
+
+**Chetan**
+2805
+1250 + 112 = 1362
+
+**Kishan**
+9177
+952 + 109 = 1061
+
+**Poukin**
+8300
+707 + 50 = 757
+
+**Rohel**
+4983
+812 + 20 = 832
+
+### May
+**Angoucha**
+0
+46 + 34 = 80
+
+**Chetan**
+0
+2 + 112 = 114
+
+**Kishan**
+814
+20 + 109 = 129
+
+**Poukin**
+1453
+0 + 50 = 50
+
+**Rohel**
+988
+15 + 20 = 35
+
+## Total
+Scanned- 26485
+Entried- 3995 + 34 + 112 + 109 + 50 + 20 = 4320
 
 =======================================================
