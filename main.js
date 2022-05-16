@@ -55,6 +55,7 @@ const tenMay22 = document.querySelector("#ten-may-22");
 const elevenMay22 = document.querySelector("#eleven-may-22");
 const twelveMay22 = document.querySelector("#twelve-may-22");
 const thirteenMay22 = document.querySelector("#thirteen-may-22");
+const sixteenMay22 = document.querySelector("#sixteen-may-22");
 
 const holiday = document.querySelectorAll(".holiday");
 // Table
@@ -94,13 +95,13 @@ const showTotalProgress = () => {
   chetanPages.innerText = 2805;
   chetanEntry.innerText = 1545;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 9467;
+  kishanPages.innerText = 9861;
   kishanEntry.innerText = 1265;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 8692;
+  poukinPages.innerText = 9050;
   poukinEntry.innerText = 878;
   poukinRemarks.innerText = "";
-  rohelPages.innerText = 5245;
+  rohelPages.innerText = 5571;
   rohelEntry.innerText = 933;
   rohelRemarks.innerText = "";
 }
@@ -793,13 +794,13 @@ may22.addEventListener("click", () => {
   chetanPages.innerText = 0;
   chetanEntry.innerText = 297;
   chetanRemarks.innerText = "";
-  kishanPages.innerText = 1104;
+  kishanPages.innerText = 1498;
   kishanEntry.innerText = 333;
   kishanRemarks.innerText = "";
-  poukinPages.innerText = 1845;
+  poukinPages.innerText = 2203;
   poukinEntry.innerText = 171;
   poukinRemarks.innerText = "";
-  rohelPages.innerText = 1250;
+  rohelPages.innerText = 1576;
   rohelEntry.innerText = 136;
   rohelRemarks.innerText = "";
 })
@@ -990,6 +991,25 @@ thirteenMay22.addEventListener("click", () => {
   poukinEntry.innerText = 0;
   poukinRemarks.innerText = "";
   rohelPages.innerText = 262;
+  rohelEntry.innerText = 0;
+  rohelRemarks.innerText = "";
+})
+
+// Function to display the stats for 16 May 22
+sixteenMay22.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaRemarks.innerText = "Making PDFs";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 0;
+  chetanRemarks.innerText = "Excel Work, Printing & Inserting Gazette Barcode Pages";
+  kishanPages.innerText = 394;
+  kishanEntry.innerText = 0;
+  kishanRemarks.innerText = "";
+  poukinPages.innerText = 358;
+  poukinEntry.innerText = 0;
+  poukinRemarks.innerText = "";
+  rohelPages.innerText = 326;
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "";
 })
