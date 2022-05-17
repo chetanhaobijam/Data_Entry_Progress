@@ -2,11 +2,11 @@
   "2022" : {
     "chetan": {
       "old": {
-        "scan": ,
-        "entry": 0,
+        "scan": 0,
+        "entry": 0
       },
       "march": {
-        "scan": [0, 0 ]
+        "scan": [0, 0]
       }
     }
   }
