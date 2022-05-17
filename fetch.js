@@ -109,20 +109,115 @@ const progress = (aPages, aEntry, aRemarks, cPages, cEntry, cRemarks, kPages, kE
   rohelRemarks.innerText = rRemarks;
 }
 
-// Function to Display the Total Data Entry Progress
-const showTotalProgress = () => {
-  totalProgressContent.classList.remove("hide");
-  workProgressContent.classList.add("hide");
-  march22content.classList.add("hide");
-  april22content.classList.add("hide");
-  may22content.classList.add("hide");
-  dataEntry.classList.remove("hide");
-  progress(724, 377, em, 2805, 1545, em, 9861, 1265, em, 9050, 878, em, 5571, 933, em);
+const total = arr => {
+  return arr.reduce((acc, val) => {
+    return acc + val;
+  0})
 }
 
-showTotalProgress();
+async function getData() {
+  const dataStream = await fetch("./data.json");
+  const datas = await dataStream.json();
 
-totalProgress.addEventListener("click", showTotalProgress);
+  let oldAngouchaScan = datas["2022"]["angoucha"]["old"]["scan"];
+  let oldAngouchaEntry = datas["2022"]["angoucha"]["old"]["entry"];
+  let oldChetanScan = datas["2022"]["chetan"]["old"]["scan"];
+  let oldChetanEntry = datas["2022"]["chetan"]["old"]["entry"];
+  let oldKishanScan = datas["2022"]["kishan"]["old"]["scan"];
+  let oldKishanEntry = datas["2022"]["kishan"]["old"]["entry"];
+  let oldPoukinScan = datas["2022"]["poukin"]["old"]["scan"];
+  let oldPoukinEntry = datas["2022"]["poukin"]["old"]["entry"];
+  let oldRohelScan = datas["2022"]["rohel"]["old"]["scan"];
+  let oldRohelEntry = datas["2022"]["rohel"]["old"]["entry"];
+
+  // March 22 Total Data
+  let angouchaMar22ScanTotal = total(datas["2022"]["angoucha"]["march"]["scan"]);
+  let angouchaMar22EntryTotal = total(datas["2022"]["angoucha"]["march"]["entry"]);
+  let chetanMar22ScanTotal = total(datas["2022"]["chetan"]["march"]["scan"]);
+  let chetanMar22EntryTotal = total(datas["2022"]["chetan"]["march"]["entry"]);
+  let kishanMar22ScanTotal = total(datas["2022"]["kishan"]["march"]["scan"]);
+  let kishanMar22EntryTotal = total(datas["2022"]["kishan"]["march"]["entry"]);
+  let poukinMar22ScanTotal = total(datas["2022"]["poukin"]["march"]["scan"]);
+  let poukinMar22EntryTotal = total(datas["2022"]["poukin"]["march"]["entry"]);
+  let rohelMar22ScanTotal = total(datas["2022"]["rohel"]["march"]["scan"]);
+  let rohelMar22EntryTotal = total(datas["2022"]["rohel"]["march"]["entry"]);
+
+  // Total Data
+  let angouchaTotalScan = oldAngouchaScan + angouchaMar22ScanTotal;
+  let angouchaTotalEntry = oldAngouchaEntry + angouchaMar22EntryTotal;
+  let chetanTotalScan = oldChetanScan + chetanMar22ScanTotal;
+  let chetanTotalEntry = oldChetanEntry + chetanMar22EntryTotal;
+  let kishanTotalScan = oldKishanScan + kishanMar22ScanTotal;
+  let kishanTotalEntry = oldKishanEntry + kishanMar22EntryTotal;
+  let poukinTotalScan = oldPoukinScan + poukinMar22ScanTotal;
+  let poukinTotalEntry = oldPoukinEntry + poukinMar22EntryTotal;
+  let rohelTotalScan = oldRohelScan + rohelMar22ScanTotal;
+  let rohelTotalEntry = oldRohelEntry + rohelMar22EntryTotal;
+
+  // Function to Display the Total Data Entry Progress
+  const showTotalProgress = () => {
+    totalProgressContent.classList.remove("hide");
+    workProgressContent.classList.add("hide");
+    march22content.classList.add("hide");
+    april22content.classList.add("hide");
+    may22content.classList.add("hide");
+    dataEntry.classList.remove("hide");
+    progress(angouchaTotalScan, angouchaTotalEntry, em, chetanTotalScan, chetanTotalEntry, em, kishanTotalScan, kishanTotalEntry, em, poukinTotalScan, poukinTotalEntry, em, rohelTotalScan, rohelTotalEntry, em);
+  }
+
+  showTotalProgress();
+
+  totalProgress.addEventListener("click", showTotalProgress);
+
+  // Function to Trigger the Display of March 22 Data Entry Stats
+  march22.addEventListener("click", () => {
+    totalProgressContent.classList.add("hide");
+    workProgressContent.classList.add("hide");
+    march22content.classList.remove("hide");
+    april22content.classList.add("hide");
+    may22content.classList.add("hide");
+    dataEntry.classList.remove("hide");
+    progress(angouchaMar22ScanTotal, angouchaMar22EntryTotal, em, chetanMar22ScanTotal, chetanMar22EntryTotal, em, kishanMar22ScanTotal, kishanMar22EntryTotal, em, poukinMar22ScanTotal, poukinMar22EntryTotal, em, rohelMar22ScanTotal, rohelMar22EntryTotal, em);
+  })
+
+  // Function to display the stats for 17 March 22
+  seventeenMarch22.addEventListener("click", () => {
+    let chetanMar22Entry = datas["2022"]["chetan"]["march"]["entry"][0];
+    let kishanMar22Scan = datas["2022"]["kishan"]["march"]["scan"][0];
+    let poukinMar22Scan = datas["2022"]["poukin"]["march"]["scan"][0];
+    progress(0, 0, abs, 0, chetanMar22Entry, "Few entries due to Software Error", kishanMar22Scan, 0, em, poukinMar22Scan, 0, em, 0, 0, abs);
+  })
+
+  // Function to display the stats for 23 March 22
+  twentythreeMarch22.addEventListener("click", () => {
+    let chetanMar22Entry = datas["2022"]["chetan"]["march"]["entry"][1];
+    let kishanMar22Scan = datas["2022"]["kishan"]["march"]["scan"][1];
+    let poukinMar22Scan = datas["2022"]["poukin"]["march"]["scan"][1];
+    progress(0, 0, abs, 0, chetanMar22Entry, em, kishanMar22Scan, 0, em, poukinMar22Scan, 0, em, 0, 0, abs);
+  })
+
+  // Function to display the stats for 24 March 22
+  twentyfourMarch22.addEventListener("click", () => {
+    let chetanMar22Entry = datas["2022"]["chetan"]["march"]["entry"][2];
+    let kishanMar22Scan = datas["2022"]["kishan"]["march"]["scan"][2];
+    let poukinMar22Scan = datas["2022"]["poukin"]["march"]["scan"][2];
+    let rohelMar22Entry = datas["2022"]["rohel"]["march"]["entry"][2];
+    progress(0, 0, abs, 0, chetanMar22Entry, em, kishanMar22Scan, 0, em, poukinMar22Scan, 0, em, 0, rohelMar22Entry, em);
+  })
+
+  // Function to display the stats for 25 March 22
+  twentyfiveMarch22.addEventListener("click", () => {
+    let chetanMar22Entry = datas["2022"]["chetan"]["march"]["entry"][3];
+    let kishanMar22Scan = datas["2022"]["kishan"]["march"]["scan"][3];
+    let kishanMar22Entry = datas["2022"]["kishan"]["march"]["entry"][3];
+    let poukinMar22Entry = datas["2022"]["poukin"]["march"]["entry"][3];
+    let rohelMar22Entry = datas["2022"]["rohel"]["march"]["entry"][3];
+    progress(0, 0, abs, 0, chetanMar22Entry, em, kishanMar22Scan, kishanMar22Entry, em, 0, poukinMar22Entry, em, 0, rohelMar22Entry, em);
+  })
+}
+
+
+getData();
 
 // Work Progress Section
 const workProgressColoring = () => {
@@ -172,126 +267,4 @@ holiday.forEach(date => {
   rohelEntry.innerText = 0;
   rohelRemarks.innerText = "Office Holiday";
   })
-})
-
-// Function to Trigger the Display of March 22 Data Entry Stats
-march22.addEventListener("click", () => {
-  totalProgressContent.classList.add("hide");
-  workProgressContent.classList.add("hide");
-  march22content.classList.remove("hide");
-  april22content.classList.add("hide");
-  may22content.classList.add("hide");
-  dataEntry.classList.remove("hide");
-  progress(607, 0, em, 69, 378, em, 2996, 232, em, 2055, 110, em, 222, 220, em);
-})
-
-// Function to display the stats for 17 March 22
-seventeenMarch22.addEventListener("click", () => {
-  progress(0, 0, abs, 0, 5, "Few entries due to Software Error", 448, 0, em, 320, 0, em, 0, 0, abs);
-})
-
-// Function to display the stats for 23 March 22
-twentythreeMarch22.addEventListener("click", () => {
-  progress(0, 0, abs, 0, 63, em, 504, 0, em, 360, 0, em, 0, 0, abs);
-})
-
-// Function to display the stats for 24 March 22
-twentyfourMarch22.addEventListener("click", () => {
-  progress(0, 0, abs, 0, 70, em, 558, 0, em, 384, 0, em, 0, 41, em);
-})
-
-// Function to display the stats for 25 March 22
-twentyfiveMarch22.addEventListener("click", () => {
-  progress(0, 0, abs, 0, 61, em, 228, 46, em, 0, 35, em, 0, 62, em);
-})
-
-// Function to display the stats for 26 March 22
-twentysixMarch22.addEventListener("click", () => {
-  progress(0, 0, abs, 0, 6, prins, 400, 54, em, 223, 0, em, 222, 0, em);
-})
-
-// Function to display the stats for 28 March 22
-twentyeightMarch22.addEventListener("click", () => {
-  progress(82, 0, print, 69, 35, prins, 260, 35, em, 220, 25, em, 0, 27, insert);
-})
-
-// Function to display the stats for 29 March 22
-twentynineMarch22.addEventListener("click", () => {
-  progress(203, 0, em, 0, 38, em, 454, 0, em, 344, 0, em, 0, 0, abs);
-})
-
-// Function to display the stats for 30 March 22
-thirtyMarch22.addEventListener("click", () => {
-  progress(148, 0, em, 0, 49, em, 0, 50, em, 204, 0, em, 0, 40, em);
-})
-
-// Function to display the stats for 31 March 22
-thirtyoneMarch22.addEventListener("click", () => {
-  progress(174, 0, em, 0, 51, insert, 144, 47, print, 0, 50, em, 0, 50, em);
-})
-
-// Function to Trigger the Display of May 22 Data Entry Stats
-may22.addEventListener("click", () => {
-  totalProgressContent.classList.add("hide");
-  workProgressContent.classList.add("hide");
-  march22content.classList.add("hide");
-  april22content.classList.add("hide");
-  may22content.classList.remove("hide");
-  dataEntry.classList.remove("hide");
-  progress(0, 154, "", 0, 297, "", 1498, 333, "", 2203, 171, "", 1576, 136, "");
-})
-
-// Function to display the stats for 02 May 22
-twoMay22.addEventListener("click", () => {
-  progress(0, 6, em, 0, 0, other, 0, 0, other, 0, 0, other, 0, 0, other);
-})
-
-// Function to display the stats for 04 May 22
-fourMay22.addEventListener("click", () => {
-  progress(0, 10, em, 0, 0, other, 0, 20, em, 0, 0, other, 0, 0, other)
-})
-
-// Function to display the stats for 05 May 22
-fiveMay22.addEventListener("click", () => {
-  progress(0, 18, em, 0, 0, other, 302, 0, em, 400, 0, em, 322, 0, em);
-})
-
-// Function to display the stats for 06 May 22
-sixMay22.addEventListener("click", () => {
-  progress(0, 0, make, 0, 0, `${excel} & ${make}`, 426, 0, em, 401, 0, em, 272, 0, em);
-})
-
-// Function to display the stats for 07 May 22
-sevenMay22.addEventListener("click", () => {
-  progress(0, 0, make, 0, 2, `${excel} & ${make}`, 86, 0, make, 410, 0, em, 238, 0, em);
-})
-
-// Function to display the stats for 09 May 22
-nineMay22.addEventListener("click", () => {
-  progress(0, 12, make, 0, 0, `${excel} & ${make}`, 0, 0, `${excel} & ${make}`, 242, 0, em, 156, 15, em);
-})
-
-// Function to display the stats for 10 May 22
-tenMay22.addEventListener("click", () => {
-  progress(0, 34, em, 0, 112, make, 0, 109, make, 0, 50, em, 0, 20, em)
-})
-
-// Function to display the stats for 11 May 22
-elevenMay22.addEventListener("click", () => {
-  progress(0, 58, em, 0, 100, print, 0, 104, em, 0, 60, em, 0, 50, em)
-})
-
-// Function to display the stats for 12 May 22
-twelveMay22.addEventListener("click", () => {
-  progress(0, 16, em, 0, 83, em, 0, 100, em, 0, 61, em, 0, 51, em);
-})
-
-// Function to display the stats for 13 May 22
-thirteenMay22.addEventListener("click", () => {
-  progress(0, 0, other, 0, 0, print, 290, 0, em, 392, 0, em, 262, 0, em)
-})
-
-// Function to display the stats for 16 May 22
-sixteenMay22.addEventListener("click", () => {
-  progress(0, 0, make, 0, 0, `Excel Work, ${prins}`, 394, 0, "",  358, 0, "", 326, 0, "");
 })
