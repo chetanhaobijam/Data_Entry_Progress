@@ -6,135 +6,37 @@ april22.addEventListener("click", () => {
   april22content.classList.remove("hide");
   may22content.classList.add("hide");
   dataEntry.classList.remove("hide");
-  angouchaPages.innerText = 117;
-  angouchaEntry.innerText = 223;
-  angouchaRemarks.innerText = "";
-  chetanPages.innerText = 408;
-  chetanEntry.innerText = 586;
-  chetanRemarks.innerText = "";
-  kishanPages.innerText = 3428;
-  kishanEntry.innerText = 382;
-  kishanRemarks.innerText = "";
-  poukinPages.innerText = 2684;
-  poukinEntry.innerText = 336;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 2031;
-  rohelEntry.innerText = 345;
-  rohelRemarks.innerText = "";
+  progress(117, 223, em, 408, 586, em, 3428, 382, em, 2684, 336, em, 2031, 345, em);
 })
 
 // Function to display the stats for 01 April 22
 oneApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 0;
-  angouchaRemarks.innerText = "Printing Work";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 73;
-  chetanRemarks.innerText = "";
-  kishanPages.innerText = 0;
-  kishanEntry.innerText = 70;
-  kishanRemarks.innerText = "";
-  poukinPages.innerText = 0;
-  poukinEntry.innerText = 43;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 0;
-  rohelEntry.innerText = 41;
-  rohelRemarks.innerText = "";
+  progress(0, 0, print, 0, 73, em, 0, 70, em, 0, 43, em, 0, 41, em);
 })
 
 // Function to display the stats for 04 April 22
 fourApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 17;
-  angouchaEntry.innerText = 0;
-  angouchaRemarks.innerText = "Printing Work";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 20;
-  chetanRemarks.innerText = "Printing Work";
-  kishanPages.innerText = 242;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "";
-  poukinPages.innerText = 214;
-  poukinEntry.innerText = 0;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 214;
-  rohelEntry.innerText = 0;
-  rohelRemarks.innerText = "";
+  progress(17, 0, print, 0, 20, print, 242, 0, em, 214, 0, em, 214, 0, em);
 })
 
 // Function to display the stats for 05 April 22
 fiveApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 16;
-  angouchaRemarks.innerText = "";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 54;
-  chetanRemarks.innerText = "";
-  kishanPages.innerText = 513;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "";
-  poukinPages.innerText = 215;
-  poukinEntry.innerText = 0;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 209;
-  rohelEntry.innerText = 0;
-  rohelRemarks.innerText = "";
+  progress(0, 16, em, 0, 54, em, 513, 0, em, 215, 0, em, 209, 0, em)
 })
 
 // Function to display the stats for 06 April 22
 sixApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 100;
-  angouchaEntry.innerText = 30;
-  angouchaRemarks.innerText = "";
-  chetanPages.innerText = 100;
-  chetanEntry.innerText = 6;
-  chetanRemarks.innerText = "Inserting Barcode Pages";
-  kishanPages.innerText = 0;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "Absent";
-  poukinPages.innerText = 410;
-  poukinEntry.innerText = 0;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 0;
-  rohelEntry.innerText = 50;
-  rohelRemarks.innerText = "";
+  progress(100, 30, em, 100, 6, insert, 0, 0, abs, 410, 0, em, 0, 50, em);
 })
 
 // Function to display the stats for 07 April 22
 sevenApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 21;
-  angouchaRemarks.innerText = "";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 63;
-  chetanRemarks.innerText = "";
-  kishanPages.innerText = 398;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "Inserting Barcode Pages";
-  poukinPages.innerText = 315;
-  poukinEntry.innerText = 0;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 0;
-  rohelEntry.innerText = 52;
-  rohelRemarks.innerText = "";
+  progress(0, 21, em, 0, 63, em, 398, 0, insert, 315, 0, em, 0, 52, em);
 })
 
 // Function to display the stats for 08 April 22
 eightApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 0;
-  angouchaRemarks.innerText = "Other work";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 65;
-  chetanRemarks.innerText = "";
-  kishanPages.innerText = 0;
-  kishanEntry.innerText = 71;
-  kishanRemarks.innerText = "";
-  poukinPages.innerText = 0;
-  poukinEntry.innerText = 50;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 0;
-  rohelEntry.innerText = 50;
-  rohelRemarks.innerText = "";
+  progress(0, 0, other, 0, 65, em, 0, 71, em, 0, 50, em, 0, 50, em);
 })
 
 // Function to display the stats for 11 April 22
