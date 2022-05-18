@@ -2116,3 +2116,58 @@ Scanned- 28507 + 172 = 28679
 Entried- 5003
 
 =======================================================
+
+# Date- 18/05/22
+Angoucha: Making PDFs
+Chetan: Excel, Printing & Inserting Gazette Barcode Pages, Scan - 2, Entry - 1
+Kishan: Scan - 376
+Poukin: Scan - 312
+Rohel: Scan - 311
+
+## Total per person
+**Angoucha**
+724
+377
+
+**Chetan**
+2805 + 2 = 2807
+1545 + 1 = 1546
+
+**Kishan**
+9861 + 376 = 10237
+1265
+
+**Poukin**
+9222 + 312 = 9534
+878
+
+**Rohel**
+5571 + 311 = 5882
+933
+
+### May
+**Angoucha**
+0
+154
+
+**Chetan**
+0 + 2 = 2
+297 + 1 = 298
+
+**Kishan**
+1498 + 376 = 1874
+333
+
+**Poukin**
+2375 + 312 = 2687
+171
+
+**Rohel**
+1576 + 311 = 1887
+136
+
+## Total
+Scanned- 28679 + 2 + 376 + 312 + 311 = 29680
+Entried- 5003
+
+=======================================================
