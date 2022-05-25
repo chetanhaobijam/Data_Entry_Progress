@@ -8,9 +8,11 @@ const totalProgressContent = document.querySelector("#total-progress-content");
 const workProgress = document.querySelector("#work-progress");
 const workProgressContent = document.querySelector("#work-progress-content");
 const dataEntry = document.querySelector(".data-entry");
+const calendarData = document.querySelectorAll(".calendar-table tbody td");
+
 // Dates
 const march22 = document.querySelector("#march-22");
-const march22content = document.querySelector("#march-22-content");
+const march22Content = document.querySelector("#march-22-content");
 const seventeenMarch22 = document.querySelector("#seventeen-march-22");
 const twentythreeMarch22 = document.querySelector("#twentythree-march-22");
 const twentyfourMarch22 = document.querySelector("#twentyfour-march-22");
@@ -21,7 +23,7 @@ const twentynineMarch22 = document.querySelector("#twentynine-march-22");
 const thirtyMarch22 = document.querySelector("#thirty-march-22");
 const thirtyoneMarch22 = document.querySelector("#thirtyone-march-22");
 const april22 = document.querySelector("#april-22");
-const april22content = document.querySelector("#april-22-content");
+const april22Content = document.querySelector("#april-22-content");
 const oneApril22 = document.querySelector("#one-april-22");
 const fourApril22 = document.querySelector("#four-april-22");
 const fiveApril22 = document.querySelector("#five-april-22");
@@ -44,7 +46,7 @@ const twentyeightApril22 = document.querySelector("#twentyeight-april-22");
 const twentynineApril22 = document.querySelector("#twentynine-april-22");
 const thirtyApril22 = document.querySelector("#thirty-april-22");
 const may22 = document.querySelector("#may-22");
-const may22content = document.querySelector("#may-22-content");
+const may22Content = document.querySelector("#may-22-content");
 const twoMay22 = document.querySelector("#two-may-22");
 const fourMay22 = document.querySelector("#four-may-22");
 const fiveMay22 = document.querySelector("#five-may-22");
@@ -65,6 +67,7 @@ const twentyThreeMay22 = document.querySelector("#twentythree-may-22");
 const twentyFourMay22 = document.querySelector("#twentyfour-may-22");
 
 const holiday = document.querySelectorAll(".holiday");
+
 // Table
 const angouchaPages = document.querySelector("#angoucha-pages");
 const angouchaEntry = document.querySelector("#angoucha-entry");
@@ -91,6 +94,23 @@ const abs = "Absent";
 const em = "";
 const excel = "Excel Work";
 const other = "Other work";
+
+// Function to Remove the Active class from table data
+const removeActiveData = () => {
+  calendarData.forEach(data => {
+    data.classList.remove("active-data");
+  })
+}
+
+// Function to mark the clicked table data as active
+for(let i = 0; i < calendarData.length; i++) {
+  calendarData[i].addEventListener("click", () => {
+    removeActiveData();
+    if(calendarData[i].hasAttribute("class")) {
+      calendarData[i].classList.add("active-data");
+    }
+  })
+}
 
 // Function to Trigger the Display of Aside Section
 asideTrigger.addEventListener("click", () => {
@@ -120,10 +140,11 @@ const progress = (aPages, aEntry, aRemarks, cPages, cEntry, cRemarks, kPages, kE
 const showTotalProgress = () => {
   totalProgressContent.classList.remove("hide");
   workProgressContent.classList.add("hide");
-  march22content.classList.add("hide");
-  april22content.classList.add("hide");
-  may22content.classList.add("hide");
+  march22Content.classList.add("hide");
+  april22Content.classList.add("hide");
+  may22Content.classList.add("hide");
   dataEntry.classList.remove("hide");
+  removeActiveData();
   progress(724, 377, em, 2807, 1546, em, 10237, 1265, em, 9658, 959, em, 6506, 983, em);
 }
 
@@ -147,11 +168,12 @@ const workProgressColoring = () => {
 
 const showWorkProgress = () => {
   totalProgressContent.classList.add("hide");
-  march22content.classList.add("hide");
-  april22content.classList.add("hide");
-  may22content.classList.add("hide");
+  march22Content.classList.add("hide");
+  april22Content.classList.add("hide");
+  may22Content.classList.add("hide");
   dataEntry.classList.add("hide");
   workProgressContent.classList.remove("hide");
+  removeActiveData();
 }
 
 workProgress.addEventListener("click", () => {
@@ -185,10 +207,11 @@ holiday.forEach(date => {
 march22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
   workProgressContent.classList.add("hide");
-  march22content.classList.remove("hide");
-  april22content.classList.add("hide");
-  may22content.classList.add("hide");
+  march22Content.classList.remove("hide");
+  april22Content.classList.add("hide");
+  may22Content.classList.add("hide");
   dataEntry.classList.remove("hide");
+  removeActiveData();
   progress(607, 0, em, 69, 378, em, 2996, 232, em, 2055, 110, em, 222, 220, em);
 })
 
@@ -241,10 +264,11 @@ thirtyoneMarch22.addEventListener("click", () => {
 april22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
   workProgressContent.classList.add("hide");
-  march22content.classList.add("hide");
-  april22content.classList.remove("hide");
-  may22content.classList.add("hide");
+  march22Content.classList.add("hide");
+  april22Content.classList.remove("hide");
+  may22Content.classList.add("hide");
   dataEntry.classList.remove("hide");
+  removeActiveData();
   progress(117, 223, em, 408, 586, em, 3428, 382, em, 2684, 336, em, 2031, 345, em);
 })
 
@@ -567,10 +591,11 @@ thirtyApril22.addEventListener("click", () => {
 may22.addEventListener("click", () => {
   totalProgressContent.classList.add("hide");
   workProgressContent.classList.add("hide");
-  march22content.classList.add("hide");
-  april22content.classList.add("hide");
-  may22content.classList.remove("hide");
+  march22Content.classList.add("hide");
+  april22Content.classList.add("hide");
+  may22Content.classList.remove("hide");
   dataEntry.classList.remove("hide");
+  removeActiveData();
   progress(0, 154, em, 0, 298, em, 1874, 333, em, 2811, 252, em, 2511, 186, em);
 })
 
