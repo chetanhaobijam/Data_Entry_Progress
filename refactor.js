@@ -66,6 +66,7 @@ const twentyOneMay22 = document.querySelector("#twentyone-may-22");
 const twentyThreeMay22 = document.querySelector("#twentythree-may-22");
 const twentyFourMay22 = document.querySelector("#twentyfour-may-22");
 const twentyFiveMay22 = document.querySelector("#twentyfive-may-22");
+const twentySixMay22 = document.querySelector("#twentysix-may-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -146,7 +147,7 @@ const showTotalProgress = () => {
   may22Content.classList.add("hide");
   dataEntry.classList.remove("hide");
   removeActiveData();
-  progress(724, 377, em, 2807, 1581, em, 10237, 1265, em, 9658, 1009, em, 6506, 1038, em);
+  progress(724, 377, em, 2807, 1612, em, 10237, 1335, em, 9658, 1061, em, 6506, 1095, em);
 }
 
 showTotalProgress();
@@ -597,7 +598,7 @@ may22.addEventListener("click", () => {
   may22Content.classList.remove("hide");
   dataEntry.classList.remove("hide");
   removeActiveData();
-  progress(0, 154, em, 0, 333, em, 1874, 333, em, 2811, 302, em, 2511, 241, em);
+  progress(0, 154, em, 0, 364, em, 1874, 403, em, 2811, 354, em, 2511, 298, em);
 })
 
 // Function to display the stats for 02 May 22
@@ -693,4 +694,9 @@ twentyFourMay22.addEventListener("click", () => {
 // Function to display the stats for 25 May 22
 twentyFiveMay22.addEventListener("click", () => {
   progress(0, 0, abs, 0, 35, `${make} & ${insert}`, 0, 0, make,  0, 50, em, 0, 55, em);
+})
+
+// Function to display the stats for 26 May 22
+twentySixMay22.addEventListener("click", () => {
+  progress(0, 0, other, 0, 31, `${print}`, 0, 70, em,  0, 52, em, 0, 57, em);
 })

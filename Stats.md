@@ -2501,3 +2501,58 @@ Scanned- 30428
 Entried- 5134 + 35 + 50 + 55 = 5274
 
 =======================================================
+
+# Date- 26/05/22
+Angoucha: Other work
+Chetan: Printing Gazette Barcode Pages, Entry - 31
+Kishan: Entry - 70
+Poukin: Entry - 52
+Rohel: Entry - 57
+
+## Total per person
+**Angoucha**
+724
+377
+
+**Chetan**
+2807
+1581 + 31 = 1612
+
+**Kishan**
+10237
+1265 + 70 = 1335
+
+**Poukin**
+9658
+1009 + 52 = 1061
+
+**Rohel**
+6506
+1038 + 57 = 1095
+
+### May
+**Angoucha**
+0
+154
+
+**Chetan**
+2
+333 + 31 = 364
+
+**Kishan**
+1874
+333 + 70 = 403
+
+**Poukin**
+2811
+302 + 52 = 354
+
+**Rohel**
+2511
+241 + 57 = 298
+
+## Total
+Scanned- 30428
+Entried- 5274 + 31 + 70 + 52 + 57 = 5484
+
+=======================================================
