@@ -96,6 +96,7 @@ const abs = "Absent";
 const em = "";
 const excel = "Excel Work";
 const other = "Other work";
+const elec = "Electricity outage";
 
 // Function to Remove the Active class from table data
 const removeActiveData = () => {
@@ -298,287 +299,77 @@ eightApril22.addEventListener("click", () => {
 
 // Function to display the stats for 11 April 22
 elevenApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 23;
-  angouchaRemarks.innerText = "";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 50;
-  chetanRemarks.innerText = "";
-  kishanPages.innerText = 0;
-  kishanEntry.innerText = 68;
-  kishanRemarks.innerText = "Printing Works";
-  poukinPages.innerText = 0;
-  poukinEntry.innerText = 39;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 0;
-  rohelEntry.innerText = 24;
-  rohelRemarks.innerText = "";
+  progress(0, 23, em, 0, 50, em, 0, 68, print, 0, 39, em, 0, 24, em);
 })
 
 // Function to display the stats for 12 April 22
 twelveApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 24;
-  angouchaRemarks.innerText = "";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 5;
-  chetanRemarks.innerText = "Printing Works";
-  kishanPages.innerText = 378;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "";
-  poukinPages.innerText = 208;
-  poukinEntry.innerText = 0;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 208;
-  rohelEntry.innerText = 0;
-  rohelRemarks.innerText = "";
+  progress(0, 24, em, 0, 5, print, 378, 0, em, 208, 0, em, 208, 0, em);
 })
 
 // Function to display the stats for 13 April 22
 thirteenApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 35;
-  angouchaRemarks.innerText = "";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 55;
-  chetanRemarks.innerText = "";
-  kishanPages.innerText = 311;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "";
-  poukinPages.innerText = 476;
-  poukinEntry.innerText = 0;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 305;
-  rohelEntry.innerText = 0;
-  rohelRemarks.innerText = "";
+  progress(0, 35, em, 0, 55, em, 311, 0, em, 476, 0, em, 305, 0, em);
 })
 
 // Function to display the stats for 16 April 22
 sixteenApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 0;
-  angouchaRemarks.innerText = "Other works, Electricity Outage Problem";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 0;
-  chetanRemarks.innerText = "Excel Work, Electricity Outage Problem";
-  kishanPages.innerText = 0;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "Absent";
-  poukinPages.innerText = 10;
-  poukinEntry.innerText = 0;
-  poukinRemarks.innerText = "Electricity Outage Problem";
-  rohelPages.innerText = 84;
-  rohelEntry.innerText = 0;
-  rohelRemarks.innerText = "Electricity Outage Problem";
+  progress(0, 0, `${other}, ${elec}`, 0, 0, `${excel}, ${elec}`, 0, 0, abs, 10, 0, elec, 84, 0, elec);
 })
 
 // Function to display the stats for 18 April 22
 eighteenApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 0;
-  angouchaRemarks.innerText = "Other Works";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 40;
-  chetanRemarks.innerText = "Excel Work";
-  kishanPages.innerText = 336;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "";
-  poukinPages.innerText = 80;
-  poukinEntry.innerText = 30;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 142;
-  rohelEntry.innerText = 0;
-  rohelRemarks.innerText = "";
+  progress(0, 0, other, 0, 40, excel, 336, 0, em, 80, 30, em, 142, 0, em);
 })
 
 // Function to display the stats for 19 April 22
 nineteenApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 11;
-  angouchaRemarks.innerText = "";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 51;
-  chetanRemarks.innerText = "";
-  kishanPages.innerText = 0;
-  kishanEntry.innerText = 58;
-  kishanRemarks.innerText = "";
-  poukinPages.innerText = 0;
-  poukinEntry.innerText = 45;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 0;
-  rohelEntry.innerText = 31;
-  rohelRemarks.innerText = "";
+  progress(0, 11, em, 0, 51, em, 0, 58, em, 0, 45, em, 0, 31, em);
 })
 
 // Function to display the stats for 20 April 22
 twentyApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 3;
-  angouchaRemarks.innerText = "";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 3;
-  chetanRemarks.innerText = "";
-  kishanPages.innerText = 0;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "Printing Works";
-  poukinPages.innerText = 0;
-  poukinEntry.innerText = 11;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 0;
-  rohelEntry.innerText = 0;
-  rohelRemarks.innerText = "No Work Done";
+  progress(0, 3, em, 0, 3, em, 0, 0, print, 0, 11, em, 0, 0, `No work done`);
 })
 
 // Function to display the stats for 21 April 22
 twentyoneApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 38;
-  angouchaRemarks.innerText = "";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 0;
-  chetanRemarks.innerText = "Printing & Other Works";
-  kishanPages.innerText = 472;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "";
-  poukinPages.innerText = 300;
-  poukinEntry.innerText = 0;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 255;
-  rohelEntry.innerText = 0;
-  rohelRemarks.innerText = "";
+  progress(0, 38, em, 0, 0, print, 472, 0, em, 300, 0, em, 255, 0, em);
 })
 
 // Function to display the stats for 22 April 22
 twentytwoApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 0;
-  angouchaRemarks.innerText = "Making PDFs";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 0;
-  chetanRemarks.innerText = "Excel and Making PDFs";
-  kishanPages.innerText = 0;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "Absent";
-  poukinPages.innerText = 310;
-  poukinEntry.innerText = 0;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 400;
-  rohelEntry.innerText = 0;
-  rohelRemarks.innerText = "";
+  progress(0, 0, make, 0, 0, `${excel} & ${make}`, 0, 0, abs, 310, 0, em, 400, 0, em);
 })
 
 // Function to display the stats for 25 April 22
 twentyfiveApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 0;
-  angouchaRemarks.innerText = "Making PDFs";
-  chetanPages.innerText = 8;
-  chetanEntry.innerText = 1;
-  chetanRemarks.innerText = "Excel work, Making PDFs and Inserting Barcode Pages";
-  kishanPages.innerText = 286;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "";
-  poukinPages.innerText = 146;
-  poukinEntry.innerText = 0;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 214;
-  rohelEntry.innerText = 0;
-  rohelRemarks.innerText = "";
+  progress(0, 0, make, 8, 1, `${excel}, ${make} & ${insert}`, 286, 0, em, 146, 0, em, 214, 0, em);
 })
 
 // Function to display the stats for 26 April 22
 twentysixApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 2;
-  angouchaRemarks.innerText = "Making PDFs";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 0;
-  chetanRemarks.innerText = "Excel work, Making PDFs and Inserting Barcode Pages";
-  kishanPages.innerText = 400;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "";
-  poukinPages.innerText = 0;
-  poukinEntry.innerText = 50;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 0;
-  rohelEntry.innerText = 32;
-  rohelRemarks.innerText = "";
+  progress(0, 2, make, 0, 0, `${excel}, ${make} & ${insert}`, 400, 0, em, 0, 50, em, 0, 32, em);
 })
 
 // Function to display the stats for 27 April 22
 twentysevenApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 0;
-  angouchaRemarks.innerText = "Electricity Outage";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 0;
-  chetanRemarks.innerText = "Inserting Barcode Pages, Electricity Outage";
-  kishanPages.innerText = 0;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "Inserting Barcode Pages, Electricity Outage";
-  poukinPages.innerText = 0;
-  poukinEntry.innerText = 0;
-  poukinRemarks.innerText = "Electricity Outage";
-  rohelPages.innerText = 0;
-  rohelEntry.innerText = 0;
-  rohelRemarks.innerText = "Electricity Outage";
+  progress(0, 0, elec, 0, 0, `${insert}, ${elec}`, 0, 0, `${insert}, ${elec}`, 0, 0, elec, 0, 0, elec);
 })
 
 // Function to display the stats for 28 April 22
 twentyeightApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 0;
-  angouchaRemarks.innerText = "Absent";
-  chetanPages.innerText = 300;
-  chetanEntry.innerText = 0;
-  chetanRemarks.innerText = "Excel work, Making PDFs, Electricity Outage";
-  kishanPages.innerText = 0;
-  kishanEntry.innerText = 0;
-  kishanRemarks.innerText = "Absent";
-  poukinPages.innerText = 0;
-  poukinEntry.innerText = 26;
-  poukinRemarks.innerText = "Electricity Outage";
-  rohelPages.innerText = 0;
-  rohelEntry.innerText = 26;
-  rohelRemarks.innerText = "Electricity Outage";
+  progress(0, 0, abs, 300, 0, `${excel}, ${make}, ${elec}`, 0, 0, abs, 0, 26, elec, 0, 26, elec);
 })
 
 // Function to display the stats for 29 April 22
 twentynineApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 18;
-  angouchaRemarks.innerText = "Making PDFs";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 100;
-  chetanRemarks.innerText = "Excel work, Making PDFs";
-  kishanPages.innerText = 92;
-  kishanEntry.innerText = 100;
-  kishanRemarks.innerText = "Making PDFs";
-  poukinPages.innerText = 0;
-  poukinEntry.innerText = 42;
-  poukinRemarks.innerText = "";
-  rohelPages.innerText = 0;
-  rohelEntry.innerText = 39;
-  rohelRemarks.innerText = "";
+  progress(0, 18, make, 0, 100, `${excel}, ${make}`, 92, 100, make, 0, 42, em, 0, 39, em);
 })
 
 // Function to display the stats for 30 April 22
 thirtyApril22.addEventListener("click", () => {
-  angouchaPages.innerText = 0;
-  angouchaEntry.innerText = 2;
-  angouchaRemarks.innerText = "";
-  chetanPages.innerText = 0;
-  chetanEntry.innerText = 0;
-  chetanRemarks.innerText = "Printing 496 Gazette Barcode Pages";
-  kishanPages.innerText = 0;
-  kishanEntry.innerText = 15;
-  kishanRemarks.innerText = "Making PDFs, Inserting 496 Gazette Barcode Pages";
-  poukinPages.innerText = 0;
-  poukinEntry.innerText = 0;
-  poukinRemarks.innerText = "No Work Done";
-  rohelPages.innerText = 0;
-  rohelEntry.innerText = 0;
-  rohelRemarks.innerText = "Absent";
+  progress(0, 2, em, 0, 0, print, 0, 15, `${make}, ${insert}`, 0, 0, `No work done`, 0, 0, abs);
 })
 
 // Function to Trigger the Display of May 22 Data Entry Stats
@@ -645,7 +436,7 @@ sixteenMay22.addEventListener("click", () => {
 
 // Function to display the stats for 17 May 22
 seventeenMay22.addEventListener("click", () => {
-  progress(0, 0, make, 0, 0, abs, 0, 0, other,  172, 0, em, 0, 0, other);
+  progress(0, 0, make, 0, 0, abs, 0, 0, other,  172, 0, elec, 0, 0, other);
 })
 
 // Function to display the stats for 18 May 22
@@ -665,7 +456,7 @@ twentyMay22.addEventListener("click", () => {
 
 // Function to display the stats for 21 May 22
 twentyOneMay22.addEventListener("click", () => {
-  progress(0, 0, make, 0, 0, `${excel}, ${make}`, 0, 0, make,  0, 0, abs, 131, 0, em);
+  progress(0, 0, make, 0, 0, `${excel}, ${make}`, 0, 0, make,  0, 0, abs, 131, 0, `Scanning Finished`);
 })
 
 // Function to display the stats for 23 May 22
