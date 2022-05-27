@@ -138,14 +138,20 @@ const progress = (aPages, aEntry, aRemarks, cPages, cEntry, cRemarks, kPages, kE
   rohelRemarks.innerText = rRemarks;
 }
 
-// Function to Display the Total Data Entry Progress
-const showTotalProgress = () => {
-  totalProgressContent.classList.remove("hide");
+const displayProgress = (content) => {
+  totalProgressContent.classList.add("hide");
   workProgressContent.classList.add("hide");
   march22Content.classList.add("hide");
   april22Content.classList.add("hide");
   may22Content.classList.add("hide");
   dataEntry.classList.remove("hide");
+  // Content
+  content.classList.remove("hide");
+}
+
+// Function to Display the Total Data Entry Progress
+const showTotalProgress = () => {
+  displayProgress(totalProgressContent);
   removeActiveData();
   progress(724, 377, em, 2807, 1612, em, 10237, 1335, em, 9658, 1061, em, 6506, 1095, em);
 }
@@ -169,12 +175,8 @@ const workProgressColoring = () => {
 }
 
 const showWorkProgress = () => {
-  totalProgressContent.classList.add("hide");
-  march22Content.classList.add("hide");
-  april22Content.classList.add("hide");
-  may22Content.classList.add("hide");
+  displayProgress(workProgressContent);
   dataEntry.classList.add("hide");
-  workProgressContent.classList.remove("hide");
   removeActiveData();
 }
 
@@ -207,12 +209,7 @@ holiday.forEach(date => {
 
 // Function to Trigger the Display of March 22 Data Entry Stats
 march22.addEventListener("click", () => {
-  totalProgressContent.classList.add("hide");
-  workProgressContent.classList.add("hide");
-  march22Content.classList.remove("hide");
-  april22Content.classList.add("hide");
-  may22Content.classList.add("hide");
-  dataEntry.classList.remove("hide");
+  displayProgress(march22Content);
   removeActiveData();
   progress(607, 0, em, 69, 378, em, 2996, 232, em, 2055, 110, em, 222, 220, em);
 })
@@ -264,12 +261,7 @@ thirtyoneMarch22.addEventListener("click", () => {
 
 // Function to Trigger the Display of April 22 Data Entry Stats
 april22.addEventListener("click", () => {
-  totalProgressContent.classList.add("hide");
-  workProgressContent.classList.add("hide");
-  march22Content.classList.add("hide");
-  april22Content.classList.remove("hide");
-  may22Content.classList.add("hide");
-  dataEntry.classList.remove("hide");
+  displayProgress(april22Content);
   removeActiveData();
   progress(117, 223, em, 408, 586, em, 3428, 382, em, 2684, 336, em, 2031, 345, em);
 })
@@ -591,12 +583,7 @@ thirtyApril22.addEventListener("click", () => {
 
 // Function to Trigger the Display of May 22 Data Entry Stats
 may22.addEventListener("click", () => {
-  totalProgressContent.classList.add("hide");
-  workProgressContent.classList.add("hide");
-  march22Content.classList.add("hide");
-  april22Content.classList.add("hide");
-  may22Content.classList.remove("hide");
-  dataEntry.classList.remove("hide");
+  displayProgress(may22Content);
   removeActiveData();
   progress(0, 154, em, 0, 364, em, 1874, 403, em, 2811, 354, em, 2511, 298, em);
 })
