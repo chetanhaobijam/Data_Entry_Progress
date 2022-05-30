@@ -379,7 +379,7 @@ thirtyApril22.addEventListener("click", () => {
 may22.addEventListener("click", () => {
   displayProgress(may22Content);
   removeActiveData();
-  progress(0, 154, em, 0, 513, em, 1874, 613, em, 2811, 509, em, 2511, 449, em);
+  progress(0, 154, em, 2, 513, em, 1874, 613, em, 2811, 509, em, 2511, 449, em);
 })
 
 // Function to display the stats for 02 May 22
