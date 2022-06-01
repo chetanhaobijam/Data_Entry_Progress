@@ -2781,7 +2781,7 @@ Entried- 6149 + 2 = 6151
 Angoucha: Other work
 Chetan: Printing & Making PDFs
 Kishan: Scan - 502
-Poukin: Scan - 480
+Poukin: Scan - 428
 Rohel: Entry - 245
 
 ## Total per person
@@ -2798,7 +2798,7 @@ Rohel: Entry - 245
 1545
 
 **Poukin**
-9710 + 480 = 10190
+9710 + 428 = 10138
 1216
 
 **Rohel**
@@ -2819,7 +2819,7 @@ Rohel: Entry - 245
 0
 
 **Poukin**
-0 + 480 = 480
+0 + 428 = 428
 0
 
 **Rohel**
@@ -2827,7 +2827,7 @@ Rohel: Entry - 245
 0
 
 ## Total
-Scanned- 30630 + 502 + 480 + 245 = 31857
+Scanned- 30630 + 502 + 428 + 245 = 31805
 Entried- 6151
 
 =======================================================
