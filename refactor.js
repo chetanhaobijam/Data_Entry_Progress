@@ -71,6 +71,9 @@ const twentySevenMay22 = document.querySelector("#twentyseven-may-22");
 const twentyEightMay22 = document.querySelector("#twentyeight-may-22");
 const thirtyMay22 = document.querySelector("#thirty-may-22");
 const thirtyOneMay22 = document.querySelector("#thirtyone-may-22");
+const june22 = document.querySelector("#june-22");
+const june22Content = document.querySelector("#june-22-content");
+const oneJune22 = document.querySelector("#one-june-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -149,6 +152,7 @@ const displayProgress = (content) => {
   march22Content.classList.add("hide");
   april22Content.classList.add("hide");
   may22Content.classList.add("hide");
+  june22Content.classList.add("hide");
   dataEntry.classList.remove("hide");
   // Content
   content.classList.remove("hide");
@@ -501,4 +505,16 @@ thirtyMay22.addEventListener("click", () => {
 // Function to display the stats for 31 May 22
 thirtyOneMay22.addEventListener("click", () => {
   progress(0, 0, other, 0, 2, `${print} & IDs Work`, 116, 0, `IDs work, Scanning Started`,  52, 0, `Scanning Started`, 34, 0, `Scanning Started`);
+})
+
+// Function to Trigger the Display of March 22 Data Entry Stats
+june22.addEventListener("click", () => {
+  displayProgress(june22Content);
+  removeActiveData();
+  progress(0, 0, em, 0, 0, em, 502, 0, em, 480, 0, em, 245, 0, em);
+})
+
+// Function to display the stats for 31 May 22
+oneJune22.addEventListener("click", () => {
+  progress(0, 0, other, 0, 0, `${print} & ${make}`, 502, 0, em,  480, 0, em, 245, 0, em);
 })
