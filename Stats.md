@@ -2667,7 +2667,7 @@ Entried- 5729 + 25 + 64 + 42 + 40 = 5900
 
 =======================================================
 
-# Date- 28/05/22
+# Date- 30/05/22
 Angoucha: Other work
 Chetan: Entry - 60
 Kishan: Entry - 76, IDs Work
@@ -2719,5 +2719,60 @@ Rohel: Entry - 55
 ## Total
 Scanned- 30428
 Entried- 5900 + 60 + 76 + 58 + 55 = 6149
+
+=======================================================
+
+# Date- 31/05/22
+Angoucha: Other work
+Chetan: Entry - 2, Printing & IDs Work
+Kishan: Scan - 116, IDs Work
+Poukin: Scan - 52
+Rohel: Entry - 34
+
+## Total per person
+**Angoucha**
+724
+377
+
+**Chetan**
+2807
+1761 + 2 = 1763
+
+**Kishan**
+10237 + 116 = 10353
+1545
+
+**Poukin**
+9658 + 52 = 9710
+1216
+
+**Rohel**
+6506 + 34 = 6540
+1246
+
+### May
+**Angoucha**
+0
+154
+
+**Chetan**
+2
+513 + 2 = 515
+
+**Kishan**
+1874 + 116 = 1990
+613
+
+**Poukin**
+2811 + 52 = 2863
+509
+
+**Rohel**
+2511 + 34 = 2545
+449
+
+## Total
+Scanned- 30428 + 116 + 52 + 34 = 30630
+Entried- 6149 + 2 = 6151
 
 =======================================================
