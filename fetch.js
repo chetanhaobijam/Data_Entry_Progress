@@ -8,9 +8,14 @@ const totalProgressContent = document.querySelector("#total-progress-content");
 const workProgress = document.querySelector("#work-progress");
 const workProgressContent = document.querySelector("#work-progress-content");
 const dataEntry = document.querySelector(".data-entry");
+const calendarData = document.querySelectorAll(".calendar-table tbody td");
+const totalGazetteScan = document.querySelector(".total-pages");
+const totalGazetteEntry = document.querySelector(".total-entry");
+
 // Dates
+// March Dates
 const march22 = document.querySelector("#march-22");
-const march22content = document.querySelector("#march-22-content");
+const march22Content = document.querySelector("#march-22-content");
 const seventeenMarch22 = document.querySelector("#seventeen-march-22");
 const twentythreeMarch22 = document.querySelector("#twentythree-march-22");
 const twentyfourMarch22 = document.querySelector("#twentyfour-march-22");
@@ -20,8 +25,10 @@ const twentyeightMarch22 = document.querySelector("#twentyeight-march-22");
 const twentynineMarch22 = document.querySelector("#twentynine-march-22");
 const thirtyMarch22 = document.querySelector("#thirty-march-22");
 const thirtyoneMarch22 = document.querySelector("#thirtyone-march-22");
+
+// April Dates
 const april22 = document.querySelector("#april-22");
-const april22content = document.querySelector("#april-22-content");
+const april22Content = document.querySelector("#april-22-content");
 const oneApril22 = document.querySelector("#one-april-22");
 const fourApril22 = document.querySelector("#four-april-22");
 const fiveApril22 = document.querySelector("#five-april-22");
@@ -43,8 +50,10 @@ const twentysevenApril22 = document.querySelector("#twentyseven-april-22");
 const twentyeightApril22 = document.querySelector("#twentyeight-april-22");
 const twentynineApril22 = document.querySelector("#twentynine-april-22");
 const thirtyApril22 = document.querySelector("#thirty-april-22");
+
+// May Dates
 const may22 = document.querySelector("#may-22");
-const may22content = document.querySelector("#may-22-content");
+const may22Content = document.querySelector("#may-22-content");
 const twoMay22 = document.querySelector("#two-may-22");
 const fourMay22 = document.querySelector("#four-may-22");
 const fiveMay22 = document.querySelector("#five-may-22");
@@ -56,8 +65,28 @@ const elevenMay22 = document.querySelector("#eleven-may-22");
 const twelveMay22 = document.querySelector("#twelve-may-22");
 const thirteenMay22 = document.querySelector("#thirteen-may-22");
 const sixteenMay22 = document.querySelector("#sixteen-may-22");
+const seventeenMay22 = document.querySelector("#seventeen-may-22");
+const eighteenMay22 = document.querySelector("#eighteen-may-22");
+const nineteenMay22 = document.querySelector("#nineteen-may-22");
+const twentyMay22 = document.querySelector("#twenty-may-22");
+const twentyOneMay22 = document.querySelector("#twentyone-may-22");
+const twentyThreeMay22 = document.querySelector("#twentythree-may-22");
+const twentyFourMay22 = document.querySelector("#twentyfour-may-22");
+const twentyFiveMay22 = document.querySelector("#twentyfive-may-22");
+const twentySixMay22 = document.querySelector("#twentysix-may-22");
+const twentySevenMay22 = document.querySelector("#twentyseven-may-22");
+const twentyEightMay22 = document.querySelector("#twentyeight-may-22");
+const thirtyMay22 = document.querySelector("#thirty-may-22");
+const thirtyOneMay22 = document.querySelector("#thirtyone-may-22");
+
+// June Dates
+const june22 = document.querySelector("#june-22");
+const june22Content = document.querySelector("#june-22-content");
+const oneJune22 = document.querySelector("#one-june-22");
+const twoJune22 = document.querySelector("#two-june-22");
 
 const holiday = document.querySelectorAll(".holiday");
+
 // Table
 const angouchaPages = document.querySelector("#angoucha-pages");
 const angouchaEntry = document.querySelector("#angoucha-entry");
@@ -84,6 +113,24 @@ const abs = "Absent";
 const em = "";
 const excel = "Excel Work";
 const other = "Other work";
+const elec = "Electricity outage";
+
+// Function to Remove the Active class from table data
+const removeActiveData = () => {
+  calendarData.forEach(data => {
+    data.classList.remove("active-data");
+  })
+}
+
+// Function to mark the clicked table data as active
+for(let i = 0; i < calendarData.length; i++) {
+  calendarData[i].addEventListener("click", () => {
+    removeActiveData();
+    if(calendarData[i].hasAttribute("class")) {
+      calendarData[i].classList.add("active-data");
+    }
+  })
+}
 
 // Function to Trigger the Display of Aside Section
 asideTrigger.addEventListener("click", () => {
@@ -109,38 +156,53 @@ const progress = (aPages, aEntry, aRemarks, cPages, cEntry, cRemarks, kPages, kE
   rohelRemarks.innerText = rRemarks;
 }
 
+// Function to hide/display the contents
+const displayProgress = (content) => {
+  totalProgressContent.classList.add("hide");
+  workProgressContent.classList.add("hide");
+  march22Content.classList.add("hide");
+  april22Content.classList.add("hide");
+  may22Content.classList.add("hide");
+  june22Content.classList.add("hide");
+  dataEntry.classList.remove("hide");
+  // Content
+  content.classList.remove("hide");
+}
+
+// Function to calculate the total scan/entry of a month
 const total = arr => {
   return arr.reduce((acc, val) => {
     return acc + val;
   0})
 }
 
+
+// Function to call the data by Fetch API
 async function getData() {
   const dataStream = await fetch("./data.json");
   const datas = await dataStream.json();
-
-  let oldAngouchaScan = datas["2022"]["angoucha"]["old"]["scan"];
-  let oldAngouchaEntry = datas["2022"]["angoucha"]["old"]["entry"];
-  let oldChetanScan = datas["2022"]["chetan"]["old"]["scan"];
-  let oldChetanEntry = datas["2022"]["chetan"]["old"]["entry"];
-  let oldKishanScan = datas["2022"]["kishan"]["old"]["scan"];
-  let oldKishanEntry = datas["2022"]["kishan"]["old"]["entry"];
-  let oldPoukinScan = datas["2022"]["poukin"]["old"]["scan"];
-  let oldPoukinEntry = datas["2022"]["poukin"]["old"]["entry"];
-  let oldRohelScan = datas["2022"]["rohel"]["old"]["scan"];
-  let oldRohelEntry = datas["2022"]["rohel"]["old"]["entry"];
+  let oldAngouchaScan = datas[2022]["angoucha"]["old"]["scan"];
+  let oldAngouchaEntry = datas[2022]["angoucha"]["old"]["entry"];
+  let oldChetanScan = datas[2022]["chetan"]["old"]["scan"];
+  let oldChetanEntry = datas[2022]["chetan"]["old"]["entry"];;
+  let oldKishanScan = datas[2022]["kishan"]["old"]["scan"];
+  let oldKishanEntry = datas[2022]["kishan"]["old"]["entry"];;
+  let oldPoukinScan = datas[2022]["poukin"]["old"]["scan"];
+  let oldPoukinEntry = datas[2022]["poukin"]["old"]["entry"];
+  let oldRohelScan = datas[2022]["rohel"]["old"]["scan"];
+  let oldRohelEntry = datas[2022]["rohel"]["old"]["entry"];
 
   // March 22 Total Data
-  let angouchaMar22ScanTotal = total(datas["2022"]["angoucha"]["march"]["scan"]);
-  let angouchaMar22EntryTotal = total(datas["2022"]["angoucha"]["march"]["entry"]);
-  let chetanMar22ScanTotal = total(datas["2022"]["chetan"]["march"]["scan"]);
-  let chetanMar22EntryTotal = total(datas["2022"]["chetan"]["march"]["entry"]);
-  let kishanMar22ScanTotal = total(datas["2022"]["kishan"]["march"]["scan"]);
-  let kishanMar22EntryTotal = total(datas["2022"]["kishan"]["march"]["entry"]);
-  let poukinMar22ScanTotal = total(datas["2022"]["poukin"]["march"]["scan"]);
-  let poukinMar22EntryTotal = total(datas["2022"]["poukin"]["march"]["entry"]);
-  let rohelMar22ScanTotal = total(datas["2022"]["rohel"]["march"]["scan"]);
-  let rohelMar22EntryTotal = total(datas["2022"]["rohel"]["march"]["entry"]);
+  let angouchaMar22ScanTotal = total(datas[2022]["angoucha"]["march"]["scan"]);
+  let angouchaMar22EntryTotal = total(datas[2022]["angoucha"]["march"]["entry"]);
+  let chetanMar22ScanTotal = total(datas[2022]["chetan"]["march"]["scan"]);
+  let chetanMar22EntryTotal = total(datas[2022]["chetan"]["march"]["entry"]);
+  let kishanMar22ScanTotal = total(datas[2022]["kishan"]["march"]["scan"]);
+  let kishanMar22EntryTotal = total(datas[2022]["kishan"]["march"]["entry"]);
+  let poukinMar22ScanTotal = total(datas[2022]["poukin"]["march"]["scan"]);
+  let poukinMar22EntryTotal = total(datas[2022]["poukin"]["march"]["entry"]);
+  let rohelMar22ScanTotal = total(datas[2022]["rohel"]["march"]["scan"]);
+  let rohelMar22EntryTotal = total(datas[2022]["rohel"]["march"]["entry"]);
 
   // Total Data
   let angouchaTotalScan = oldAngouchaScan + angouchaMar22ScanTotal;
@@ -153,15 +215,18 @@ async function getData() {
   let poukinTotalEntry = oldPoukinEntry + poukinMar22EntryTotal;
   let rohelTotalScan = oldRohelScan + rohelMar22ScanTotal;
   let rohelTotalEntry = oldRohelEntry + rohelMar22EntryTotal;
+  let totalScan = angouchaTotalScan + chetanTotalScan + kishanTotalScan + poukinTotalScan + rohelTotalScan;
+  let totalEntry = angouchaTotalEntry + chetanTotalEntry + kishanTotalEntry + poukinTotalEntry + rohelTotalEntry;
+
+  // Show Total Data
+  totalGazetteScan.innerText = totalScan;
+  totalGazetteEntry.innerText = totalEntry;
+
 
   // Function to Display the Total Data Entry Progress
   const showTotalProgress = () => {
-    totalProgressContent.classList.remove("hide");
-    workProgressContent.classList.add("hide");
-    march22content.classList.add("hide");
-    april22content.classList.add("hide");
-    may22content.classList.add("hide");
-    dataEntry.classList.remove("hide");
+    displayProgress(totalProgressContent);
+    removeActiveData();
     progress(angouchaTotalScan, angouchaTotalEntry, em, chetanTotalScan, chetanTotalEntry, em, kishanTotalScan, kishanTotalEntry, em, poukinTotalScan, poukinTotalEntry, em, rohelTotalScan, rohelTotalEntry, em);
   }
 
@@ -171,12 +236,8 @@ async function getData() {
 
   // Function to Trigger the Display of March 22 Data Entry Stats
   march22.addEventListener("click", () => {
-    totalProgressContent.classList.add("hide");
-    workProgressContent.classList.add("hide");
-    march22content.classList.remove("hide");
-    april22content.classList.add("hide");
-    may22content.classList.add("hide");
-    dataEntry.classList.remove("hide");
+    displayProgress(march22Content);
+    removeActiveData();
     progress(angouchaMar22ScanTotal, angouchaMar22EntryTotal, em, chetanMar22ScanTotal, chetanMar22EntryTotal, em, kishanMar22ScanTotal, kishanMar22EntryTotal, em, poukinMar22ScanTotal, poukinMar22EntryTotal, em, rohelMar22ScanTotal, rohelMar22EntryTotal, em);
   })
 
@@ -257,12 +318,9 @@ const workProgressColoring = () => {
 }
 
 const showWorkProgress = () => {
-  totalProgressContent.classList.add("hide");
-  march22content.classList.add("hide");
-  april22content.classList.add("hide");
-  may22content.classList.add("hide");
+  displayProgress(workProgressContent);
   dataEntry.classList.add("hide");
-  workProgressContent.classList.remove("hide");
+  removeActiveData();
 }
 
 workProgress.addEventListener("click", () => {
