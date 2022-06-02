@@ -162,7 +162,7 @@ const displayProgress = (content) => {
 const showTotalProgress = () => {
   displayProgress(totalProgressContent);
   removeActiveData();
-  progress(724, 377, em, 2807, 1763, em, 10855, 1545, em, 10138, 1216, em, 6783, 1246, em);
+  progress(724, 377, em, 2807, 1763, em, 10855, 1545, em, 10138, 1216, em, 6784, 1246, em);
 }
 
 showTotalProgress();
@@ -511,10 +511,10 @@ thirtyOneMay22.addEventListener("click", () => {
 june22.addEventListener("click", () => {
   displayProgress(june22Content);
   removeActiveData();
-  progress(0, 0, em, 0, 0, em, 502, 0, em, 428, 0, em, 243, 0, em);
+  progress(0, 0, em, 0, 0, em, 502, 0, em, 428, 0, em, 244, 0, em);
 })
 
 // Function to display the stats for 31 May 22
 oneJune22.addEventListener("click", () => {
-  progress(0, 0, other, 0, 0, `${print} & ${make}`, 502, 0, em,  428, 0, em, 243, 0, em);
+  progress(0, 0, other, 0, 0, `${print} & ${make}`, 502, 0, em,  428, 0, em, 244, 0, em);
 })
