@@ -2805,7 +2805,7 @@ Rohel: Entry - 244
 6540+ 244 = 6784
 1246
 
-### May
+### June
 **Angoucha**
 0
 0
@@ -2828,6 +2828,61 @@ Rohel: Entry - 244
 
 ## Total
 Scanned- 30630 + 502 + 428 + 244 = 31804
+Entried- 6151
+
+=======================================================
+
+# Date- 01/06/22
+Angoucha: Other work
+Chetan: Excel Work, Printing Work
+Kishan: Scan - 502
+Poukin: Scan - 320
+Rohel: Entry - 438
+
+## Total per person
+**Angoucha**
+724
+377
+
+**Chetan**
+2807
+1763
+
+**Kishan**
+10855 + 502 = 11357
+1545
+
+**Poukin**
+10138 + 320 = 10458
+1216
+
+**Rohel**
+6784 + 438 = 7222
+1246
+
+### June
+**Angoucha**
+0
+0
+
+**Chetan**
+0
+0 
+
+**Kishan**
+502 + 502 = 1004
+0
+
+**Poukin**
+428 + 320 = 748
+0
+
+**Rohel**
+244 + 438 = 682
+0
+
+## Total
+Scanned- 31804 + 502 + 320 + 438 = 33064
 Entried- 6151
 
 =======================================================

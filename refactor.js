@@ -11,6 +11,7 @@ const dataEntry = document.querySelector(".data-entry");
 const calendarData = document.querySelectorAll(".calendar-table tbody td");
 
 // Dates
+// March Dates
 const march22 = document.querySelector("#march-22");
 const march22Content = document.querySelector("#march-22-content");
 const seventeenMarch22 = document.querySelector("#seventeen-march-22");
@@ -22,6 +23,8 @@ const twentyeightMarch22 = document.querySelector("#twentyeight-march-22");
 const twentynineMarch22 = document.querySelector("#twentynine-march-22");
 const thirtyMarch22 = document.querySelector("#thirty-march-22");
 const thirtyoneMarch22 = document.querySelector("#thirtyone-march-22");
+
+// April Dates
 const april22 = document.querySelector("#april-22");
 const april22Content = document.querySelector("#april-22-content");
 const oneApril22 = document.querySelector("#one-april-22");
@@ -45,6 +48,8 @@ const twentysevenApril22 = document.querySelector("#twentyseven-april-22");
 const twentyeightApril22 = document.querySelector("#twentyeight-april-22");
 const twentynineApril22 = document.querySelector("#twentynine-april-22");
 const thirtyApril22 = document.querySelector("#thirty-april-22");
+
+// May Dates
 const may22 = document.querySelector("#may-22");
 const may22Content = document.querySelector("#may-22-content");
 const twoMay22 = document.querySelector("#two-may-22");
@@ -71,9 +76,12 @@ const twentySevenMay22 = document.querySelector("#twentyseven-may-22");
 const twentyEightMay22 = document.querySelector("#twentyeight-may-22");
 const thirtyMay22 = document.querySelector("#thirty-may-22");
 const thirtyOneMay22 = document.querySelector("#thirtyone-may-22");
+
+// June Dates
 const june22 = document.querySelector("#june-22");
 const june22Content = document.querySelector("#june-22-content");
 const oneJune22 = document.querySelector("#one-june-22");
+const twoJune22 = document.querySelector("#two-june-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -162,7 +170,7 @@ const displayProgress = (content) => {
 const showTotalProgress = () => {
   displayProgress(totalProgressContent);
   removeActiveData();
-  progress(724, 377, em, 2807, 1763, em, 10855, 1545, em, 10138, 1216, em, 6784, 1246, em);
+  progress(724, 377, em, 2807, 1763, em, 11357, 1545, em, 10458, 1216, em, 7222, 1246, em);
 }
 
 showTotalProgress();
@@ -511,10 +519,15 @@ thirtyOneMay22.addEventListener("click", () => {
 june22.addEventListener("click", () => {
   displayProgress(june22Content);
   removeActiveData();
-  progress(0, 0, em, 0, 0, em, 502, 0, em, 428, 0, em, 244, 0, em);
+  progress(0, 0, em, 0, 0, em, 1004, 0, em, 748, 0, em, 682, 0, em);
 })
 
-// Function to display the stats for 31 May 22
+// Function to display the stats for 01 June 22
 oneJune22.addEventListener("click", () => {
   progress(0, 0, other, 0, 0, `${print} & ${make}`, 502, 0, em,  428, 0, em, 244, 0, em);
+})
+
+// Function to display the stats for 02 June 22
+twoJune22.addEventListener("click", () => {
+  progress(0, 0, other, 0, 0, `${excel} & ${print}`, 502, 0, em, 320, 0, em, 438, 0, em);
 })
