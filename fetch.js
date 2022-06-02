@@ -186,7 +186,7 @@ async function getData() {
   let oldChetanScan = datas[2022]["chetan"]["old"]["scan"];
   let oldChetanEntry = datas[2022]["chetan"]["old"]["entry"];;
   let oldKishanScan = datas[2022]["kishan"]["old"]["scan"];
-  let oldKishanEntry = datas[2022]["kishan"]["old"]["entry"];;
+  let oldKishanEntry = datas[2022]["kishan"]["old"]["entry"];
   let oldPoukinScan = datas[2022]["poukin"]["old"]["scan"];
   let oldPoukinEntry = datas[2022]["poukin"]["old"]["entry"];
   let oldRohelScan = datas[2022]["rohel"]["old"]["scan"];
