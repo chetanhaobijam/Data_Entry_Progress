@@ -538,7 +538,7 @@ Angoucha: Scan - 100, Entry - 30
 Chetan: Scan - 100, Entry - 6
 Kishan: Absent
 Poukin: Scan - 410
-Rohel
+Rohel: Entry - 50
 
 ## Total per person
 **Angoucha**
@@ -2727,7 +2727,7 @@ Angoucha: Other work
 Chetan: Entry - 2, Printing & IDs Work
 Kishan: Scan - 116, IDs Work
 Poukin: Scan - 52
-Rohel: Entry - 34
+Rohel: Scan - 34
 
 ## Total per person
 **Angoucha**
@@ -2782,7 +2782,7 @@ Angoucha: Other work
 Chetan: Printing & Making PDFs
 Kishan: Scan - 502
 Poukin: Scan - 428
-Rohel: Entry - 244
+Rohel: Scan - 244
 
 ## Total per person
 **Angoucha**
@@ -2832,12 +2832,12 @@ Entried- 6151
 
 =======================================================
 
-# Date- 01/06/22
+# Date- 02/06/22
 Angoucha: Other work
 Chetan: Excel Work, Printing Work
 Kishan: Scan - 502
 Poukin: Scan - 320
-Rohel: Entry - 438
+Rohel: Scan - 438
 
 ## Total per person
 **Angoucha**
@@ -2883,6 +2883,61 @@ Rohel: Entry - 438
 
 ## Total
 Scanned- 31804 + 502 + 320 + 438 = 33064
+Entried- 6151
+
+=======================================================
+
+# Date- 03/06/22
+Angoucha: Other work
+Chetan: Excel Work, Printing Work, Making PDFs Work
+Kishan: Scan - 554
+Poukin: Scan - 346
+Rohel: Scan - 302
+
+## Total per person
+**Angoucha**
+724
+377
+
+**Chetan**
+2807
+1763
+
+**Kishan**
+11357 + 554 = 11911
+1545
+
+**Poukin**
+10458 + 346 = 10804
+1216
+
+**Rohel**
+7222 + 302 = 7524
+1246
+
+### June
+**Angoucha**
+0
+0
+
+**Chetan**
+0
+0 
+
+**Kishan**
+1004 + 554 = 1558
+0
+
+**Poukin**
+748 + 346 = 1094
+0
+
+**Rohel**
+682 + 302 = 984
+0
+
+## Total
+Scanned- 33064 + 554 + 346 + 302 = 34266
 Entried- 6151
 
 =======================================================
