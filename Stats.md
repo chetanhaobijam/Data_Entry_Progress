@@ -2836,8 +2836,8 @@ Entried- 6151
 Angoucha: Other work
 Chetan: Excel Work, Printing Work
 Kishan: Scan - 502
-Poukin: Scan - 320
-Rohel: Scan - 438
+Poukin: Scan - 360
+Rohel: Scan - 440
 
 ## Total per person
 **Angoucha**
@@ -2853,11 +2853,11 @@ Rohel: Scan - 438
 1545
 
 **Poukin**
-10138 + 320 = 10458
+10138 + 360 = 10498
 1216
 
 **Rohel**
-6784 + 438 = 7222
+6784 + 440 = 7224
 1246
 
 ### June
@@ -2874,15 +2874,15 @@ Rohel: Scan - 438
 0
 
 **Poukin**
-428 + 320 = 748
+428 + 360 = 788
 0
 
 **Rohel**
-244 + 438 = 682
+244 + 440 = 684
 0
 
 ## Total
-Scanned- 31804 + 502 + 320 + 438 = 33064
+Scanned- 31804 + 502 + 360 + 440 = 33106
 Entried- 6151
 
 =======================================================
@@ -2892,7 +2892,7 @@ Angoucha: Other work
 Chetan: Excel Work, Printing Work, Making PDFs Work
 Kishan: Scan - 554
 Poukin: Scan - 346
-Rohel: Scan - 302
+Rohel: Scan - 300
 
 ## Total per person
 **Angoucha**
@@ -2908,11 +2908,11 @@ Rohel: Scan - 302
 1545
 
 **Poukin**
-10458 + 346 = 10804
+10498 + 346 = 10844
 1216
 
 **Rohel**
-7222 + 302 = 7524
+7224 + 300 = 7524
 1246
 
 ### June
@@ -2929,15 +2929,70 @@ Rohel: Scan - 302
 0
 
 **Poukin**
-748 + 346 = 1094
+788 + 346 = 1134
 0
 
 **Rohel**
-682 + 302 = 984
+684 + 300 = 984
 0
 
 ## Total
-Scanned- 33064 + 554 + 346 + 302 = 34266
+Scanned- 33106 + 554 + 346 + 300 = 34306
+Entried- 6151
+
+=======================================================
+
+# Date- 04/06/22
+Angoucha: Absent
+Chetan: Excel Work, Printing Work, Gazette Title Correction
+Kishan: Gazette Title Correction
+Poukin: Scan - 186
+Rohel: Scan - 172
+
+## Total per person
+**Angoucha**
+724
+377
+
+**Chetan**
+2807
+1763
+
+**Kishan**
+11911
+1545
+
+**Poukin**
+10844 + 186 = 11030
+1216
+
+**Rohel**
+7524 + 172 = 7696
+1246
+
+### June
+**Angoucha**
+0
+0
+
+**Chetan**
+0
+0 
+
+**Kishan**
+1558
+0
+
+**Poukin**
+1134 + 186 = 1320
+0
+
+**Rohel**
+984 + 172 = 1156
+0
+
+## Total
+Scanned- 34306 + 186 + 172 = 34664
 Entried- 6151
 
 =======================================================
