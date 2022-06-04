@@ -643,7 +643,7 @@ Entried- 2443 + 21 + 63 + 52 = 2579
 Chetan: Entry - 65
 Kishan: Entry - 71
 Poukin: Entry - 50
-Rohel
+Rohel: Entry - 50
 
 ## Total per person
 **Angoucha**
