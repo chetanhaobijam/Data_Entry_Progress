@@ -84,6 +84,7 @@ const oneJune22 = document.querySelector("#one-june-22");
 const twoJune22 = document.querySelector("#two-june-22");
 const threeJune22 = document.querySelector("#three-june-22");
 const fourJune22 = document.querySelector("#four-june-22");
+const sixJune22 = document.querySelector("#six-june-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -172,7 +173,7 @@ const displayProgress = (content) => {
 const showTotalProgress = () => {
   displayProgress(totalProgressContent);
   removeActiveData();
-  progress(724, 377, em, 2807, 1763, em, 11911, 1545, em, 11030, 1216, em, 7696, 1246, em);
+  progress(724, 377, em, 2807, 1763, em, 11992, 1545, em, 11426, 1216, em, 8076, 1246, em);
 }
 
 showTotalProgress();
@@ -521,7 +522,7 @@ thirtyOneMay22.addEventListener("click", () => {
 june22.addEventListener("click", () => {
   displayProgress(june22Content);
   removeActiveData();
-  progress(0, 0, em, 0, 0, em, 1558, 0, em, 1320, 0, em, 1156, 0, em);
+  progress(0, 0, em, 0, 0, em, 1639, 0, em, 1716, 0, em, 1536, 0, em);
 })
 
 // Function to display the stats for 01 June 22
@@ -542,5 +543,10 @@ threeJune22.addEventListener("click", () => {
 // Function to display the stats for 04 June 22
 fourJune22.addEventListener("click", () => {
   progress(0, 0, abs, 0, 0, `${excel}, ${print} & Gazette Title Correction`, 0, 0, `Gazette Title Correction`, 186, 0, em, 172, 0, em);
+})
+
+// Function to display the stats for 06 June 22
+sixJune22.addEventListener("click", () => {
+  progress(0, 0, other, 0, 0, `${excel} & ${make}`, 81, 0, `${make}, Scanning Completed`, 396, 0, `Scanning Completed`, 380, 0, em);
 })
 
