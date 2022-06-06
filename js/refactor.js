@@ -173,7 +173,7 @@ const displayProgress = (content) => {
 const showTotalProgress = () => {
   displayProgress(totalProgressContent);
   removeActiveData();
-  progress(724, 377, em, 2807, 1763, em, 11992, 1545, em, 11426, 1216, em, 8076, 1246, em);
+  progress(724, 377, em, 2807, 1763, em, 12192, 1545, em, 11426, 1216, em, 8076, 1246, em);
 }
 
 showTotalProgress();
