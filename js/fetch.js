@@ -179,7 +179,7 @@ const total = arr => {
 
 // Function to call the data by Fetch API
 async function getData() {
-  const dataStream = await fetch("./data.json");
+  const dataStream = await fetch("../json/data.json");
   const datas = await dataStream.json();
   let oldAngouchaScan = datas[2022]["angoucha"]["old"]["scan"];
   let oldAngouchaEntry = datas[2022]["angoucha"]["old"]["entry"];
@@ -216,17 +216,29 @@ async function getData() {
   let rohelApr22ScanTotal = total(datas[2022]["rohel"]["april"]["scan"]);
   let rohelApr22EntryTotal = total(datas[2022]["rohel"]["april"]["entry"]);
 
+  // May 22 Total Data
+  let angouchaMay22ScanTotal = total(datas[2022]["angoucha"]["may"]["scan"]);
+  let angouchaMay22EntryTotal = total(datas[2022]["angoucha"]["may"]["entry"]);
+  let chetanMay22ScanTotal = total(datas[2022]["chetan"]["may"]["scan"]);
+  let chetanMay22EntryTotal = total(datas[2022]["chetan"]["may"]["entry"]);
+  let kishanMay22ScanTotal = total(datas[2022]["kishan"]["may"]["scan"]);
+  let kishanMay22EntryTotal = total(datas[2022]["kishan"]["may"]["entry"]);
+  let poukinMay22ScanTotal = total(datas[2022]["poukin"]["may"]["scan"]);
+  let poukinMay22EntryTotal = total(datas[2022]["poukin"]["may"]["entry"]);
+  let rohelMay22ScanTotal = total(datas[2022]["rohel"]["may"]["scan"]);
+  let rohelMay22EntryTotal = total(datas[2022]["rohel"]["may"]["entry"]);
+
   // Total Data
-  let angouchaTotalScan = oldAngouchaScan + angouchaMar22ScanTotal + angouchaApr22ScanTotal;
-  let angouchaTotalEntry = oldAngouchaEntry + angouchaMar22EntryTotal + angouchaApr22EntryTotal;
-  let chetanTotalScan = oldChetanScan + chetanMar22ScanTotal + chetanApr22ScanTotal;
-  let chetanTotalEntry = oldChetanEntry + chetanMar22EntryTotal + chetanApr22EntryTotal;
-  let kishanTotalScan = oldKishanScan + kishanMar22ScanTotal + kishanApr22ScanTotal;
-  let kishanTotalEntry = oldKishanEntry + kishanMar22EntryTotal + kishanApr22EntryTotal;
-  let poukinTotalScan = oldPoukinScan + poukinMar22ScanTotal + poukinApr22ScanTotal;
-  let poukinTotalEntry = oldPoukinEntry + poukinMar22EntryTotal + poukinApr22EntryTotal;
-  let rohelTotalScan = oldRohelScan + rohelMar22ScanTotal + rohelApr22ScanTotal;
-  let rohelTotalEntry = oldRohelEntry + rohelMar22EntryTotal + rohelApr22EntryTotal;
+  let angouchaTotalScan = oldAngouchaScan + angouchaMar22ScanTotal + angouchaApr22ScanTotal + angouchaMay22ScanTotal;
+  let angouchaTotalEntry = oldAngouchaEntry + angouchaMar22EntryTotal + angouchaApr22EntryTotal + angouchaMay22EntryTotal;
+  let chetanTotalScan = oldChetanScan + chetanMar22ScanTotal + chetanApr22ScanTotal + chetanMay22ScanTotal;
+  let chetanTotalEntry = oldChetanEntry + chetanMar22EntryTotal + chetanApr22EntryTotal + chetanMay22EntryTotal;
+  let kishanTotalScan = oldKishanScan + kishanMar22ScanTotal + kishanApr22ScanTotal + kishanMay22ScanTotal;
+  let kishanTotalEntry = oldKishanEntry + kishanMar22EntryTotal + kishanApr22EntryTotal + kishanMay22EntryTotal;
+  let poukinTotalScan = oldPoukinScan + poukinMar22ScanTotal + poukinApr22ScanTotal + poukinMay22ScanTotal;
+  let poukinTotalEntry = oldPoukinEntry + poukinMar22EntryTotal + poukinApr22EntryTotal + poukinMay22EntryTotal;
+  let rohelTotalScan = oldRohelScan + rohelMar22ScanTotal + rohelApr22ScanTotal + rohelMay22ScanTotal;
+  let rohelTotalEntry = oldRohelEntry + rohelMar22EntryTotal + rohelApr22EntryTotal + rohelMay22EntryTotal;
   let totalScan = angouchaTotalScan + chetanTotalScan + kishanTotalScan + poukinTotalScan + rohelTotalScan;
   let totalEntry = angouchaTotalEntry + chetanTotalEntry + kishanTotalEntry + poukinTotalEntry + rohelTotalEntry;
 
@@ -341,7 +353,7 @@ async function getData() {
     progress(angouchaScan, 0, em, 0, chetanEntry, insert, kishanScan, kishanEntry, print, 0, poukinEntry, em, 0, rohelEntry, em);
   })
 
-  // Function to Trigger the Display of March 22 Data Entry Stats
+  // Function to Trigger the Display of April 22 Data Entry Stats
   april22.addEventListener("click", () => {
     displayProgress(april22Content);
     removeActiveData();
@@ -536,6 +548,13 @@ async function getData() {
     let angouchaEntry = datas["2022"]["angoucha"]["april"]["entry"][19];
     let kishanEntry = datas["2022"]["kishan"]["april"]["entry"][19];
     progress(0, angouchaEntry, em, 0, 0, print, 0, kishanEntry, `${make}, ${insert}`, 0, 0, `No work done`, 0, 0, abs);
+  })
+
+  // Function to Trigger the Display of May 22 Data Entry Stats
+  may22.addEventListener("click", () => {
+    displayProgress(may22Content);
+    removeActiveData();
+    progress(angouchaMay22ScanTotal, angouchaMay22EntryTotal, em, chetanMay22ScanTotal, chetanMay22EntryTotal, em, kishanMay22ScanTotal, kishanMay22EntryTotal, em, poukinMay22ScanTotal, poukinMay22EntryTotal, em, rohelMay22ScanTotal, rohelMay22EntryTotal, em);
   })
 
 }

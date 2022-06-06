@@ -1,12 +1,8 @@
 // Function to Trigger the Display of March 22 Data Entry Stats
 march22.addEventListener("click", () => {
-  totalProgressContent.classList.add("hide");
-  workProgressContent.classList.add("hide");
-  march22content.classList.remove("hide");
-  april22content.classList.add("hide");
-  may22content.classList.add("hide");
-  dataEntry.classList.remove("hide");
-  progress(607, 0, "", 69, 378, "", 2996, 232, "", 2055, 110, "", 222, 220, "");
+  displayProgress(march22Content);
+  removeActiveData();
+  progress(607, 0, em, 69, 378, em, 2996, 232, em, 2055, 110, em, 222, 220, em);
 })
 
 // Function to display the stats for 17 March 22
