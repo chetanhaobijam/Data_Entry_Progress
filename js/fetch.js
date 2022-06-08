@@ -84,6 +84,11 @@ const june22 = document.querySelector("#june-22");
 const june22Content = document.querySelector("#june-22-content");
 const oneJune22 = document.querySelector("#one-june-22");
 const twoJune22 = document.querySelector("#two-june-22");
+const threeJune22 = document.querySelector("#three-june-22");
+const fourJune22 = document.querySelector("#four-june-22");
+const sixJune22 = document.querySelector("#six-june-22");
+const sevenJune22 = document.querySelector("#seven-june-22");
+const eightJune22 = document.querySelector("#eight-june-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -114,6 +119,10 @@ const em = "";
 const excel = "Excel Work";
 const other = "Other work";
 const elec = "Electricity outage";
+const scanStart = "Scanning Started";
+const scanEnd = "Scanning Finished";
+const entryStart = "Entry Started";
+const entryEnd = "Entry Finished";
 
 // Function to Remove the Active class from table data
 const removeActiveData = () => {
@@ -181,6 +190,7 @@ const total = arr => {
 async function getData() {
   const dataStream = await fetch("../json/data.json");
   const datas = await dataStream.json();
+  // Old Datas
   let oldAngouchaScan = datas[2022]["angoucha"]["old"]["scan"];
   let oldAngouchaEntry = datas[2022]["angoucha"]["old"]["entry"];
   let oldChetanScan = datas[2022]["chetan"]["old"]["scan"];
@@ -228,17 +238,29 @@ async function getData() {
   let rohelMay22ScanTotal = total(datas[2022]["rohel"]["may"]["scan"]);
   let rohelMay22EntryTotal = total(datas[2022]["rohel"]["may"]["entry"]);
 
+  // June 22 Total Data
+  let angouchaJun22ScanTotal = total(datas[2022]["angoucha"]["june"]["scan"]);
+  let angouchaJun22EntryTotal = total(datas[2022]["angoucha"]["june"]["entry"]);
+  let chetanJun22ScanTotal = total(datas[2022]["chetan"]["june"]["scan"]);
+  let chetanJun22EntryTotal = total(datas[2022]["chetan"]["june"]["entry"]);
+  let kishanJun22ScanTotal = total(datas[2022]["kishan"]["june"]["scan"]);
+  let kishanJun22EntryTotal = total(datas[2022]["kishan"]["june"]["entry"]);
+  let poukinJun22ScanTotal = total(datas[2022]["poukin"]["june"]["scan"]);
+  let poukinJun22EntryTotal = total(datas[2022]["poukin"]["june"]["entry"]);
+  let rohelJun22ScanTotal = total(datas[2022]["rohel"]["june"]["scan"]);
+  let rohelJun22EntryTotal = total(datas[2022]["rohel"]["june"]["entry"]);
+
   // Total Data
-  let angouchaTotalScan = oldAngouchaScan + angouchaMar22ScanTotal + angouchaApr22ScanTotal + angouchaMay22ScanTotal;
-  let angouchaTotalEntry = oldAngouchaEntry + angouchaMar22EntryTotal + angouchaApr22EntryTotal + angouchaMay22EntryTotal;
-  let chetanTotalScan = oldChetanScan + chetanMar22ScanTotal + chetanApr22ScanTotal + chetanMay22ScanTotal;
-  let chetanTotalEntry = oldChetanEntry + chetanMar22EntryTotal + chetanApr22EntryTotal + chetanMay22EntryTotal;
-  let kishanTotalScan = oldKishanScan + kishanMar22ScanTotal + kishanApr22ScanTotal + kishanMay22ScanTotal;
-  let kishanTotalEntry = oldKishanEntry + kishanMar22EntryTotal + kishanApr22EntryTotal + kishanMay22EntryTotal;
-  let poukinTotalScan = oldPoukinScan + poukinMar22ScanTotal + poukinApr22ScanTotal + poukinMay22ScanTotal;
-  let poukinTotalEntry = oldPoukinEntry + poukinMar22EntryTotal + poukinApr22EntryTotal + poukinMay22EntryTotal;
-  let rohelTotalScan = oldRohelScan + rohelMar22ScanTotal + rohelApr22ScanTotal + rohelMay22ScanTotal;
-  let rohelTotalEntry = oldRohelEntry + rohelMar22EntryTotal + rohelApr22EntryTotal + rohelMay22EntryTotal;
+  let angouchaTotalScan = oldAngouchaScan + angouchaMar22ScanTotal + angouchaApr22ScanTotal + angouchaMay22ScanTotal  + angouchaJun22ScanTotal;
+  let angouchaTotalEntry = oldAngouchaEntry + angouchaMar22EntryTotal + angouchaApr22EntryTotal + angouchaMay22EntryTotal + angouchaJun22EntryTotal;
+  let chetanTotalScan = oldChetanScan + chetanMar22ScanTotal + chetanApr22ScanTotal + chetanMay22ScanTotal + chetanJun22ScanTotal;
+  let chetanTotalEntry = oldChetanEntry + chetanMar22EntryTotal + chetanApr22EntryTotal + chetanMay22EntryTotal + chetanJun22EntryTotal;
+  let kishanTotalScan = oldKishanScan + kishanMar22ScanTotal + kishanApr22ScanTotal + kishanMay22ScanTotal + kishanJun22ScanTotal;
+  let kishanTotalEntry = oldKishanEntry + kishanMar22EntryTotal + kishanApr22EntryTotal + kishanMay22EntryTotal + kishanJun22EntryTotal;
+  let poukinTotalScan = oldPoukinScan + poukinMar22ScanTotal + poukinApr22ScanTotal + poukinMay22ScanTotal + poukinJun22ScanTotal;
+  let poukinTotalEntry = oldPoukinEntry + poukinMar22EntryTotal + poukinApr22EntryTotal + poukinMay22EntryTotal + poukinJun22EntryTotal;
+  let rohelTotalScan = oldRohelScan + rohelMar22ScanTotal + rohelApr22ScanTotal + rohelMay22ScanTotal + rohelJun22ScanTotal;
+  let rohelTotalEntry = oldRohelEntry + rohelMar22EntryTotal + rohelApr22EntryTotal + rohelMay22EntryTotal + rohelJun22EntryTotal;
   let totalScan = angouchaTotalScan + chetanTotalScan + kishanTotalScan + poukinTotalScan + rohelTotalScan;
   let totalEntry = angouchaTotalEntry + chetanTotalEntry + kishanTotalEntry + poukinTotalEntry + rohelTotalEntry;
 
@@ -344,12 +366,12 @@ async function getData() {
   
   // Function to display the stats for 30 March 22
   thirtyoneMarch22.addEventListener("click", () => {
-    let angouchaScan = datas["2022"]["angoucha"]["march"]["scan"][6];
-    let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][6];
-    let kishanScan = datas["2022"]["kishan"]["march"]["scan"][6];
-    let kishanEntry = datas["2022"]["kishan"]["march"]["entry"][6];
-    let poukinEntry = datas["2022"]["poukin"]["march"]["entry"][6];
-    let rohelEntry = datas["2022"]["poukin"]["march"]["entry"][6];
+    let angouchaScan = datas["2022"]["angoucha"]["march"]["scan"][8];
+    let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][8];
+    let kishanScan = datas["2022"]["kishan"]["march"]["scan"][8];
+    let kishanEntry = datas["2022"]["kishan"]["march"]["entry"][8];
+    let poukinEntry = datas["2022"]["poukin"]["march"]["entry"][8];
+    let rohelEntry = datas["2022"]["poukin"]["march"]["entry"][8];
     progress(angouchaScan, 0, em, 0, chetanEntry, insert, kishanScan, kishanEntry, print, 0, poukinEntry, em, 0, rohelEntry, em);
   })
 
@@ -664,14 +686,14 @@ async function getData() {
     let kishanScan = datas["2022"]["kishan"]["may"]["scan"][12];
     let poukinScan = datas["2022"]["poukin"]["may"]["scan"][12];
     let rohelScan = datas["2022"]["rohel"]["may"]["scan"][12];
-    progress(0, 0, make, chetanScan, chetanEntry, `${excel}, ${prins}`, kishanScan, 0, `Scanning Finished`, poukinScan, 0, em, rohelScan, 0, em);
+    progress(0, 0, make, chetanScan, chetanEntry, `${excel}, ${prins}`, kishanScan, 0, scanEnd, poukinScan, 0, em, rohelScan, 0, em);
   })
 
   // Function to display the stats for 19 May 22
   nineteenMay22.addEventListener("click", () => {
     let poukinScan = datas["2022"]["poukin"]["may"]["scan"][13];
     let rohelScan = datas["2022"]["rohel"]["may"]["scan"][13];
-    progress(0, 0, make, 0, 0, `${excel}, ${make}`, 0, 0, abs, poukinScan, 0, `Scanning Finished`, rohelScan, 0, em);
+    progress(0, 0, make, 0, 0, `${excel}, ${make}`, 0, 0, abs, poukinScan, 0, scanEnd, rohelScan, 0, em);
   })
 
   // Function to display the stats for 20 May 22
@@ -683,7 +705,7 @@ async function getData() {
   // Function to display the stats for 21 May 22
   twentyOneMay22.addEventListener("click", () => {
     let rohelScan = datas["2022"]["rohel"]["may"]["scan"][15];
-    progress(0, 0, make, 0, 0, `${excel}, ${make}`, 0, 0, make, 0, 0, abs, rohelScan, 0, `Scanning Finished`);
+    progress(0, 0, make, 0, 0, `${excel}, ${make}`, 0, 0, make, 0, 0, abs, rohelScan, 0, scanEnd);
   })
 
   // Function to display the stats for 23 May 22
@@ -741,7 +763,7 @@ async function getData() {
     let kishanEntry = datas["2022"]["kishan"]["may"]["entry"][22];
     let poukinEntry = datas["2022"]["poukin"]["may"]["entry"][22];
     let rohelEntry = datas["2022"]["rohel"]["may"]["entry"][22];
-    progress(0, 0, other, 0, chetanEntry, `Entry Finished`, 0, kishanEntry, `IDs work, Entry Finished`, 0, poukinEntry, `Entry Finished`, 0, rohelEntry, `Entry Finished`);
+    progress(0, 0, other, 0, chetanEntry, entryEnd, 0, kishanEntry, `IDs work, Entry Finished`, 0, poukinEntry, entryEnd, 0, rohelEntry, entryEnd);
   })
 
   // Function to display the stats for 31 May 22
@@ -750,9 +772,69 @@ async function getData() {
     let kishanScan = datas["2022"]["kishan"]["may"]["scan"][23];
     let poukinScan = datas["2022"]["poukin"]["may"]["scan"][23];
     let rohelScan = datas["2022"]["rohel"]["may"]["scan"][23];
-    progress(0, 0, other, 0, chetanEntry, `${print} & IDs Work`, kishanScan, 0, `IDs work, Scanning Started`, poukinScan, 0, `Scanning Started`, rohelScan, 0, `Scanning Started`);
+    progress(0, 0, other, 0, chetanEntry, `${print} & IDs Work`, kishanScan, 0, `IDs work, ${scanStart}`, poukinScan, 0, `${scanStart}`, rohelScan, 0, `${scanStart}`);
   })
 
+  // Function to Trigger the Display of June 22 Data Entry Stats
+  june22.addEventListener("click", () => {
+    displayProgress(june22Content);
+    removeActiveData();
+    progress(angouchaJun22ScanTotal, angouchaJun22EntryTotal, em, chetanJun22ScanTotal, chetanJun22EntryTotal, em, kishanJun22ScanTotal, kishanJun22EntryTotal, em, poukinJun22ScanTotal, poukinJun22EntryTotal, em, rohelJun22ScanTotal, rohelJun22EntryTotal, em);
+  })
+
+  // Function to display the stats for 01 June 22
+  oneJune22.addEventListener("click", () => {
+    let kishanScan = datas["2022"]["kishan"]["june"]["scan"][0];
+    let poukinScan = datas["2022"]["poukin"]["june"]["scan"][0];
+    let rohelScan = datas["2022"]["rohel"]["june"]["scan"][0];
+    progress(0, 0, other, 0, 0, `${print} & ${make}`, kishanScan, 0, em, poukinScan, 0, em, rohelScan, 0, em);
+  })
+
+  // Function to display the stats for 02 June 22
+  twoJune22.addEventListener("click", () => {
+    let kishanScan = datas["2022"]["kishan"]["june"]["scan"][1];
+    let poukinScan = datas["2022"]["poukin"]["june"]["scan"][1];
+    let rohelScan = datas["2022"]["rohel"]["june"]["scan"][1];
+    progress(0, 0, other, 0, 0, `${excel} & ${print}`, kishanScan, 0, em, poukinScan, 0, em, rohelScan, 0, em);
+  })
+
+  // Function to display the stats for 03 June 22
+  threeJune22.addEventListener("click", () => {
+    let kishanScan = datas["2022"]["kishan"]["june"]["scan"][2];
+    let poukinScan = datas["2022"]["poukin"]["june"]["scan"][2];
+    let rohelScan = datas["2022"]["rohel"]["june"]["scan"][2];
+    progress(0, 0, other, 0, 0, `${excel}, ${print} & ${make}`, kishanScan, 0, em, poukinScan, 0, em, rohelScan, 0, em);
+  })
+
+  // Function to display the stats for 04 June 22
+  fourJune22.addEventListener("click", () => {
+    let poukinScan = datas["2022"]["poukin"]["june"]["scan"][3];
+    let rohelScan = datas["2022"]["rohel"]["june"]["scan"][3];
+    progress(0, 0, abs, 0, 0, `${excel}, ${print} & Gazette Title Correction`, 0, 0, `Gazette Title Correction`, poukinScan, 0, em, rohelScan, 0, em);
+  })
+
+  // Function to display the stats for 06 June 22
+  sixJune22.addEventListener("click", () => {
+    let kishanScan = datas["2022"]["kishan"]["june"]["scan"][4];
+    let poukinScan = datas["2022"]["poukin"]["june"]["scan"][4];
+    let rohelScan = datas["2022"]["rohel"]["june"]["scan"][4];
+    progress(0, 0, other, 0, 0, `${excel} & ${make}`, kishanScan, 0, `${make}, Scanning Completed`, poukinScan, 0, scanEnd, rohelScan, 0, em);
+  })
+
+  // Function to display the stats for 07 June 22
+  sevenJune22.addEventListener("click", () => {
+    let poukinEntry = datas["2022"]["poukin"]["june"]["entry"][5];
+    let rohelScan = datas["2022"]["rohel"]["june"]["scan"][5];
+    progress(0, 0, other, 0, 0, `${excel} & ${make}`, 0, 0, make, 0, poukinEntry, entryStart, rohelScan, 0, em);
+  })
+
+  // Function to display the stats for 08 June 22
+  eightJune22.addEventListener("click", () => {
+    let poukinEntry = datas["2022"]["poukin"]["june"]["entry"][6];
+    let rohelScan = datas["2022"]["rohel"]["june"]["scan"][6];
+    let rohelEntry = datas["2022"]["rohel"]["june"]["entry"][6];
+    progress(0, 0, other, 0, 0, `${excel} & ${make}`, 0, 0, make, 0, poukinEntry, em, rohelScan, rohelEntry, `${scanEnd}, ${entryStart}`);
+  })
 }
 
 
