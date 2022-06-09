@@ -188,7 +188,7 @@ const total = arr => {
 
 // Function to call the data by Fetch API
 async function getData() {
-  const dataStream = await fetch("../json/data.json");
+  const dataStream = await fetch("./json/data.json");
   const datas = await dataStream.json();
   // Old Datas
   let oldAngouchaScan = datas[2022]["angoucha"]["old"]["scan"];
