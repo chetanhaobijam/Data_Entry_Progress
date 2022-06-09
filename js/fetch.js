@@ -365,7 +365,7 @@ async function getData() {
     let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][0];
     let kishanScan = datas["2022"]["kishan"]["march"]["scan"][0];
     let poukinScan = datas["2022"]["poukin"]["march"]["scan"][0];
-    progress(0, 0, abs, 0, chetanEntry, "Few entries due to Software Error", kishanScan, 0, em, poukinScan, 0, em, 0, 0, abs);
+    progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, 0, "Few entries due to Software Error", kishanScan, 0, 0, 0, em, poukinScan, 0, 0, 0, em, 0, 0, 0, 0, abs);
   })
 
   // Function to display the stats for 23 March 22
@@ -373,7 +373,7 @@ async function getData() {
     let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][1];
     let kishanScan = datas["2022"]["kishan"]["march"]["scan"][1];
     let poukinScan = datas["2022"]["poukin"]["march"]["scan"][1];
-    progress(0, 0, abs, 0, chetanEntry, em, kishanScan, 0, em, poukinScan, 0, em, 0, 0, abs);
+    progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, 0, em, kishanScan, 0, 0, 0, em, poukinScan, 0, 0, 0, em, 0, 0, 0, 0, abs);
   })
 
   // Function to display the stats for 24 March 22
@@ -382,7 +382,7 @@ async function getData() {
     let kishanScan = datas["2022"]["kishan"]["march"]["scan"][2];
     let poukinScan = datas["2022"]["poukin"]["march"]["scan"][2];
     let rohelEntry = datas["2022"]["rohel"]["march"]["entry"][2];
-    progress(0, 0, abs, 0, chetanEntry, em, kishanScan, 0, em, poukinScan, 0, em, 0, rohelEntry, em);
+    progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, 0, em, kishanScan, 0, 0, 0, em, poukinScan, 0, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 
   // Function to display the stats for 25 March 22
@@ -915,7 +915,7 @@ async function getData() {
     let chetanPdf = datas["2022"]["chetan"]["june"]["pdf"][7];
     let kishanPdf = datas["2022"]["kishan"]["june"]["pdf"][7];
     let poukinEntry = datas["2022"]["poukin"]["june"]["entry"][7];
-    progress(0, 0, angouchaPdf, 0, em, 0, 0, chetanPdf, 0, em, 0, 0, kishanPdf, 0, em, 0, poukinEntry, 0, 0, em, 0, 0, 0, 0, em);
+    progress(0, 0, angouchaPdf, 0, em, 0, 0, chetanPdf, 0, em, 0, 0, kishanPdf, 0, em, 0, poukinEntry, 0, 0, em, 0, 0, 0, 0, abs);
   })
 }
 
@@ -953,18 +953,28 @@ holiday.forEach(date => {
   date.addEventListener("click", () => {
   angouchaPages.innerText = 0;
   angouchaEntry.innerText = 0;
+  angouchaPdf.innerText = 0;
+  angouchaPrint.innerText = 0;
   angouchaRemarks.innerText = "Office Holiday";
   chetanPages.innerText = 0;
   chetanEntry.innerText = 0;
+  chetanPdf.innerText = 0;
+  chetanPrint.innerText = 0;
   chetanRemarks.innerText = "Office Holiday";
   kishanPages.innerText = 0;
   kishanEntry.innerText = 0;
+  kishanPdf.innerText = 0;
+  kishanPrint.innerText = 0;
   kishanRemarks.innerText = "Office Holiday";
   poukinPages.innerText = 0;
   poukinEntry.innerText = 0;
+  poukinPdf.innerText = 0;
+  poukinPrint.innerText = 0;
   poukinRemarks.innerText = "Office Holiday";
   rohelPages.innerText = 0;
   rohelEntry.innerText = 0;
+  rohelPdf.innerText = 0;
+  rohelPrint.innerText = 0;
   rohelRemarks.innerText = "Office Holiday";
   })
 })
