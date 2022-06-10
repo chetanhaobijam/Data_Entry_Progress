@@ -90,6 +90,7 @@ const sixJune22 = document.querySelector("#six-june-22");
 const sevenJune22 = document.querySelector("#seven-june-22");
 const eightJune22 = document.querySelector("#eight-june-22");
 const nineJune22 = document.querySelector("#nine-june-22");
+const tenJune22 = document.querySelector("#ten-june-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -935,6 +936,15 @@ async function getData() {
     let poukinEntry = datas["2022"]["poukin"]["june"]["entry"][7];
     progress(0, 0, angouchaPdf, 0, em, 0, 0, chetanPdf, 0, em, 0, 0, kishanPdf, 0, em, 0, poukinEntry, 0, 0, em, 0, 0, 0, 0, abs);
   })
+
+  // Function to display the stats for 08 June 22
+  tenJune22.addEventListener("click", () => {
+    let chetanEntry = datas["2022"]["chetan"]["june"]["entry"][8];
+    let kishanEntry = datas["2022"]["kishan"]["june"]["entry"][8];
+    let poukinEntry = datas["2022"]["poukin"]["june"]["entry"][8];
+    let rohelEntry = datas["2022"]["rohel"]["june"]["entry"][8];
+    progress(0, 0, 0, 0, other, 0, chetanEntry, 0, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, abs);
+  })
 }
 
 
@@ -948,7 +958,7 @@ const workProgressColoring = () => {
       td.classList.add("text-success");
     } else if (td.textContent === "No") {
       td.classList.add("text-danger");
-    } else if (td.textContent === "Ongoing") {
+    } else if (td.textContent.includes("Ongoing")) {
       td.classList.add("text-primary");
     }
   });

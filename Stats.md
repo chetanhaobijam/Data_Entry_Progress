@@ -3162,12 +3162,21 @@ Entried- 6203 + 66 + 31 = 6300
 
 =======================================================
 
-# Date- 08/06/22
+# Date- 09/06/22
 Angoucha: PDF - 502
 Chetan: PDF - 600
 Kishan: PDF - 630
 Poukin: Entry - 70
 Rohel: Absent
+
+=======================================================
+
+# Date- 10/06/22
+Angoucha: Other
+Chetan: Entry - 100
+Kishan: Entry - 100
+Poukin: Entry - 70
+Rohel: Entry - 50
 
 =======================================================
 
