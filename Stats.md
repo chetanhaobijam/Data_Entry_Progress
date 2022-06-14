@@ -3184,8 +3184,17 @@ Rohel: Entry - 50
 Angoucha: Other
 Chetan: Scan - 1 Entry - 1 Inserting Gazette - 619
 Kishan: Scan - 240, Other Resume Work
-Poukin: Entry - 452 + 30 (Extra) = 482
+Poukin: Scan - 452 + 30 (Extra) = 482
 Rohel: Scan - 404
+
+=======================================================
+
+# Date- 14/06/22
+Angoucha: Other
+Chetan: Entry - 1, PDFs Creation - 24 + 240 + 404 = 668
+Kishan: Absent
+Poukin: Scan - 425
+Rohel: Scan - 24 + 486 = 510
 
 =======================================================
 
