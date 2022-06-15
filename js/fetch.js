@@ -158,7 +158,7 @@ for(let i = 0; i < calendarData.length; i++) {
 
 // Function to Trigger the Display of Aside Section
 asideTrigger.addEventListener("click", () => {
-  aside.classList.toggle("hide");
+  aside.classList.toggle("left");
   mainContent.classList.toggle("shrink-left-margin");
 })
 

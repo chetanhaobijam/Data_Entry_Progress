@@ -19,6 +19,11 @@ $font-stack: 500 16px 'Nunito', sans-serif;
   display: none !important;
 }
 
+.left {
+  transform: translate(-400px);
+  transition: transform 1s ease;
+}
+
 .show {
   display: block !important;
 }

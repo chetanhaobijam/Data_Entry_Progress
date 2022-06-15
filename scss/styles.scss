@@ -12,7 +12,7 @@ header {
     left: 0;
     width: 100%;
     background-color: $white;
-    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
     z-index: 2;
     .nav-brand {
         font-size: 1.3rem;
@@ -39,12 +39,14 @@ main {
     position: fixed;
     top: 3em;
     left: 0;
+    transform: translate(0px);
     width: 20%;
     padding-top: 2rem;
     z-index: 1;
     overflow-y: hidden;
     height: 94vh;
     background-color: $white;
+    transition: transform 1s ease;
 
     &:hover {
       overflow-y: auto;
