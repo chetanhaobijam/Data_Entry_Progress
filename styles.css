@@ -92,6 +92,13 @@ main aside::-webkit-scrollbar-thumb {
 main aside::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+main aside .total-progress, main aside .work-progress {
+  height: 53px;
+  line-height: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
 main aside .total-progress a, main aside .work-progress a {
   color: #212529;
   font-size: 1.2rem;
@@ -104,7 +111,6 @@ main aside .total-progress a:hover, main aside .work-progress a:hover {
 }
 main aside .accordion-body {
   padding: 0;
-  transition: all ease 1;
 }
 main aside .accordion-body .list-group-item {
   cursor: pointer;
@@ -191,10 +197,38 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+  main aside {
+    transform: translate(-400px);
+    width: 250px;
+  }
   main .main-content {
-    margin-left: 13rem;
+    margin-left: 1rem;
   }
   main .main-content .data-container {
     margin-right: 1rem;
+  }
+
+  .left {
+    transform: translate(0px);
+  }
+
+  .shrink-left-margin {
+    margin-left: 1rem !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .main-content .data-container .data-entry {
+    width: 95%;
+  }
+  main .main-content .data-container .data-entry table {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 567px) {
+  main .main-content .data-container .calendar-table {
+    width: 95%;
+  }
+  main .main-content .data-container .data-entry {
+    width: 100%;
   }
 }
