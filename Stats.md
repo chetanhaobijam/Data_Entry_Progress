@@ -3203,7 +3203,7 @@ Angoucha: Other
 Chetan: PDFs Creation - 452 + 156 = 608
 Kishan: Absent
 Poukin: Scan - 462
-Rohel: Scan - 479
+Rohel: Scan - 479 - 4 = 475
 
 =======================================================
 
@@ -3213,6 +3213,15 @@ Chetan: PDFs Creation - 330 + 303 = 633
 Kishan: Absent
 Poukin: Scan - 470
 Rohel: Scan - 316
+
+=======================================================
+
+# Date- 17/06/22
+Angoucha: Other
+Chetan: PDFs Creation - 152 + 475 = 627
+Kishan: Absent
+Poukin: Scan - 260 + 215 = 475
+Rohel: Scan - 233 + 108 = 341
 
 =======================================================
 
