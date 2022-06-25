@@ -101,6 +101,7 @@ const twentyOneJune22 = document.querySelector("#twentyone-june-22");
 const twentyTwoJune22 = document.querySelector("#twentytwo-june-22");
 const twentyThreeJune22 = document.querySelector("#twentythree-june-22");
 const twentyFourJune22 = document.querySelector("#twentyfour-june-22");
+const twentyFiveJune22 = document.querySelector("#twentyfive-june-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -1041,6 +1042,15 @@ async function getData() {
     let poukinPdf = datas["2022"]["poukin"]["june"]["pdf"][18];
     let rohelPdf = datas["2022"]["rohel"]["june"]["pdf"][18];
     progress(0, 0, 0, 0, other, 0, chetanEntry, 0, 0, `Server Problem`, kishanScan, 0, 0, 0, `Scan started for Book 1986-87`, 0, 0, poukinPdf, 0, `PDF completed for Book 1983-84`, 0, 0, rohelPdf, 0, `PDF completed for Book 1982-83`);
+  })
+
+  // Function to display the stats for 24 June 22
+  twentyFiveJune22.addEventListener("click", () => {
+    let chetanEntry = datas["2022"]["chetan"]["june"]["entry"][19];
+    let kishanScan = datas["2022"]["kishan"]["june"]["scan"][19];
+    let poukinPdf = datas["2022"]["poukin"]["june"]["pdf"][19];
+    let rohelPdf = datas["2022"]["rohel"]["june"]["pdf"][19];
+    progress(0, 0, 0, 0, other, 0, chetanEntry, 0, 0, em, kishanScan, 0, 0, 0, em, 0, 0, poukinPdf, 0, em, 0, 0, rohelPdf, 0, em);
   })
 }
 
