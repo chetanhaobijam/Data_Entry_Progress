@@ -1066,10 +1066,10 @@ async function getData() {
 
   // Function to display the stats for 28 June 22
   twentyEightJune22.addEventListener("click", () => {
-    let chetanPdf = datas["2022"]["chetan"]["june"]["pdf"][20];
-    let kishanScan = datas["2022"]["kishan"]["june"]["scan"][20];
-    let poukinScan = datas["2022"]["poukin"]["june"]["scan"][20];
-    let rohelScan = datas["2022"]["rohel"]["june"]["scan"][20];
+    let chetanPdf = datas["2022"]["chetan"]["june"]["pdf"][21];
+    let kishanScan = datas["2022"]["kishan"]["june"]["scan"][21];
+    let poukinScan = datas["2022"]["poukin"]["june"]["scan"][21];
+    let rohelScan = datas["2022"]["rohel"]["june"]["scan"][21];
     progress(0, 0, 0, 0, other, 0, 0, chetanPdf, 0, elec, kishanScan, 0, 0, 0, `${elec}, Scan Completed for Book 1986-87`, poukinScan, 0, 0, 0, elec, rohelScan, 0, 0, 0, elec);
   })
 }
