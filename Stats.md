@@ -3310,7 +3310,7 @@ Rohel: Scan - 310
 Angoucha: Other
 Chetan: PDF - 720
 Kishan: Entry - 112
-Poukin: Scan - 473, Entry - 16
+Poukin: Scan - 473, Entry - 18
 Rohel: Scan - 598
 
 =======================================================
