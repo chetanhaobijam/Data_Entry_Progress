@@ -5,6 +5,7 @@ const mainContent = document.querySelector(".main-content");
 const currentWork = document.querySelector("#current-work");
 const totalProgress = document.querySelector("#total-progress");
 const totalProgressContent = document.querySelector("#total-progress-content");
+const workProgress = document.querySelector("#work-progress");
 const workProgressContent = document.querySelector("#work-progress-content");
 const dataEntry = document.querySelector(".data-entry");
 const calendarData = document.querySelectorAll(".calendar-table tbody td");
@@ -228,6 +229,7 @@ const progress = (aPages, aEntry, aPdf, aPrint, aRemarks, cPages, cEntry, cPdf, 
 // Function to hide/display the contents
 const displayProgress = (content) => {
   totalProgressContent.classList.add("hide");
+  workProgressContent.classList.add("hide");
   march22Content.classList.add("hide");
   april22Content.classList.add("hide");
   may22Content.classList.add("hide");
@@ -1163,6 +1165,16 @@ const workProgressColoring = () => {
     }
   });
 }
+
+const showWorkProgress = () => {
+  displayProgress(workProgressContent);
+  dataEntry.classList.add("hide");
+  removeActiveData();
+}
+
+workProgress.addEventListener("click", () => {
+  showWorkProgress();
+})
 
 workProgressColoring();
 
