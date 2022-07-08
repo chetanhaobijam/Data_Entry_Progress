@@ -3351,12 +3351,21 @@ Rohel: Entry - 90
 
 =======================================================
 
-# Date- 06/07/22
+# Date- 07/07/22
 Angoucha: Other
 Chetan: PDF - 885
 Kishan: Entry - 152
 Poukin: Entry - 100
 Rohel: Entry - 102
+
+=======================================================
+
+# Date- 08/07/22
+Angoucha: Other
+Chetan: Scan - 1, PDF - 306, Print - 369
+Kishan: Entry - 141
+Poukin: Entry - 100
+Rohel: Entry - 90
 
 =======================================================
 
