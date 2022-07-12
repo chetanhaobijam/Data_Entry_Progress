@@ -1,6 +1,6 @@
 
   async function getChart() {
-    const dataStream = await fetch("../json/data.json");
+    const dataStream = await fetch("./json/data.json");
     const datas = await dataStream.json();
     console.log(datas);
 
