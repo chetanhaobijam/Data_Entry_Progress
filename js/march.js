@@ -1,51 +1,87 @@
-// Function to Trigger the Display of March 22 Data Entry Stats
-march22.addEventListener("click", () => {
-  displayProgress(march22Content);
-  removeActiveData();
-  progress(607, 0, em, 69, 378, em, 2996, 232, em, 2055, 110, em, 222, 220, em);
-})
-
 // Function to display the stats for 17 March 22
 seventeenMarch22.addEventListener("click", () => {
-  progress(0, 0, abs, 0, 5, "Few entries due to Software Error", 448, 0, "", 320, 0, "", 0, 0, abs);
+  let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][0];
+  let kishanScan = datas["2022"]["kishan"]["march"]["scan"][0];
+  let poukinScan = datas["2022"]["poukin"]["march"]["scan"][0];
+  progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, 0, "Few entries due to Software Error", kishanScan, 0, 0, 0, em, poukinScan, 0, 0, 0, em, 0, 0, 0, 0, abs);
 })
 
 // Function to display the stats for 23 March 22
 twentythreeMarch22.addEventListener("click", () => {
-  progress(0, 0, abs, 0, 68, "", 504, 0, "", 360, 0, "", 0, 0, abs);
+  let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][1];
+  let kishanScan = datas["2022"]["kishan"]["march"]["scan"][1];
+  let poukinScan = datas["2022"]["poukin"]["march"]["scan"][1];
+  progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, 0, em, kishanScan, 0, 0, 0, em, poukinScan, 0, 0, 0, em, 0, 0, 0, 0, abs);
 })
 
 // Function to display the stats for 24 March 22
 twentyfourMarch22.addEventListener("click", () => {
-  progress(0, 0, abs, 0, 70, "", 558, 0, "", 384, 0, "", 0, 41, "");
+  let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][2];
+  let kishanScan = datas["2022"]["kishan"]["march"]["scan"][2];
+  let poukinScan = datas["2022"]["poukin"]["march"]["scan"][2];
+  let rohelEntry = datas["2022"]["rohel"]["march"]["entry"][2];
+  progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, 0, em, kishanScan, 0, 0, 0, em, poukinScan, 0, 0, 0, em, 0, rohelEntry, 0, 0, em);
 })
 
 // Function to display the stats for 25 March 22
 twentyfiveMarch22.addEventListener("click", () => {
-  progress(0, 0, abs, 0, 61, "", 228, 46, "", 0, 35, "", 0, 62, "");
+  let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][3];
+  let kishanScan = datas["2022"]["kishan"]["march"]["scan"][3];
+  let kishanEntry = datas["2022"]["kishan"]["march"]["entry"][3];
+  let poukinEntry = datas["2022"]["poukin"]["march"]["entry"][3];
+  let rohelEntry = datas["2022"]["rohel"]["march"]["entry"][3];
+  progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, 0, em, kishanScan, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
 })
 
 // Function to display the stats for 26 March 22
 twentysixMarch22.addEventListener("click", () => {
-  progress(0, 0, abs, 0, 6, prins, 400, 54, "", 223, 0, "", 222, 0, "");
+  let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][4];
+  let kishanScan = datas["2022"]["kishan"]["march"]["scan"][4];
+  let kishanEntry = datas["2022"]["kishan"]["march"]["entry"][4];
+  let poukinScan = datas["2022"]["poukin"]["march"]["scan"][4];
+  let rohelScan = datas["2022"]["rohel"]["march"]["scan"][4];
+  progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, 0, prins, kishanScan, kishanEntry, 0, 0, em, poukinScan, 0, 0, 0, em, rohelScan, 0, 0, 0, em);
 })
 
 // Function to display the stats for 28 March 22
 twentyeightMarch22.addEventListener("click", () => {
-  progress(82, 0, print, 69, 35, prins, 260, 35, "", 220, 25, "", 0, 27, insert);
+  let angouchaScan = datas["2022"]["angoucha"]["march"]["scan"][5];
+  let chetanScan = datas["2022"]["chetan"]["march"]["scan"][5];
+  let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][5];
+  let kishanScan = datas["2022"]["kishan"]["march"]["scan"][5];
+  let kishanEntry = datas["2022"]["kishan"]["march"]["entry"][5];
+  let poukinScan = datas["2022"]["poukin"]["march"]["scan"][5];
+  let poukinEntry = datas["2022"]["poukin"]["march"]["entry"][5];
+  let rohelEntry = datas["2022"]["rohel"]["march"]["entry"][5];
+  progress(angouchaScan, 0, 0, 0, print, chetanScan, chetanEntry, 0, 0, prins, kishanScan, kishanEntry, 0, 0, em, poukinScan, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, insert);
 })
 
 // Function to display the stats for 29 March 22
 twentynineMarch22.addEventListener("click", () => {
-  progress(203, 0, "", 0, 38, "", 454, 0, "", 344, 0, "", 0, 0, abs);
+  let angouchaScan = datas["2022"]["angoucha"]["march"]["scan"][6];
+  let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][6];
+  let kishanScan = datas["2022"]["kishan"]["march"]["scan"][6];
+  let poukinScan = datas["2022"]["poukin"]["march"]["scan"][6];
+  progress(angouchaScan, 0, 0, 0, em, 0, chetanEntry, 0, 0, em, kishanScan, 0, 0, 0, em, poukinScan, 0, 0, 0, em, 0, 0, 0, 0, abs);
 })
 
 // Function to display the stats for 30 March 22
 thirtyMarch22.addEventListener("click", () => {
-  progress(148, 0, "", 0, 49, "", 0, 50, "", 204, 0, "", 0, 40, "");
+  let angouchaScan = datas["2022"]["angoucha"]["march"]["scan"][7];
+  let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][7];
+  let kishanEntry = datas["2022"]["kishan"]["march"]["entry"][7];
+  let poukinScan = datas["2022"]["poukin"]["march"]["scan"][7];
+  let rohelEntry = datas["2022"]["poukin"]["march"]["entry"][7];
+  progress(angouchaScan, 0, 0, 0, em, 0, chetanEntry, 0, 0, em, 0, kishanEntry, 0, 0, em, poukinScan, 0, 0, 0, em, 0, rohelEntry, 0, 0, abs);
 })
 
-// Function to display the stats for 31 March 22
+// Function to display the stats for 30 March 22
 thirtyoneMarch22.addEventListener("click", () => {
-  progress(174, 0, "", 0, 51, insert, 144, 47, print, 0, 50, "", 0, 50, "");
+  let angouchaScan = datas["2022"]["angoucha"]["march"]["scan"][8];
+  let chetanEntry = datas["2022"]["chetan"]["march"]["entry"][8];
+  let kishanScan = datas["2022"]["kishan"]["march"]["scan"][8];
+  let kishanEntry = datas["2022"]["kishan"]["march"]["entry"][8];
+  let poukinEntry = datas["2022"]["poukin"]["march"]["entry"][8];
+  let rohelEntry = datas["2022"]["poukin"]["march"]["entry"][8];
+  progress(angouchaScan, 0, 0, 0, em, 0, chetanEntry, 0, 0, insert, kishanScan, kishanEntry, 0, 0, print, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
 })
