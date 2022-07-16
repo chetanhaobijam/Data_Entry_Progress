@@ -121,6 +121,7 @@ const twelveJuly22 = document.querySelector("#twelve-july-22");
 const thirteenJuly22 = document.querySelector("#thirteen-july-22");
 const fourteenJuly22 = document.querySelector("#fourteen-july-22");
 const fifteenJuly22 = document.querySelector("#fifteen-july-22");
+const sixteenJuly22 = document.querySelector("#sixteen-july-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -1139,7 +1140,7 @@ async function getData() {
     progress(angouchaJul22ScanTotal, angouchaJul22EntryTotal, angouchaJul22PdfTotal, angouchaJul22PrintTotal, em, chetanJul22ScanTotal, chetanJul22EntryTotal, chetanJul22PdfTotal, chetanJul22PrintTotal, em, kishanJul22ScanTotal, kishanJul22EntryTotal,  kishanJul22PdfTotal, kishanJul22PrintTotal, em, poukinJul22ScanTotal, poukinJul22EntryTotal, poukinJul22PdfTotal, poukinJul22PrintTotal, em, rohelJul22ScanTotal, rohelJul22EntryTotal, rohelJul22PdfTotal, rohelJul22PrintTotal, em);
   })
 
-  // Function to display the stats for 02 June 22
+  // Function to display the stats for 02 July 22
   twoJuly22.addEventListener("click", () => {
     let chetanPdf = datas["2022"]["chetan"]["july"]["pdf"][0];
     let kishanEntry = datas["2022"]["kishan"]["july"]["entry"][0];
@@ -1148,7 +1149,7 @@ async function getData() {
     progress(0, 0, 0, 0, abs, 0, 0, chetanPdf, 0, elec, 0, kishanEntry, 0, 0, elec, 0, poukinEntry, 0, 0, elec, rohelScan, 0, 0, 0, elec);
   })
 
-  // Function to display the stats for 04 June 22
+  // Function to display the stats for 04 July 22
   fourJuly22.addEventListener("click", () => {
     let chetanPdf = datas["2022"]["chetan"]["july"]["pdf"][1];
     let kishanEntry = datas["2022"]["kishan"]["july"]["entry"][1];
@@ -1157,7 +1158,7 @@ async function getData() {
     progress(0, 0, 0, 0, other, 0, 0, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 
-  // Function to display the stats for 05 June 22
+  // Function to display the stats for 05 July 22
   fiveJuly22.addEventListener("click", () => {
     let chetanPdf = datas["2022"]["chetan"]["july"]["pdf"][2];
     let kishanEntry = datas["2022"]["kishan"]["july"]["entry"][2];
@@ -1166,7 +1167,7 @@ async function getData() {
     progress(0, 0, 0, 0, other, 0, 0, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 
-  // Function to display the stats for 06 June 22
+  // Function to display the stats for 06 July 22
   sixJuly22.addEventListener("click", () => {
     let chetanPdf = datas["2022"]["chetan"]["july"]["pdf"][3];
     let kishanEntry = datas["2022"]["kishan"]["july"]["entry"][3];
@@ -1175,7 +1176,7 @@ async function getData() {
     progress(0, 0, 0, 0, other, 0, 0, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 
-  // Function to display the stats for 07 June 22
+  // Function to display the stats for 07 July 22
   sevenJuly22.addEventListener("click", () => {
     let chetanPdf = datas["2022"]["chetan"]["july"]["pdf"][4];
     let kishanEntry = datas["2022"]["kishan"]["july"]["entry"][4];
@@ -1184,7 +1185,7 @@ async function getData() {
     progress(0, 0, 0, 0, other, 0, 0, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 
-  // Function to display the stats for 08 June 22
+  // Function to display the stats for 08 July 22
   eightJuly22.addEventListener("click", () => {
     let chetanScan = datas["2022"]["chetan"]["july"]["scan"][5];
     let chetanPdf = datas["2022"]["chetan"]["july"]["pdf"][5];
@@ -1195,7 +1196,7 @@ async function getData() {
     progress(0, 0, 0, 0, other, chetanScan, 0, chetanPdf, chetanPrint, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 
-  // Function to display the stats for 11 June 22
+  // Function to display the stats for 11 July 22
   elevenJuly22.addEventListener("click", () => {
     let chetanPrint = datas["2022"]["chetan"]["july"]["print"][6];
     let kishanEntry = datas["2022"]["kishan"]["july"]["entry"][6];
@@ -1204,7 +1205,7 @@ async function getData() {
     progress(0, 0, 0, 0, abs, 0, 0, 0, chetanPrint, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 
-  // Function to display the stats for 12 June 22
+  // Function to display the stats for 12 July 22
   twelveJuly22.addEventListener("click", () => {
     let chetanPrint = datas["2022"]["chetan"]["july"]["print"][7];
     let kishanEntry = datas["2022"]["kishan"]["july"]["entry"][7];
@@ -1213,7 +1214,7 @@ async function getData() {
     progress(0, 0, 0, 0, other, 0, 0, 0, chetanPrint, elec, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 
-  // Function to display the stats for 13 June 22
+  // Function to display the stats for 13 July 22
   thirteenJuly22.addEventListener("click", () => {
     let angouchaEntry = datas["2022"]["angoucha"]["july"]["entry"][8];
     let chetanPrint = datas["2022"]["chetan"]["july"]["print"][8];
@@ -1223,7 +1224,7 @@ async function getData() {
     progress(0, angouchaEntry, 0, 0, elec, 0, 0, 0, chetanPrint, elec, 0, kishanEntry, 0, 0, elec, 0, poukinEntry, 0, 0, elec, 0, rohelEntry, 0, 0, elec);
   })
 
-  // Function to display the stats for 14 June 22
+  // Function to display the stats for 14 July 22
   fourteenJuly22.addEventListener("click", () => {
     let angouchaEntry = datas["2022"]["angoucha"]["july"]["entry"][9];
     let chetanScan = datas["2022"]["chetan"]["july"]["scan"][9];
@@ -1235,7 +1236,7 @@ async function getData() {
     progress(0, angouchaEntry, 0, 0, em, chetanScan, 0, chetanPdf, chetanPrint, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 
-   // Function to display the stats for 15 June 22
+   // Function to display the stats for 15 July 22
    fifteenJuly22.addEventListener("click", () => {
     let angouchaEntry = datas["2022"]["angoucha"]["july"]["entry"][10];
     let chetanScan = datas["2022"]["chetan"]["july"]["scan"][10];
@@ -1247,6 +1248,17 @@ async function getData() {
     let poukinEntry = datas["2022"]["poukin"]["july"]["entry"][10];
     let rohelEntry = datas["2022"]["rohel"]["july"]["entry"][10];
     progress(0, angouchaEntry, 0, 0, em, chetanScan, chetanEntry, chetanPdf, chetanPrint, em, 0, kishanEntry, 0, kishanPrint, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
+  })
+
+  // Function to display the stats for 16 July 22
+  sixteenJuly22.addEventListener("click", () => {
+    let angouchaPrint = datas["2022"]["angoucha"]["july"]["print"][11];
+    let chetanEntry = datas["2022"]["chetan"]["july"]["entry"][11];
+    let chetanPrint = datas["2022"]["chetan"]["july"]["print"][11];
+    let kishanEntry = datas["2022"]["kishan"]["july"]["entry"][11];
+    let poukinEntry = datas["2022"]["poukin"]["july"]["entry"][11];
+    let rohelEntry = datas["2022"]["rohel"]["july"]["entry"][11];
+    progress(0, 0, 0, angouchaPrint, em, 0, chetanEntry, 0, chetanPrint, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 }
 
