@@ -123,6 +123,7 @@ const fourteenJuly22 = document.querySelector("#fourteen-july-22");
 const fifteenJuly22 = document.querySelector("#fifteen-july-22");
 const sixteenJuly22 = document.querySelector("#sixteen-july-22");
 const seventeenJuly22 = document.querySelector("#seventeen-july-22");
+const eighteenJuly22 = document.querySelector("#eighteen-july-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -168,6 +169,7 @@ const scanEnd = "Scanning Finished";
 const entryStart = "Entry Started";
 const entryEnd = "Entry Finished";
 const over = "Overtime Work";
+const nwd = "No work done";
 
 // Function to Remove the Active class from table data
 const removeActiveData = () => {
@@ -1270,6 +1272,11 @@ async function getData() {
     let kishanPrint = datas["2022"]["kishan"]["july"]["print"][12];
     let rohelEntry = datas["2022"]["rohel"]["july"]["entry"][12];
     progress(0, 0, 0, 0, em, 0, chetanEntry, 0, chetanPrint, over, 0, 0, 0, kishanPrint, over, 0, 0, 0, 0, em, 0, rohelEntry, 0, 0, over);
+  })
+
+  // Function to display the stats for 18 July 22
+  eighteenJuly22.addEventListener("click", () => {
+    progress(0, 0, 0, 0, nwd, 0, 0, 0, 0, nwd, 0, 0, 0, 0, nwd, 0, 0, 0, 0, nwd, 0, 0, 0, 0, nwd);
   })
 }
 
