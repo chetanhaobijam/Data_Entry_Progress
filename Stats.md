@@ -3432,12 +3432,21 @@ Rohel : Entry - 65
 
 =======================================================
 
-# Date: 18/07/22
-Angoucha : No Work
-Chetan : No Work
-Kishan : No Work
-Poukin : No Work
-Rohel : No Work
+# Date: 19/07/22
+Angoucha : Entry - 17
+Chetan : Entry - 85
+Kishan : Scan - 482
+Poukin : Scan - 480
+Rohel : Scan - 452
+
+=======================================================
+
+# Date: 20/07/22
+Angoucha : Other Work
+Chetan : Absent
+Kishan : Absent
+Poukin : Scan - 482
+Rohel : Scan - 333
 
 =======================================================
 
