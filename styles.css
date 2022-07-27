@@ -176,8 +176,30 @@ main .main-content .data-container .calendar-table tbody tr td:hover {
   background-color: #4a498d;
   color: #fff;
 }
+main .main-content .data-container .work-progress-content {
+  height: 400px;
+  overflow-y: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+main .main-content .data-container .work-progress-content::-webkit-scrollbar {
+  width: 10px;
+}
+main .main-content .data-container .work-progress-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+main .main-content .data-container .work-progress-content::-webkit-scrollbar-thumb {
+  background: #4a498d;
+  border-radius: 5px;
+}
+main .main-content .data-container .work-progress-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 main .main-content .data-container .work-progress-content, main .main-content .data-container .data-entry {
-  width: 80%;
+  width: 90%;
+  max-width: 800px;
   margin: 2rem auto;
   text-align: center;
   font-size: 0.8rem;
@@ -207,11 +229,9 @@ footer {
   main .main-content .data-container {
     margin-right: 1rem;
   }
-
   .left {
     transform: translate(0px);
   }
-
   .shrink-left-margin {
     margin-left: 1rem !important;
   }
@@ -228,7 +248,19 @@ footer {
   main .main-content .data-container .calendar-table {
     width: 95%;
   }
-  main .main-content .data-container .data-entry {
+  main .main-content .data-container .work-progress-content {
+    height: auto;
+    overflow-y: hidden;
+    /* width */
+    /* Handle */
+  }
+  main .main-content .data-container .work-progress-content::-webkit-scrollbar {
+    height: 5px;
+  }
+  main .main-content .data-container .work-progress-content::-webkit-scrollbar-thumb {
+    border-radius: 0;
+  }
+  main .main-content .data-container .work-progress-content, main .main-content .data-container .data-entry {
     width: 100%;
   }
 }

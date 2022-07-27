@@ -131,6 +131,7 @@ const twentyTwoJuly22 = document.querySelector("#twentytwo-july-22");
 const twentyThreeJuly22 = document.querySelector("#twentythree-july-22");
 const twentyFiveJuly22 = document.querySelector("#twentyfive-july-22");
 const twentySixJuly22 = document.querySelector("#twentysix-july-22");
+const twentySevenJuly22 = document.querySelector("#twentyseven-july-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -249,6 +250,7 @@ const progress = (aPages, aEntry, aPdf, aPrint, aRemarks, cPages, cEntry, cPdf, 
 
 // Function to hide/display the contents
 const displayProgress = (content) => {
+  currentWork.classList.add("hide");
   totalProgressContent.classList.add("hide");
   workProgressContent.classList.add("hide");
   march22Content.classList.add("hide");
@@ -429,6 +431,7 @@ async function getData() {
   // Function to Display the Total Data Entry Progress
   const showTotalProgress = () => {
     displayProgress(totalProgressContent);
+    displayProgress(currentWork);
     removeActiveData();
     progress(angouchaTotalScan, angouchaTotalEntry, angouchaTotalPdf, angouchaTotalPrint, em, chetanTotalScan, chetanTotalEntry, chetanTotalPdf, chetanTotalPrint, em, kishanTotalScan, kishanTotalEntry, kishanTotalPdf, kishanTotalPrint, em, poukinTotalScan, poukinTotalEntry, poukinTotalPdf, poukinTotalPrint, em, rohelTotalScan, rohelTotalEntry, rohelTotalPdf, rohelTotalPrint, em);
   }
@@ -1353,6 +1356,15 @@ async function getData() {
     let rohelScan = datas["2022"]["rohel"]["july"]["scan"][20];
     let rohelEntry = datas["2022"]["rohel"]["july"]["entry"][20];
     progress(0, 0, angouchaPdf, 0, em, 0, 0, chetanPdf, 0, excel, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, rohelScan, rohelEntry, 0, 0, em);
+  })
+
+  // Function to display the stats for 27 July 22
+  twentySevenJuly22.addEventListener("click", () => {
+    let angouchaPdf = datas["2022"]["angoucha"]["july"]["pdf"][21];
+    let chetanPdf = datas["2022"]["chetan"]["july"]["pdf"][21];
+    let poukinEntry = datas["2022"]["poukin"]["july"]["entry"][21];
+    let rohelEntry = datas["2022"]["rohel"]["july"]["entry"][21];
+    progress(0, 0, angouchaPdf, 0, elec, 0, 0, chetanPdf, 0, elec, 0, 0, 0, 0, abs, 0, poukinEntry, 0, 0, elec, 0, rohelEntry, 0, 0, elec);
   })
 }
 

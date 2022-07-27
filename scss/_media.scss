@@ -43,7 +43,21 @@
         .calendar-table {
           width: 95%;
         }
-        .data-entry {
+        .work-progress-content {
+          height: auto;
+          overflow-y: hidden;
+
+          /* width */
+          &::-webkit-scrollbar {
+            height: 5px;
+          }
+
+          /* Handle */
+          &::-webkit-scrollbar-thumb {
+            border-radius: 0;
+          }
+        }
+        .work-progress-content, .data-entry {
           width: 100%;
         }
       }

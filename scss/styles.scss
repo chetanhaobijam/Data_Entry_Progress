@@ -175,8 +175,35 @@ main {
           }
         }
       }
+      .work-progress-content {
+        height: 400px;
+        overflow-y: auto;
+
+         /* width */
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: $dark-purple;
+          border-radius: 5px;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+      }
+
       .work-progress-content, .data-entry {
-        width: 80%;
+        width: 90%;
+        max-width: 800px;
         margin: 2rem auto;
         text-align: center;
         font-size: 0.8rem;
