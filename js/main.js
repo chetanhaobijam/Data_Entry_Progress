@@ -132,6 +132,7 @@ const twentyThreeJuly22 = document.querySelector("#twentythree-july-22");
 const twentyFiveJuly22 = document.querySelector("#twentyfive-july-22");
 const twentySixJuly22 = document.querySelector("#twentysix-july-22");
 const twentySevenJuly22 = document.querySelector("#twentyseven-july-22");
+const twentyEightJuly22 = document.querySelector("#twentyeight-july-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -431,7 +432,7 @@ async function getData() {
   // Function to Display the Total Data Entry Progress
   const showTotalProgress = () => {
     displayProgress(totalProgressContent);
-    displayProgress(currentWork);
+    currentWork.classList.remove("hide");
     removeActiveData();
     progress(angouchaTotalScan, angouchaTotalEntry, angouchaTotalPdf, angouchaTotalPrint, em, chetanTotalScan, chetanTotalEntry, chetanTotalPdf, chetanTotalPrint, em, kishanTotalScan, kishanTotalEntry, kishanTotalPdf, kishanTotalPrint, em, poukinTotalScan, poukinTotalEntry, poukinTotalPdf, poukinTotalPrint, em, rohelTotalScan, rohelTotalEntry, rohelTotalPdf, rohelTotalPrint, em);
   }
@@ -1365,6 +1366,16 @@ async function getData() {
     let poukinEntry = datas["2022"]["poukin"]["july"]["entry"][21];
     let rohelEntry = datas["2022"]["rohel"]["july"]["entry"][21];
     progress(0, 0, angouchaPdf, 0, elec, 0, 0, chetanPdf, 0, elec, 0, 0, 0, 0, abs, 0, poukinEntry, 0, 0, elec, 0, rohelEntry, 0, 0, elec);
+  })
+
+  // Function to display the stats for 28 July 22
+  twentyEightJuly22.addEventListener("click", () => {
+    let angouchaPdf = datas["2022"]["angoucha"]["july"]["pdf"][22];
+    let chetanPdf = datas["2022"]["chetan"]["july"]["pdf"][22];
+    let kishanEntry = datas["2022"]["kishan"]["july"]["entry"][22];
+    let poukinEntry = datas["2022"]["poukin"]["july"]["entry"][22];
+    let rohelEntry = datas["2022"]["rohel"]["july"]["entry"][22];
+    progress(0, 0, angouchaPdf, 0, em, 0, 0, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 }
 
