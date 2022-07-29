@@ -3508,8 +3508,17 @@ Rohel : Entry - 57
 Angoucha : PDF - 320
 Chetan : PDF - 614
 Kishan : Entry - 108
-Poukin : Entry - 85
-Rohel : Entry - 92
+Poukin : Entry - 59
+Rohel : Entry - 68
+
+=======================================================
+
+# Date : 29/07/22
+Angoucha : PDF - 574
+Chetan : Entry - 115, PDF - 96
+Kishan : Entry - 131
+Poukin : Entry - 101
+Rohel : Entry - 97
 
 =======================================================
 
