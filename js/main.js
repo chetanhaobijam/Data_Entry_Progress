@@ -140,6 +140,7 @@ const thirtyJuly22 = document.querySelector("#thirty-july-22");
 const august22 = document.querySelector("#august-22");
 const august22Content = document.querySelector("#august-22-content");
 const oneAugust22 = document.querySelector("#one-august-22");
+const twoAugust22 = document.querySelector("#two-august-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -1444,7 +1445,17 @@ async function getData() {
     let kishanEntry = datas["2022"]["kishan"]["august"]["entry"][0];
     let poukinEntry = datas["2022"]["poukin"]["august"]["entry"][0];
     let rohelEntry = datas["2022"]["rohel"]["august"]["entry"][0];
-    progress(0, angouchaEntry, 0, 0, em, 0, chetanEntry, 0, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
+    progress(0, angouchaEntry, 0, 0, em, 0, chetanEntry, 0, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, `Entry Completed for Book 1988-89`, 0, rohelEntry, 0, 0, em);
+  })
+
+  // Function to display the stats for 02 August 22
+  twoAugust22.addEventListener("click", () => {
+    let angouchaPrint = datas["2022"]["angoucha"]["august"]["print"][1];
+    let chetanPrint = datas["2022"]["chetan"]["august"]["print"][1];
+    let kishanEntry = datas["2022"]["kishan"]["august"]["entry"][1];
+    let kishanPrint = datas["2022"]["kishan"]["august"]["print"][1];
+    let rohelEntry = datas["2022"]["rohel"]["august"]["entry"][1];
+    progress(0, 0, 0, angouchaPrint, em, 0, 0, 0, chetanPrint, em, 0, kishanEntry, 0, kishanPrint, `Entry Completed for Book 1987-88`, 0, 0, 0, 0, abs, 0, rohelEntry, 0, 0, `Entry Completed for Book 1989-90`);
   })
 }
 
