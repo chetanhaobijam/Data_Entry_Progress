@@ -148,6 +148,7 @@ const sixAugust22 = document.querySelector("#six-august-22");
 const eightAugust22 = document.querySelector("#eight-august-22");
 const nineAugust22 = document.querySelector("#nine-august-22");
 const tenAugust22 = document.querySelector("#ten-august-22");
+const elevenAugust22 = document.querySelector("#eleven-august-22");
 
 const holiday = document.querySelectorAll(".holiday");
 
@@ -1530,6 +1531,14 @@ async function getData() {
     let poukinEntry = datas["2022"]["poukin"]["august"]["entry"][8];
     let rohelEntry = datas["2022"]["rohel"]["august"]["entry"][8];
     progress(0, 0, angouchaPdf, 0, em, 0, 0, chetanPdf, 0, `${excel}, ${other}`, kishanScan, 0, 0, 0, `${other}, Scanning Completed`, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, `Entry Started`);
+  })
+
+  // Function to display the stats for 11 August 22
+  elevenAugust22.addEventListener("click", () => {
+    let angouchaPdf = datas["2022"]["angoucha"]["august"]["pdf"][9];
+    let chetanPdf = datas["2022"]["chetan"]["august"]["pdf"][9];
+    let poukinEntry = datas["2022"]["poukin"]["august"]["entry"][9];
+    progress(0, 0, angouchaPdf, 0, other, 0, 0, chetanPdf, 0, `${excel}, ${other}`, 0, 0, 0, 0, other, 0, poukinEntry, 0, 0, em, 0, 0, 0, 0, other);
   })
 }
 
