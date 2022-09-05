@@ -3677,13 +3677,49 @@ Rohel : Other
 =======================================================
 
 # Date : 31/08/22
+Angoucha : Absent
+Chetan : Absent
+Kishan : Absent
+Poukin : Scan - 516
+Rohel : Absent
+
+======================================================= 
+
+# Date : 01/09/22
 Angoucha : Other
 Chetan : Other
 Kishan : Other
-Poukin :Entry - 11, Other
+Poukin : Scan - 254
 Rohel : Other
 
-=======================================================
+======================================================= 
+
+# Date : 02/09/22
+Angoucha : PDF - 56
+Chetan : Other
+Kishan : Entry - 133
+Poukin : Entry - 80
+Rohel : Entry - 53
+
+======================================================= 
+
+# Date : 03/09/22
+Angoucha : PDF - 466
+Chetan : PDF - 290, Other
+Kishan : Entry - 102
+Poukin : Entry - 118
+Rohel : Entry - 85
+
+======================================================= 
+
+# Date : 05/09/22
+Angoucha : PDF - 312
+Chetan : PDF - 604
+Kishan : Entry - 101
+Poukin : Entry - 84
+Rohel : Entry - 50
+
+======================================================= 
 
 
 73 + 87 + 81 + 64 + 58 + 68 + 89 + 103 + 115 + 179 + 85 + 98 + 254 + 138 + 52 + 264 + 198 + 236 

@@ -157,6 +157,14 @@ const twentyTwoAugust22 = document.querySelector("#twentytwo-august-22");
 const twentyThreeAugust22 = document.querySelector("#twentythree-august-22");
 const thirtyOneAugust22 = document.querySelector("#thirtyone-august-22");
 
+// September Dates
+const september22 = document.querySelector("#september-22");
+const september22Content = document.querySelector("#september-22-content");
+const oneSeptember22 = document.querySelector("#one-september-22");
+const twoSeptember22 = document.querySelector("#two-september-22");
+const threeSeptember22 = document.querySelector("#three-september-22");
+const fiveSeptember22 = document.querySelector("#five-september-22");
+
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
 
@@ -284,6 +292,7 @@ const displayProgress = (content) => {
   june22Content.classList.add("hide");
   july22Content.classList.add("hide");
   august22Content.classList.add("hide");
+  september22Content.classList.add("hide");
   dataEntry.classList.remove("hide");
   // Content
   content.classList.remove("hide");
@@ -445,27 +454,49 @@ async function getData() {
   let rohelAug22PdfTotal = total(datas[2022]["rohel"]["august"]["pdf"]);
   let rohelAug22PrintTotal = total(datas[2022]["rohel"]["august"]["print"]);
 
+  // September 22 Total Data
+  let angouchaSep22ScanTotal = total(datas[2022]["angoucha"]["september"]["scan"]);
+  let angouchaSep22EntryTotal = total(datas[2022]["angoucha"]["september"]["entry"]);
+  let angouchaSep22PdfTotal = total(datas[2022]["angoucha"]["september"]["pdf"]);
+  let angouchaSep22PrintTotal = total(datas[2022]["angoucha"]["september"]["print"]);
+  let chetanSep22ScanTotal = total(datas[2022]["chetan"]["september"]["scan"]);
+  let chetanSep22EntryTotal = total(datas[2022]["chetan"]["september"]["entry"]);
+  let chetanSep22PdfTotal = total(datas[2022]["chetan"]["september"]["pdf"]);
+  let chetanSep22PrintTotal = total(datas[2022]["chetan"]["september"]["print"]);
+  let kishanSep22ScanTotal = total(datas[2022]["kishan"]["september"]["scan"]);
+  let kishanSep22EntryTotal = total(datas[2022]["kishan"]["september"]["entry"]);
+  let kishanSep22PdfTotal = total(datas[2022]["kishan"]["september"]["pdf"]);
+  let kishanSep22PrintTotal = total(datas[2022]["kishan"]["september"]["print"]);
+  let poukinSep22ScanTotal = total(datas[2022]["poukin"]["september"]["scan"]);
+  let poukinSep22EntryTotal = total(datas[2022]["poukin"]["september"]["entry"]);
+  let poukinSep22PdfTotal = total(datas[2022]["poukin"]["september"]["pdf"]);
+  let poukinSep22PrintTotal = total(datas[2022]["poukin"]["september"]["print"]);
+  let rohelSep22ScanTotal = total(datas[2022]["rohel"]["september"]["scan"]);
+  let rohelSep22EntryTotal = total(datas[2022]["rohel"]["september"]["entry"]);
+  let rohelSep22PdfTotal = total(datas[2022]["rohel"]["september"]["pdf"]);
+  let rohelSep22PrintTotal = total(datas[2022]["rohel"]["september"]["print"]);
+
   // Total Data
-  let angouchaTotalScan = oldAngouchaScan + angouchaMar22ScanTotal + angouchaApr22ScanTotal + angouchaMay22ScanTotal  + angouchaJun22ScanTotal + angouchaJul22ScanTotal + angouchaAug22ScanTotal;
-  let angouchaTotalEntry = oldAngouchaEntry + angouchaMar22EntryTotal + angouchaApr22EntryTotal + angouchaMay22EntryTotal + angouchaJun22EntryTotal + angouchaJul22EntryTotal + angouchaAug22EntryTotal;
-  let angouchaTotalPdf = angouchaJun22PdfTotal + angouchaJul22PdfTotal + angouchaAug22PdfTotal;
-  let angouchaTotalPrint = angouchaJun22PrintTotal + angouchaJul22PrintTotal + angouchaAug22PrintTotal;
-  let chetanTotalScan = oldChetanScan + chetanMar22ScanTotal + chetanApr22ScanTotal + chetanMay22ScanTotal + chetanJun22ScanTotal + chetanJul22ScanTotal + chetanAug22ScanTotal;
-  let chetanTotalEntry = oldChetanEntry + chetanMar22EntryTotal + chetanApr22EntryTotal + chetanMay22EntryTotal + chetanJun22EntryTotal + chetanJul22EntryTotal + chetanAug22EntryTotal;
-  let chetanTotalPdf = chetanJun22PdfTotal + chetanJul22PdfTotal + chetanAug22PdfTotal;
-  let chetanTotalPrint = chetanJun22PrintTotal + chetanJul22PrintTotal + chetanAug22PrintTotal;
-  let kishanTotalScan = oldKishanScan + kishanMar22ScanTotal + kishanApr22ScanTotal + kishanMay22ScanTotal + kishanJun22ScanTotal + kishanJul22ScanTotal + kishanAug22ScanTotal;
-  let kishanTotalEntry = oldKishanEntry + kishanMar22EntryTotal + kishanApr22EntryTotal + kishanMay22EntryTotal + kishanJun22EntryTotal + kishanJul22EntryTotal + kishanAug22EntryTotal;
-  let kishanTotalPdf = kishanJun22PdfTotal + kishanJul22PdfTotal + kishanAug22PdfTotal;
-  let kishanTotalPrint = kishanJun22PrintTotal + kishanJul22PrintTotal + kishanAug22PrintTotal;
-  let poukinTotalScan = oldPoukinScan + poukinMar22ScanTotal + poukinApr22ScanTotal + poukinMay22ScanTotal + poukinJun22ScanTotal + poukinJul22ScanTotal + poukinAug22ScanTotal;
-  let poukinTotalEntry = oldPoukinEntry + poukinMar22EntryTotal + poukinApr22EntryTotal + poukinMay22EntryTotal + poukinJun22EntryTotal + poukinJul22EntryTotal + poukinAug22EntryTotal;
-  let poukinTotalPdf = poukinJun22PdfTotal + poukinJul22PdfTotal + poukinAug22PdfTotal;
-  let poukinTotalPrint = poukinJun22PrintTotal +  + poukinJul22PrintTotal + poukinAug22PrintTotal;
-  let rohelTotalScan = oldRohelScan + rohelMar22ScanTotal + rohelApr22ScanTotal + rohelMay22ScanTotal + rohelJun22ScanTotal + rohelJul22ScanTotal + rohelAug22ScanTotal;
-  let rohelTotalEntry = oldRohelEntry + rohelMar22EntryTotal + rohelApr22EntryTotal + rohelMay22EntryTotal + rohelJun22EntryTotal + rohelJul22EntryTotal + rohelAug22EntryTotal;
-  let rohelTotalPdf = rohelJun22PdfTotal + rohelJul22PdfTotal + rohelAug22PdfTotal;
-  let rohelTotalPrint = rohelJun22PrintTotal + rohelJul22PrintTotal + rohelAug22PrintTotal;
+  let angouchaTotalScan = oldAngouchaScan + angouchaMar22ScanTotal + angouchaApr22ScanTotal + angouchaMay22ScanTotal  + angouchaJun22ScanTotal + angouchaJul22ScanTotal + angouchaAug22ScanTotal + angouchaSep22ScanTotal;
+  let angouchaTotalEntry = oldAngouchaEntry + angouchaMar22EntryTotal + angouchaApr22EntryTotal + angouchaMay22EntryTotal + angouchaJun22EntryTotal + angouchaJul22EntryTotal + angouchaAug22EntryTotal + angouchaSep22EntryTotal;
+  let angouchaTotalPdf = angouchaJun22PdfTotal + angouchaJul22PdfTotal + angouchaAug22PdfTotal + angouchaSep22PdfTotal;
+  let angouchaTotalPrint = angouchaJun22PrintTotal + angouchaJul22PrintTotal + angouchaAug22PrintTotal + angouchaSep22PrintTotal;
+  let chetanTotalScan = oldChetanScan + chetanMar22ScanTotal + chetanApr22ScanTotal + chetanMay22ScanTotal + chetanJun22ScanTotal + chetanJul22ScanTotal + chetanAug22ScanTotal + chetanSep22ScanTotal;
+  let chetanTotalEntry = oldChetanEntry + chetanMar22EntryTotal + chetanApr22EntryTotal + chetanMay22EntryTotal + chetanJun22EntryTotal + chetanJul22EntryTotal + chetanAug22EntryTotal + chetanSep22EntryTotal;
+  let chetanTotalPdf = chetanJun22PdfTotal + chetanJul22PdfTotal + chetanAug22PdfTotal + chetanSep22PdfTotal;
+  let chetanTotalPrint = chetanJun22PrintTotal + chetanJul22PrintTotal + chetanAug22PrintTotal + chetanSep22PrintTotal;
+  let kishanTotalScan = oldKishanScan + kishanMar22ScanTotal + kishanApr22ScanTotal + kishanMay22ScanTotal + kishanJun22ScanTotal + kishanJul22ScanTotal + kishanAug22ScanTotal + kishanSep22ScanTotal;
+  let kishanTotalEntry = oldKishanEntry + kishanMar22EntryTotal + kishanApr22EntryTotal + kishanMay22EntryTotal + kishanJun22EntryTotal + kishanJul22EntryTotal + kishanAug22EntryTotal + kishanSep22EntryTotal;
+  let kishanTotalPdf = kishanJun22PdfTotal + kishanJul22PdfTotal + kishanAug22PdfTotal + kishanSep22PdfTotal;
+  let kishanTotalPrint = kishanJun22PrintTotal + kishanJul22PrintTotal + kishanAug22PrintTotal + kishanSep22PrintTotal;
+  let poukinTotalScan = oldPoukinScan + poukinMar22ScanTotal + poukinApr22ScanTotal + poukinMay22ScanTotal + poukinJun22ScanTotal + poukinJul22ScanTotal + poukinAug22ScanTotal + poukinSep22ScanTotal;
+  let poukinTotalEntry = oldPoukinEntry + poukinMar22EntryTotal + poukinApr22EntryTotal + poukinMay22EntryTotal + poukinJun22EntryTotal + poukinJul22EntryTotal + poukinAug22EntryTotal + poukinSep22EntryTotal;
+  let poukinTotalPdf = poukinJun22PdfTotal + poukinJul22PdfTotal + poukinAug22PdfTotal + poukinSep22PdfTotal;
+  let poukinTotalPrint = poukinJun22PrintTotal +  + poukinJul22PrintTotal + poukinAug22PrintTotal + poukinSep22PrintTotal;
+  let rohelTotalScan = oldRohelScan + rohelMar22ScanTotal + rohelApr22ScanTotal + rohelMay22ScanTotal + rohelJun22ScanTotal + rohelJul22ScanTotal + rohelAug22ScanTotal + rohelSep22ScanTotal;
+  let rohelTotalEntry = oldRohelEntry + rohelMar22EntryTotal + rohelApr22EntryTotal + rohelMay22EntryTotal + rohelJun22EntryTotal + rohelJul22EntryTotal + rohelAug22EntryTotal + rohelSep22EntryTotal;
+  let rohelTotalPdf = rohelJun22PdfTotal + rohelJul22PdfTotal + rohelAug22PdfTotal + rohelSep22PdfTotal;
+  let rohelTotalPrint = rohelJun22PrintTotal + rohelJul22PrintTotal + rohelAug22PrintTotal + rohelSep22PrintTotal;
   let totalScan = angouchaTotalScan + chetanTotalScan + kishanTotalScan + poukinTotalScan + rohelTotalScan;
   let totalEntry = angouchaTotalEntry + chetanTotalEntry + kishanTotalEntry + poukinTotalEntry + rohelTotalEntry;
   let totalPdf = angouchaTotalPdf + chetanTotalPdf + kishanTotalPdf + poukinTotalPdf + rohelTotalPdf;
@@ -1589,6 +1620,48 @@ async function getData() {
   thirtyOneAugust22.addEventListener("click", () => {
     let poukinScan = datas["2022"]["poukin"]["august"]["scan"][16];
     progress(0, 0, 0, 0, abs, 0, 0, 0, 0, abs, 0, 0, 0, 0, abs, poukinScan, 0, 0, 0, em, 0, 0, 0, 0, abs);
+  })
+
+  // Function to Trigger the Display of September 22 Data Entry Stats
+  september22.addEventListener("click", () => {
+    displayProgress(september22Content);
+    removeActiveData();
+    progress(angouchaSep22ScanTotal, angouchaSep22EntryTotal, angouchaSep22PdfTotal, angouchaSep22PrintTotal, em, chetanSep22ScanTotal, chetanSep22EntryTotal, chetanSep22PdfTotal, chetanSep22PrintTotal, em, kishanSep22ScanTotal, kishanSep22EntryTotal,  kishanSep22PdfTotal, kishanSep22PrintTotal, em, poukinSep22ScanTotal, poukinSep22EntryTotal, poukinSep22PdfTotal, poukinSep22PrintTotal, em, rohelSep22ScanTotal, rohelSep22EntryTotal, rohelSep22PdfTotal, rohelSep22PrintTotal, em);
+  })
+
+  // Function to display the stats for 01 September 22
+  oneSeptember22.addEventListener("click", () => {
+    let poukinScan = datas["2022"]["poukin"]["september"]["scan"][0];
+    progress(0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, 0, 0, 0, other, poukinScan, 0, 0, 0, em, 0, 0, 0, 0, other);
+  })
+
+  // Function to display the stats for 02 September 22
+  twoSeptember22.addEventListener("click", () => {
+    let angouchaPdf = datas["2022"]["angoucha"]["september"]["pdf"][1];
+    let kishanEntry = datas["2022"]["kishan"]["september"]["entry"][1];
+    let poukinEntry = datas["2022"]["poukin"]["september"]["entry"][1];
+    let rohelEntry = datas["2022"]["rohel"]["september"]["entry"][1];
+    progress(0, 0, angouchaPdf, 0, em, 0, 0, 0, 0, other, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
+  })
+
+  // Function to display the stats for 03 September 22
+  threeSeptember22.addEventListener("click", () => {
+    let angouchaPdf = datas["2022"]["angoucha"]["september"]["pdf"][2];
+    let chetanPdf = datas["2022"]["chetan"]["september"]["pdf"][2];
+    let kishanEntry = datas["2022"]["kishan"]["september"]["entry"][2];
+    let poukinEntry = datas["2022"]["poukin"]["september"]["entry"][2];
+    let rohelEntry = datas["2022"]["rohel"]["september"]["entry"][2];
+    progress(0, 0, angouchaPdf, 0, em, 0, 0, chetanPdf, 0, other, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
+  })
+
+  // Function to display the stats for 05 September 22
+  fiveSeptember22.addEventListener("click", () => {
+    let angouchaPdf = datas["2022"]["angoucha"]["september"]["pdf"][3];
+    let chetanPdf = datas["2022"]["chetan"]["september"]["pdf"][3];
+    let kishanEntry = datas["2022"]["kishan"]["september"]["entry"][3];
+    let poukinEntry = datas["2022"]["poukin"]["september"]["entry"][3];
+    let rohelEntry = datas["2022"]["rohel"]["september"]["entry"][3];
+    progress(0, 0, angouchaPdf, 0, em, 0, 0, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 }
 
