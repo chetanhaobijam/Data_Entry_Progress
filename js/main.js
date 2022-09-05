@@ -150,8 +150,15 @@ const nineAugust22 = document.querySelector("#nine-august-22");
 const tenAugust22 = document.querySelector("#ten-august-22");
 const elevenAugust22 = document.querySelector("#eleven-august-22");
 const twelveAugust22 = document.querySelector("#twelve-august-22");
+const sixteenAugust22 = document.querySelector("#sixteen-august-22");
+const seventeenAugust22 = document.querySelector("#seventeen-august-22");
+const eighteenAugust22 = document.querySelector("#eighteen-august-22");
+const twentyTwoAugust22 = document.querySelector("#twentytwo-august-22");
+const twentyThreeAugust22 = document.querySelector("#twentythree-august-22");
+const thirtyOneAugust22 = document.querySelector("#thirtyone-august-22");
 
 const holiday = document.querySelectorAll(".holiday");
+const otherWork = document.querySelectorAll(".other-work");
 
 // Table
 const angouchaPages = document.querySelector("#angoucha-pages");
@@ -1547,6 +1554,42 @@ async function getData() {
     let poukinEntry = datas["2022"]["poukin"]["august"]["entry"][10];
     progress(0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, poukinEntry, 0, 0, em, 0, 0, 0, 0, other);
   })
+
+  // Function to display the stats for 16 August 22
+  sixteenAugust22.addEventListener("click", () => {
+    let poukinEntry = datas["2022"]["poukin"]["august"]["entry"][11];
+    progress(0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, poukinEntry, 0, 0, em, 0, 0, 0, 0, other);
+  })
+
+  // Function to display the stats for 17 August 22
+  seventeenAugust22.addEventListener("click", () => {
+    let poukinEntry = datas["2022"]["poukin"]["august"]["entry"][12];
+    progress(0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, poukinEntry, 0, 0, em, 0, 0, 0, 0, other);
+  })
+
+  // Function to display the stats for 18 August 22
+  eighteenAugust22.addEventListener("click", () => {
+    let poukinEntry = datas["2022"]["poukin"]["august"]["entry"][13];
+    progress(0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, poukinEntry, 0, 0, em, 0, 0, 0, 0, other);
+  })
+
+  // Function to display the stats for 22 August 22
+  twentyTwoAugust22.addEventListener("click", () => {
+    let poukinEntry = datas["2022"]["poukin"]["august"]["entry"][14];
+    progress(0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, poukinEntry, 0, 0, em, 0, 0, 0, 0, other);
+  })
+
+  // Function to display the stats for 23 August 22
+  twentyThreeAugust22.addEventListener("click", () => {
+    let poukinEntry = datas["2022"]["poukin"]["august"]["entry"][15];
+    progress(0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, poukinEntry, 0, 0, em, 0, 0, 0, 0, other);
+  })
+
+  // Function to display the stats for 31 August 22
+  thirtyOneAugust22.addEventListener("click", () => {
+    let poukinScan = datas["2022"]["poukin"]["august"]["scan"][16];
+    progress(0, 0, 0, 0, abs, 0, 0, 0, 0, abs, 0, 0, 0, 0, abs, poukinScan, 0, 0, 0, em, 0, 0, 0, 0, abs);
+  })
 }
 
 
@@ -1606,5 +1649,36 @@ holiday.forEach(date => {
   rohelPdf.innerText = 0;
   rohelPrint.innerText = 0;
   rohelRemarks.innerText = "Office Holiday";
+  })
+})
+
+// Function to display the stats for Holiday Days
+otherWork.forEach(date => {
+  date.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaPdf.innerText = 0;
+  angouchaPrint.innerText = 0;
+  angouchaRemarks.innerText = "Other Work";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 0;
+  chetanPdf.innerText = 0;
+  chetanPrint.innerText = 0;
+  chetanRemarks.innerText = "Other Work";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 0;
+  kishanPdf.innerText = 0;
+  kishanPrint.innerText = 0;
+  kishanRemarks.innerText = "Other Work";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 0;
+  poukinPdf.innerText = 0;
+  poukinPrint.innerText = 0;
+  poukinRemarks.innerText = "Other Work";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 0;
+  rohelPdf.innerText = 0;
+  rohelPrint.innerText = 0;
+  rohelRemarks.innerText = "Other Work";
   })
 })

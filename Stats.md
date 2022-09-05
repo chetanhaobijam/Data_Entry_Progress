@@ -3631,5 +3631,60 @@ Rohel : Other
 
 =======================================================
 
+# Date : 16/08/22
+Angoucha : Other
+Chetan : Other
+Kishan : Other
+Poukin :Entry - 103, Other
+Rohel : Other
+
+=======================================================
+
+# Date : 17/08/22
+Angoucha : Other
+Chetan : Other
+Kishan : Other
+Poukin :Entry - 115, Other
+Rohel : Other
+
+=======================================================
+
+# Date : 18/08/22
+Angoucha : Other
+Chetan : Other
+Kishan : Other
+Poukin :Entry - 8, Other
+Rohel : Other
+
+=======================================================
+
+# Date : 22/08/22
+Angoucha : Other
+Chetan : Other
+Kishan : Other
+Poukin :Entry - 35, Other
+Rohel : Other
+
+=======================================================
+
+# Date : 23/08/22
+Angoucha : Other
+Chetan : Other
+Kishan : Other
+Poukin :Entry - 11, Other
+Rohel : Other
+
+=======================================================
+
+# Date : 31/08/22
+Angoucha : Other
+Chetan : Other
+Kishan : Other
+Poukin :Entry - 11, Other
+Rohel : Other
+
+=======================================================
+
+
 73 + 87 + 81 + 64 + 58 + 68 + 89 + 103 + 115 + 179 + 85 + 98 + 254 + 138 + 52 + 264 + 198 + 236 
 + 436 + 325 + 391 + 184 + 174 + 200 + 527 + 312 + 286 + 332 + 526 + 31 + 118
