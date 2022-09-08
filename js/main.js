@@ -12,6 +12,11 @@ const calendarData = document.querySelectorAll(".calendar-table tbody td");
 const totalGazetteScan = document.querySelector(".total-pages");
 const totalGazetteEntry = document.querySelector(".total-entry");
 
+// Work Progress Coloring Variables
+const bookScan = document.querySelectorAll(".book-scan");
+const bookEntry = document.querySelectorAll(".book-entry");
+const bookPrint = document.querySelectorAll(".book-print");
+
 // Dates
 // March Dates
 const march22 = document.querySelector("#march-22");
@@ -165,6 +170,7 @@ const twoSeptember22 = document.querySelector("#two-september-22");
 const threeSeptember22 = document.querySelector("#three-september-22");
 const fiveSeptember22 = document.querySelector("#five-september-22");
 const sixSeptember22 = document.querySelector("#six-september-22");
+const sevenSeptember22 = document.querySelector("#seven-september-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -1676,36 +1682,19 @@ async function getData() {
     let rohelEntry = datas["2022"]["rohel"]["september"]["entry"][4];
     progress(0, 0, angouchaPdf, 0, em, 0, chetanEntry, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, poukinScan, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
+
+  // Function to display the stats for 07 September 22
+  sevenSeptember22.addEventListener("click", () => {
+    let chetanEntry = datas["2022"]["chetan"]["september"]["entry"][5];
+    let kishanEntry = datas["2022"]["kishan"]["september"]["entry"][5];
+    let poukinEntry = datas["2022"]["poukin"]["september"]["entry"][5];
+    let rohelEntry = datas["2022"]["rohel"]["september"]["entry"][5];
+    progress(0, 0, 0, 0, em, 0, chetanEntry, 0, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
+  })
 }
 
 
 getData();
-
-// Work Progress Section
-const workProgressColoring = () => {
-  const workTd = workProgressContent.querySelectorAll("td");
-  workTd.forEach((td) => {
-    if (td.textContent === "Completed") {
-      td.classList.add("text-success");
-    } else if (td.textContent === "No") {
-      td.classList.add("text-danger");
-    } else if (td.textContent.includes("Ongoing")) {
-      td.classList.add("text-primary");
-    }
-  });
-}
-
-const showWorkProgress = () => {
-  displayProgress(workProgressContent);
-  dataEntry.classList.add("hide");
-  removeActiveData();
-}
-
-workProgress.addEventListener("click", () => {
-  showWorkProgress();
-})
-
-workProgressColoring();
 
 // Function to display the stats for Holiday Days
 holiday.forEach(date => {
@@ -1767,4 +1756,38 @@ otherWork.forEach(date => {
   rohelPrint.innerText = 0;
   rohelRemarks.innerText = "Other Work";
   })
+})
+
+// Work Progress Section
+
+async function workProgressCount() {
+  const dataStream = await fetch("./json/book.json");
+  const datas = await dataStream.json();
+}
+
+workProgressCount();
+
+const workProgressColoring = () => {
+  const workTd = workProgressContent.querySelectorAll("td");
+  workTd.forEach((td) => {
+    if (td.textContent === "Completed") {
+      td.classList.add("text-success");
+    } else if (td.textContent === "No") {
+      td.classList.add("text-danger");
+    } else if (td.textContent.includes("Ongoing")) {
+      td.classList.add("text-primary");
+    }
+  });
+}
+
+workProgressColoring();
+
+const showWorkProgress = () => {
+  displayProgress(workProgressContent);
+  dataEntry.classList.add("hide");
+  removeActiveData();
+}
+
+workProgress.addEventListener("click", () => {
+  showWorkProgress();
 })
