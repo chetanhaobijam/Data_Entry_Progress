@@ -1640,7 +1640,8 @@ async function getData() {
   // Function to display the stats for 01 September 22
   oneSeptember22.addEventListener("click", () => {
     let poukinScan = datas["2022"]["poukin"]["september"]["scan"][0];
-    progress(0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, 0, 0, 0, other, poukinScan, 0, 0, 0, em, 0, 0, 0, 0, other);
+    let poukinEntry = datas["2022"]["poukin"]["september"]["entry"][0];
+    progress(0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, 0, 0, 0, other, poukinScan, poukinEntry, 0, 0, em, 0, 0, 0, 0, other);
   })
 
   // Function to display the stats for 02 September 22

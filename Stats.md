@@ -3689,7 +3689,7 @@ Rohel : Absent
 Angoucha : Other
 Chetan : Other
 Kishan : Other
-Poukin : Scan - 254
+Poukin : Scan - 254, Scan - 25
 Rohel : Other
 
 ======================================================= 
