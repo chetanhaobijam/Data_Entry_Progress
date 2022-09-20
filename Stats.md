@@ -3811,12 +3811,21 @@ Rohel : Scan - 276
 
 =======================================================
 
-# Date : 17/09/22
+# Date : 19/09/22
 Angoucha : PDF - 1052
 Chetan : PDF - 647
 Kishan : Entry - 152
 Poukin : Scan - 632
 Rohel : Entry - 67
+
+=======================================================
+
+# Date : 20/09/22
+Angoucha : Other work
+Chetan : PDF -  640
+Kishan : Entry - 154
+Poukin : Scan - 456
+Rohel : Entry - 12; Other work
 
 =======================================================
 

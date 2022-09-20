@@ -180,6 +180,7 @@ const fifteenSeptember22 = document.querySelector("#fifteen-september-22");
 const sixteenSeptember22 = document.querySelector("#sixteen-september-22");
 const seventeenSeptember22 = document.querySelector("#seventeen-september-22");
 const nineteenSeptember22 = document.querySelector("#nineteen-september-22");
+const twentySeptember22 = document.querySelector("#twenty-september-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -1799,6 +1800,15 @@ async function getData() {
     let poukinScan = datas["2022"]["poukin"]["september"]["scan"][14];
     let rohelEntry = datas["2022"]["rohel"]["september"]["entry"][14];
     progress(0, 0, angouchaPdf, 0, em, 0, 0, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, poukinScan, 0, 0, 0, em, 0, rohelEntry, 0, 0, em);
+  })
+
+  // Function to display the stats for 20 September 22
+  twentySeptember22.addEventListener("click", () => {
+    let chetanPdf = datas["2022"]["chetan"]["september"]["pdf"][15];
+    let kishanEntry = datas["2022"]["kishan"]["september"]["entry"][15];
+    let poukinScan = datas["2022"]["poukin"]["september"]["scan"][15];
+    let rohelEntry = datas["2022"]["rohel"]["september"]["entry"][15];
+    progress(0, 0, 0, 0, other, 0, 0, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, poukinScan, 0, 0, 0, em, 0, rohelEntry, 0, 0, other);
   })
 }
 
