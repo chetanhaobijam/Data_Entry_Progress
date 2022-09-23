@@ -181,6 +181,8 @@ const sixteenSeptember22 = document.querySelector("#sixteen-september-22");
 const seventeenSeptember22 = document.querySelector("#seventeen-september-22");
 const nineteenSeptember22 = document.querySelector("#nineteen-september-22");
 const twentySeptember22 = document.querySelector("#twenty-september-22");
+const twentyOneSeptember22 = document.querySelector("#twenty-one-september-22");
+const twentyTwoSeptember22 = document.querySelector("#twenty-two-september-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -1809,6 +1811,25 @@ async function getData() {
     let poukinScan = datas["2022"]["poukin"]["september"]["scan"][15];
     let rohelEntry = datas["2022"]["rohel"]["september"]["entry"][15];
     progress(0, 0, 0, 0, other, 0, 0, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, poukinScan, 0, 0, 0, em, 0, rohelEntry, 0, 0, other);
+  })
+
+  // Function to display the stats for 21 September 22
+  twentyOneSeptember22.addEventListener("click", () => {
+    let poukinScan = datas["2022"]["poukin"]["september"]["scan"][16];
+    let poukinEntry = datas["2022"]["poukin"]["september"]["entry"][16];
+    progress(0, 0, 0, 0, `Holiday`, 0, 0, 0, 0, `Holiday`, 0, 0, 0, 0, `Holiday`, poukinScan, poukinEntry, 0, 0, em, 0, 0, 0, 0, `Holiday`);
+  })
+
+  // Function to display the stats for 22 September 22
+  twentyTwoSeptember22.addEventListener("click", () => {
+    let angouchaPdf = datas["2022"]["angoucha"]["september"]["pdf"][17];
+    let angouchaPrint = datas["2022"]["angoucha"]["september"]["print"][17];
+    let chetanPdf = datas["2022"]["chetan"]["september"]["pdf"][17];
+    let kishanEntry = datas["2022"]["kishan"]["september"]["entry"][17];
+    let poukinScan = datas["2022"]["poukin"]["september"]["scan"][17];
+    let poukinEntry = datas["2022"]["poukin"]["september"]["entry"][17];
+    let rohelEntry = datas["2022"]["rohel"]["september"]["entry"][17];
+    progress(0, 0, angouchaPdf, angouchaPrint, em, 0, 0, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, poukinScan, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, other);
   })
 }
 
