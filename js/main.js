@@ -184,9 +184,11 @@ const twentySeptember22 = document.querySelector("#twenty-september-22");
 const twentyOneSeptember22 = document.querySelector("#twenty-one-september-22");
 const twentyTwoSeptember22 = document.querySelector("#twenty-two-september-22");
 const twentyThreeSeptember22 = document.querySelector("#twenty-three-september-22");
+const twentyFourSeptember22 = document.querySelector("#twenty-four-september-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
+const elecOutage = document.querySelectorAll(".elec-outage");
 
 // Table
 const angouchaPages = document.querySelector("#angoucha-pages");
@@ -1842,6 +1844,17 @@ async function getData() {
     let rohelEntry = datas["2022"]["rohel"]["september"]["entry"][18];
     progress(0, 0, 0, angouchaPrint, em, 0, 0, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, other);
   })
+
+  // Function to display the stats for 24 September 22
+  twentyFourSeptember22.addEventListener("click", () => {
+    let angouchaPrint = datas["2022"]["angoucha"]["september"]["print"][19];
+    let chetanPdf = datas["2022"]["chetan"]["september"]["pdf"][19];
+    let chetanPrint = datas["2022"]["chetan"]["september"]["print"][19];
+    let kishanEntry = datas["2022"]["kishan"]["september"]["entry"][19];
+    let poukinEntry = datas["2022"]["poukin"]["september"]["entry"][19];
+    let rohelEntry = datas["2022"]["rohel"]["september"]["entry"][19];
+    progress(0, 0, 0, angouchaPrint, em, 0, 0, chetanPdf, chetanPrint, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
+  })
 }
 
 
@@ -1906,6 +1919,37 @@ otherWork.forEach(date => {
   rohelPdf.innerText = 0;
   rohelPrint.innerText = 0;
   rohelRemarks.innerText = "Other Work";
+  })
+})
+
+// Function to display the stats for Days with Electricity Outage
+elecOutage.forEach(date => {
+  date.addEventListener("click", () => {
+  angouchaPages.innerText = 0;
+  angouchaEntry.innerText = 0;
+  angouchaPdf.innerText = 0;
+  angouchaPrint.innerText = 0;
+  angouchaRemarks.innerText = "Electricity Outage";
+  chetanPages.innerText = 0;
+  chetanEntry.innerText = 0;
+  chetanPdf.innerText = 0;
+  chetanPrint.innerText = 0;
+  chetanRemarks.innerText = "Electricity Outage";
+  kishanPages.innerText = 0;
+  kishanEntry.innerText = 0;
+  kishanPdf.innerText = 0;
+  kishanPrint.innerText = 0;
+  kishanRemarks.innerText = "Electricity Outage";
+  poukinPages.innerText = 0;
+  poukinEntry.innerText = 0;
+  poukinPdf.innerText = 0;
+  poukinPrint.innerText = 0;
+  poukinRemarks.innerText = "Electricity Outage";
+  rohelPages.innerText = 0;
+  rohelEntry.innerText = 0;
+  rohelPdf.innerText = 0;
+  rohelPrint.innerText = 0;
+  rohelRemarks.innerText = "Electricity Outage";
   })
 })
 
