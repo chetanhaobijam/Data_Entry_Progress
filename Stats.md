@@ -3883,6 +3883,24 @@ Rohel : Holiday
 
 =======================================================
 
+# Date : 01/10/22
+Angoucha : Print - 317
+Chetan : Print - 516
+Kishan : Entry - 149 (Completed)
+Poukin : Entry - 82 (Completed)
+Rohel : Entry - 73 (Completed)
+
+=======================================================
+
+# Date : 04/10/22
+Angoucha : Absent
+Chetan : Absent
+Kishan : Absent
+Poukin : Absent
+Rohel : Absent
+
+=======================================================
+
 
 73 + 87 + 81 + 64 + 58 + 68 + 89 + 103 + 115 + 179 + 85 + 98 + 254 + 138 + 52 + 264 + 198 + 236 
 + 436 + 325 + 391 + 184 + 174 + 200 + 527 + 312 + 286 + 332 + 526 + 31 + 118
