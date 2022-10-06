@@ -3896,8 +3896,17 @@ Rohel : Entry - 73 (Completed)
 Angoucha : Absent
 Chetan : Absent
 Kishan : Absent
-Poukin : Absent
+Poukin : Leave
 Rohel : Absent
+
+=======================================================
+
+# Date : 05/10/22
+Angoucha : Print - 66
+Chetan : Print - 222
+Kishan : Scan - 400
+Poukin : Leave
+Rohel : Scan - 395
 
 =======================================================
 

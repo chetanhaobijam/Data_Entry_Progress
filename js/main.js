@@ -193,6 +193,7 @@ const october22 = document.querySelector("#october-22");
 const october22Content = document.querySelector("#october-22-content");
 const oneOctober22 = document.querySelector("#one-october-22");
 const fourOctober22 = document.querySelector("#four-october-22");
+const fiveOctober22 = document.querySelector("#five-october-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -1923,6 +1924,14 @@ async function getData() {
   // Function to display the stats for 04 October 22
   fourOctober22.addEventListener("click", () => {
     progress(0, 0, 0, 0, abs, 0, 0, 0, 0, abs, 0, 0, 0, 0, abs, 0, 0, 0, 0, `Leave`, 0, 0, 0, 0, abs);
+  })
+
+  fiveOctober22.addEventListener("click", () => {
+    let angouchaPrint = datas["2022"]["angoucha"]["october"]["print"][1];
+    let chetanPrint = datas["2022"]["chetan"]["october"]["print"][1];
+    let kishanScan = datas["2022"]["kishan"]["october"]["scan"][1];
+    let rohelScan = datas["2022"]["rohel"]["october"]["scan"][1];
+    progress(0, 0, 0, angouchaPrint, `Print completed for Book 1995-96`, 0, 0, 0, chetanPrint, `Print Completed for Book 1994-95`, kishanScan, 0, 0, 0, `Scanning Started for Book 1997-98`, 0, 0, 0, 0, `Leave`, rohelScan, 0, 0, 0, `Scanning Started for Book 1998-99`);
   })
 }
 
