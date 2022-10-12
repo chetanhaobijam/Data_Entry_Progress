@@ -197,6 +197,7 @@ const fiveOctober22 = document.querySelector("#five-october-22");
 const sixOctober22 = document.querySelector("#six-october-22");
 const sevenOctober22 = document.querySelector("#seven-october-22");
 const tenOctober22 = document.querySelector("#ten-october-22");
+const elevenOctober22 = document.querySelector("#eleven-october-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -1958,6 +1959,13 @@ async function getData() {
   // Function to display the stats for 10 October 22
   tenOctober22.addEventListener("click", () => {
     progress(0, 0, 0, 0, `Office Foundation Day`, 0, 0, 0, 0, abs, 0, 0, 0, 0, `Office Foundation Day`, 0, 0, 0, 0, `Leave`, 0, 0, 0, 0, `Office Foundation Day`);
+  })
+
+  // Function to display the stats for 11 October 22
+  elevenOctober22.addEventListener("click", () => {
+    let chetanPdf = datas["2022"]["chetan"]["october"]["pdf"][4];
+    let rohelScan = datas["2022"]["rohel"]["october"]["scan"][4];
+    progress(0, 0, 0, 0, other, 0, 0, chetanPdf, 0, em, 0, 0, 0, 0, abs, 0, 0, 0, 0, `Leave`, rohelScan, 0, 0, 0, `Scanning Completed for Book 1998-99`);
   })
 }
 
