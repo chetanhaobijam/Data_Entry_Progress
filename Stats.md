@@ -3959,7 +3959,7 @@ Rohel : Entry - 42
 Angoucha : Other
 Chetan : Print - 379, Other Gazette Work
 Kishan : Entry - 70, Other Gazette Work
-Poukin : Scan - 476
+Poukin : Scan - 472
 Rohel : Entry - 7, Other
 
 =======================================================
