@@ -203,6 +203,8 @@ const thirteenOctober22 = document.querySelector("#thirteen-october-22");
 const fourteenOctober22 = document.querySelector("#fourteen-october-22");
 const seventeenOctober22 = document.querySelector("#seventeen-october-22");
 const eighteenOctober22 = document.querySelector("#eighteen-october-22");
+const nineteenOctober22 = document.querySelector("#nineteen-october-22");
+const twentyOctober22 = document.querySelector("#twenty-october-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2016,6 +2018,17 @@ async function getData() {
     let poukinScan = datas["2022"]["poukin"]["october"]["scan"][9];
     let rohelEntry = datas["2022"]["rohel"]["october"]["entry"][9];
     progress(0, 0, 0, 0, other, 0, chetanEntry, 0, 0, `Training`, 0, 0, 0, 0, abs, poukinScan, 0, 0, 0, em, 0, rohelEntry, 0, 0, other);
+  })
+
+  // Function to display the stats for 19 October 22
+  nineteenOctober22.addEventListener("click", () => {
+    let poukinScan = datas["2022"]["poukin"]["october"]["scan"][10];
+    progress(0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, 0, 0, 0, other, poukinScan, 0, 0, 0, `Scan Completed for Book 1999-2000`, 0, 0, 0, 0, other);
+  })
+
+  // Function to display the stats for 20 October 22
+  twentyOctober22.addEventListener("click", () => {
+    progress(0, 0, 0, 0, `Office Function`, 0, 0, 0, 0, `Office Function`, 0, 0, 0, 0, `Office Function`, 0, 0, 0, 0, `Office Function`, 0, 0, 0, 0, `Office Function`);
   })
 }
 
