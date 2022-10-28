@@ -121,7 +121,7 @@ main aside .accordion-body .list-group-item:hover {
   border-color: #fff;
 }
 main .main-content {
-  margin-left: 20rem;
+  margin-left: 25rem;
   min-height: 100vh;
   padding-top: 5rem;
   transition: all ease 1s;
@@ -218,6 +218,11 @@ footer {
   font-size: 0.9rem;
 }
 
+@media screen and (max-width: 1400px) {
+  main .main-content {
+    margin-left: 20rem;
+  }
+}
 @media screen and (max-width: 992px) {
   main aside {
     transform: translate(-400px);

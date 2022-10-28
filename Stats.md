@@ -4023,12 +4023,21 @@ Rohel : Entry - 50
 
 =======================================================
 
-# Date : 25/10/22
+# Date : 26/10/22
 Angoucha : Other
 Chetan : Entry - 27, PDF - 236, Print - 221
 Kishan : Absent
 Poukin : Entry - 95
 Rohel : Absent
+
+=======================================================
+
+# Date : 28/10/22
+Angoucha : Absent
+Chetan : Entry - 15, Print - 284
+Kishan : Entry - 240
+Poukin : Entry - 129
+Rohel : Entry - 96
 
 =======================================================
 
