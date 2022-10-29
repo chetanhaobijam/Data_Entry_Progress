@@ -210,6 +210,7 @@ const twentyTwoOctober22 = document.querySelector("#twenty-two-october-22");
 const twentyFourOctober22 = document.querySelector("#twenty-four-october-22");
 const twentySixOctober22 = document.querySelector("#twenty-six-october-22");
 const twentyEightOctober22 = document.querySelector("#twenty-eight-october-22");
+const twentyNineOctober22 = document.querySelector("#twenty-nine-october-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2081,6 +2082,12 @@ async function getData() {
     let poukinEntry = datas["2022"]["poukin"]["october"]["entry"][15];
     let rohelEntry = datas["2022"]["rohel"]["october"]["entry"][15];
     progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, chetanPrint, em, 0, kishanEntry, 0, 0, `Entry Completed`, 0, poukinEntry, 0, 0, `Entry Completed`, 0, rohelEntry, 0, 0, `Entry Completed`);
+  })
+
+  // Function to display the stats for 29 October 22
+  twentyNineOctober22.addEventListener("click", () => {
+    let chetanPrint = datas["2022"]["chetan"]["october"]["print"][16];
+    progress(0, 0, 0, 0, abs, 0, 0, 0, chetanPrint, `Printing Completed for Book 1998-99`, 0, 0, 0, 0, other, 0, 0, 0, 0, `Downloaded 2012 Gazettes`, 0, 0, 0, 0, abs);
   })
 }
 
