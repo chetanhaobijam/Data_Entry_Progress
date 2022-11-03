@@ -4059,5 +4059,21 @@ Rohel : Print - 140
 
 =======================================================
 
-73 + 87 + 81 + 64 + 58 + 68 + 89 + 103 + 115 + 179 + 85 + 98 + 254 + 138 + 52 + 264 + 198 + 236 
-+ 436 + 325 + 391 + 184 + 174 + 200 + 527 + 312 + 286 + 332 + 526 + 31 + 118
+# Date : 02/11/22
+Angoucha : Absent
+Chetan : Office Meeting
+Kishan : Office Meeting
+Poukin : Office Meeting
+Rohel : Office Meeting
+
+=======================================================
+
+# Date : 03/11/22
+Angoucha : Absent
+Chetan : Entry - 105
+Kishan : Scan - 278
+Poukin : Scan - 422
+Rohel : Other Work
+
+=======================================================
+
