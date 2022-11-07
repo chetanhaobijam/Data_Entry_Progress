@@ -4094,3 +4094,12 @@ Poukin : Scan - 446
 Rohel : Scan - 418
 
 =======================================================
+
+# Date : 07/11/22
+Angoucha : Absent
+Chetan : PDF - 666
+Kishan : Scan - 452
+Poukin : Scan - 446
+Rohel : Absent
+
+=======================================================
