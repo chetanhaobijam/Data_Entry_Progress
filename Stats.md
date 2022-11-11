@@ -4130,3 +4130,12 @@ Poukin : Entry - 70
 Rohel : Entry - 51
 
 =======================================================
+
+# Date : 11/11/22
+Angoucha : Absent
+Chetan : Entry - 92
+Kishan : Entry - 3
+Poukin : Entry - 63
+Rohel : Entry - 3
+
+=======================================================
