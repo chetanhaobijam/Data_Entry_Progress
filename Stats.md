@@ -4121,3 +4121,12 @@ Poukin : Entry - 83
 Rohel : Scan - 342
 
 =======================================================
+
+# Date : 10/11/22
+Angoucha : Absent
+Chetan : PDF - 496
+Kishan : Entry - 60
+Poukin : Entry - 70
+Rohel : Entry - 51
+
+=======================================================
