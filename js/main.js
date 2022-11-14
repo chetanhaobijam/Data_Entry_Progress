@@ -226,6 +226,7 @@ const nineNovember22 = document.querySelector("#nine-november-22");
 const tenNovember22 = document.querySelector("#ten-november-22");
 const elevenNovember22 = document.querySelector("#eleven-november-22");
 const twelveNovember22 = document.querySelector("#twelve-november-22");
+const fourteenNovember22 = document.querySelector("#fourteen-november-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2226,6 +2227,15 @@ async function getData() {
     let kishanEntry = datas["2022"]["kishan"]["november"]["entry"][8];
     let poukinEntry = datas["2022"]["poukin"]["november"]["entry"][8];
     let rohelEntry = datas["2022"]["rohel"]["november"]["entry"][8];
+    progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, 0, `Network problem`, 0, kishanEntry, 0, 0, `Network problem`, 0, poukinEntry, 0, 0, `Network problem`, 0, rohelEntry, 0, 0, `Network problem`);
+  })
+
+  // Function to display the stats for 14 November 22
+  fourteenNovember22.addEventListener("click", () => {
+    let chetanEntry = datas["2022"]["chetan"]["november"]["entry"][9];
+    let kishanEntry = datas["2022"]["kishan"]["november"]["entry"][9];
+    let poukinEntry = datas["2022"]["poukin"]["november"]["entry"][9];
+    let rohelEntry = datas["2022"]["rohel"]["november"]["entry"][9];
     progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 }
