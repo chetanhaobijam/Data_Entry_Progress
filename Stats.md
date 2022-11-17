@@ -4157,3 +4157,21 @@ Poukin : Entry - 60
 Rohel : Entry - 31
 
 =======================================================
+
+# Date : 15/11/22
+Angoucha : Absent
+Chetan : Office Picnic
+Kishan : Office Picnic
+Poukin : Office Picnic
+Rohel : Office Picnic
+
+=======================================================
+
+# Date : 16/11/22
+Angoucha : Absent
+Chetan : Absent
+Kishan : Entry - 104
+Poukin : Entry - 61
+Rohel : Entry - 23
+
+=======================================================

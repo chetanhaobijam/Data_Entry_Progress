@@ -227,6 +227,8 @@ const tenNovember22 = document.querySelector("#ten-november-22");
 const elevenNovember22 = document.querySelector("#eleven-november-22");
 const twelveNovember22 = document.querySelector("#twelve-november-22");
 const fourteenNovember22 = document.querySelector("#fourteen-november-22");
+const fifteenNovember22 = document.querySelector("#fifteen-november-22");
+const sixteenNovember22 = document.querySelector("#sixteen-november-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2237,6 +2239,19 @@ async function getData() {
     let poukinEntry = datas["2022"]["poukin"]["november"]["entry"][9];
     let rohelEntry = datas["2022"]["rohel"]["november"]["entry"][9];
     progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
+  })
+
+  // Function to display the stats for 15 November 22
+  fifteenNovember22.addEventListener("click", () => {
+    progress(0, 0, 0, 0, abs, 0, 0, 0, 0, `Office Picnic`, 0, 0, 0, 0, `Office Picnic`, 0, 0, 0, 0, `Office Picnic`, 0, 0, 0, 0, `Office Picnic`);
+  })
+
+  // Function to display the stats for 16 November 22
+  sixteenNovember22.addEventListener("click", () => {
+    let kishanEntry = datas["2022"]["kishan"]["november"]["entry"][10];
+    let poukinEntry = datas["2022"]["poukin"]["november"]["entry"][10];
+    let rohelEntry = datas["2022"]["rohel"]["november"]["entry"][10];
+    progress(0, 0, 0, 0, abs, 0, 0, 0, 0, abs, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 }
 
