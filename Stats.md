@@ -4220,3 +4220,12 @@ Poukin : Sangai Festival Work; Entry - 11
 Rohel : Sangai Festival Work
 
 =======================================================
+
+# Date : 23/11/22
+Angoucha : Absent
+Chetan : Print - 241
+Kishan : Sangai Festival Work
+Poukin : Sangai Festival Work; Entry - 13
+Rohel : Sangai Festival Work
+
+=======================================================
