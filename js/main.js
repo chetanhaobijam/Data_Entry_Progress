@@ -230,6 +230,10 @@ const fourteenNovember22 = document.querySelector("#fourteen-november-22");
 const fifteenNovember22 = document.querySelector("#fifteen-november-22");
 const sixteenNovember22 = document.querySelector("#sixteen-november-22");
 const seventeenNovember22 = document.querySelector("#seventeen-november-22");
+const eighteenNovember22 = document.querySelector("#eighteen-november-22");
+const nineteenNovember22 = document.querySelector("#nineteen-november-22");
+const twentyOneNovember22 = document.querySelector("#twenty-one-november-22");
+const twentyTwoNovember22 = document.querySelector("#twenty-two-november-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2262,6 +2266,29 @@ async function getData() {
     let poukinEntry = datas["2022"]["poukin"]["november"]["entry"][11];
     let rohelEntry = datas["2022"]["rohel"]["november"]["entry"][11];
     progress(0, 0, 0, 0, abs, 0, 0, 0, chetanPrint, `Sangai Festival Work`, 0, kishanEntry, 0, 0, `Sangai Festival Work`, 0, poukinEntry, 0, 0, `Sangai Festival Work`, 0, rohelEntry, 0, 0, `Sangai Festival Work`);
+  })
+
+  // Function to display the stats for 18 November 22
+  eighteenNovember22.addEventListener("click", () => {
+    let poukinEntry = datas["2022"]["poukin"]["november"]["entry"][12];
+    progress(0, 0, 0, 0, abs, 0, 0, 0, 0, `Sangai Festival Work`, 0, 0, 0, 0, `Sangai Festival Work`, 0, poukinEntry, 0, 0, `Sangai Festival Work`, 0, 0, 0, 0, `Sangai Festival Work`);
+  })
+
+  // Function to display the stats for 19 November 22
+  nineteenNovember22.addEventListener("click", () => {
+    progress(0, 0, 0, 0, abs, 0, 0, 0, 0, `Sangai Festival Work`, 0, 0, 0, 0, `Sangai Festival Work`, 0, 0, 0, 0, `Sangai Festival Work`, 0, 0, 0, 0, `Sangai Festival Work`);
+  })
+
+  // Function to display the stats for 21 November 22
+  twentyOneNovember22.addEventListener("click", () => {
+    let poukinEntry = datas["2022"]["poukin"]["november"]["entry"][14];
+    progress(0, 0, 0, 0, abs, 0, 0, 0, 0, `Sangai Festival Work`, 0, 0, 0, 0, `Sangai Festival Work`, 0, poukinEntry, 0, 0, `Sangai Festival Work`, 0, 0, 0, 0, `Sangai Festival Work`);
+  })
+
+  // Function to display the stats for 22 November 22
+  twentyTwoNovember22.addEventListener("click", () => {
+    let poukinEntry = datas["2022"]["poukin"]["november"]["entry"][15];
+    progress(0, 0, 0, 0, abs, 0, 0, 0, 0, `Sangai Festival Work`, 0, 0, 0, 0, `Sangai Festival Work`, 0, poukinEntry, 0, 0, `Sangai Festival Work`, 0, 0, 0, 0, `Sangai Festival Work`);
   })
 }
 

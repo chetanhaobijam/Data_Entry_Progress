@@ -4184,3 +4184,39 @@ Poukin : Entry - 98
 Rohel : Entry - 51
 
 =======================================================
+
+# Date : 18/11/22
+Angoucha : Absent
+Chetan : Sangai Festival Work
+Kishan : Sangai Festival Work
+Poukin : Sangai Festival Work; Entry - 30
+Rohel : Sangai Festival Work
+
+=======================================================
+
+# Date : 19/11/22
+Angoucha : Absent
+Chetan : Sangai Festival Work
+Kishan : Sangai Festival Work
+Poukin : Sangai Festival Work
+Rohel : Sangai Festival Work
+
+=======================================================
+
+# Date : 21/11/22
+Angoucha : Absent
+Chetan : Sangai Festival Work
+Kishan : Sangai Festival Work
+Poukin : Sangai Festival Work; Entry - 10
+Rohel : Sangai Festival Work
+
+=======================================================
+
+# Date : 22/11/22
+Angoucha : Absent
+Chetan : Sangai Festival Work
+Kishan : Sangai Festival Work
+Poukin : Sangai Festival Work; Entry - 11
+Rohel : Sangai Festival Work
+
+=======================================================
