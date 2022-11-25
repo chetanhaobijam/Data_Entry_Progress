@@ -4225,7 +4225,16 @@ Rohel : Sangai Festival Work
 Angoucha : Absent
 Chetan : Print - 241
 Kishan : Sangai Festival Work
-Poukin : Sangai Festival Work; Entry - 13
+Poukin : Sangai Festival Work; Entry - 15
 Rohel : Sangai Festival Work
+
+=======================================================
+
+# Date : 24/11/22
+Angoucha : Absent
+Chetan : Print - 569
+Kishan : Absent
+Poukin : Entry - 25
+Rohel : Entry - 15
 
 =======================================================
