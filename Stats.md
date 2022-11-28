@@ -4238,3 +4238,21 @@ Poukin : Entry - 25
 Rohel : Entry - 15
 
 =======================================================
+
+# Date : 25/11/22
+Angoucha : Absent
+Chetan : Print - 189
+Kishan : Absent
+Poukin : Entry - 40
+Rohel : Absent
+
+=======================================================
+
+# Date : 26/11/22
+Angoucha : Absent
+Chetan : Absent
+Kishan : Network Problem
+Poukin : Network Problem
+Rohel : Network Problem
+
+=======================================================
