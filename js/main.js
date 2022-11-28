@@ -238,6 +238,7 @@ const twentyThreeNovember22 = document.querySelector("#twenty-three-november-22"
 const twentyFourNovember22 = document.querySelector("#twenty-four-november-22");
 const twentyFiveNovember22 = document.querySelector("#twenty-five-november-22");
 const twentySixNovember22 = document.querySelector("#twenty-six-november-22");
+const twentyEightNovember22 = document.querySelector("#twenty-eight-november-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2320,6 +2321,16 @@ async function getData() {
   // Function to display the stats for 26 November 22
   twentySixNovember22.addEventListener("click", () => {
     progress(0, 0, 0, 0, abs, 0, 0, 0, 0, abs, 0, 0, 0, 0, `Network Problem`, 0, 0, 0, 0, `Network Problem`, 0, 0, 0, 0, `Network Problem`);
+  })
+
+  // Function to display the stats for 28 November 22
+  twentyEightNovember22.addEventListener("click", () => {
+    let chetanEntry = datas["2022"]["chetan"]["november"]["entry"][20];
+    let chetanPrint = datas["2022"]["chetan"]["november"]["print"][20];
+    let kishanEntry = datas["2022"]["kishan"]["november"]["entry"][20];
+    let poukinScan = datas["2022"]["poukin"]["november"]["scan"][20];
+    let poukinEntry = datas["2022"]["poukin"]["november"]["entry"][20];
+    progress(0, 0, 0, 0, other, 0, chetanEntry, 0, chetanPrint, `Printing completed for Book 2000-01`, 0, kishanEntry, 0, 0, `Entry completed for Book 2000-01`, poukinScan, poukinEntry, 0, 0, `Scanning started for Book 2003-04`, 0, 0, 0, 0, abs);
   })
 }
 

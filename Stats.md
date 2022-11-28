@@ -4256,3 +4256,12 @@ Poukin : Network Problem
 Rohel : Network Problem
 
 =======================================================
+
+# Date : 26/11/22
+Angoucha : Other work
+Chetan : 16 + 112 = 128
+Kishan : Entry - 12
+Poukin : Scan - 310, Entry - 13
+Rohel : Absent
+
+=======================================================
