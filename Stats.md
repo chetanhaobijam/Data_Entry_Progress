@@ -4257,11 +4257,29 @@ Rohel : Network Problem
 
 =======================================================
 
-# Date : 26/11/22
+# Date : 28/11/22
 Angoucha : Other work
-Chetan : 16 + 112 = 128
+Chetan : Print - 16 + 112 = 128
 Kishan : Entry - 12
 Poukin : Scan - 310, Entry - 13
+Rohel : Absent
+
+=======================================================
+
+# Date : 29/11/22
+Angoucha : Other work
+Chetan : PDF - 310
+Kishan : Scan - 420
+Poukin : Scan - 210
+Rohel : Scan - 172
+
+=======================================================
+
+# Date : 30/11/22
+Angoucha : Absent
+Chetan : Absent
+Kishan : Absent
+Poukin : Scan - 150, Entry - 26
 Rohel : Absent
 
 =======================================================

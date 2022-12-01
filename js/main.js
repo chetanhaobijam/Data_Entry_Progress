@@ -239,6 +239,8 @@ const twentyFourNovember22 = document.querySelector("#twenty-four-november-22");
 const twentyFiveNovember22 = document.querySelector("#twenty-five-november-22");
 const twentySixNovember22 = document.querySelector("#twenty-six-november-22");
 const twentyEightNovember22 = document.querySelector("#twenty-eight-november-22");
+const twentyNineNovember22 = document.querySelector("#twenty-nine-november-22");
+const thirtyNovember22 = document.querySelector("#thirty-november-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2331,6 +2333,22 @@ async function getData() {
     let poukinScan = datas["2022"]["poukin"]["november"]["scan"][20];
     let poukinEntry = datas["2022"]["poukin"]["november"]["entry"][20];
     progress(0, 0, 0, 0, other, 0, chetanEntry, 0, chetanPrint, `Printing completed for Book 2000-01`, 0, kishanEntry, 0, 0, `Entry completed for Book 2000-01`, poukinScan, poukinEntry, 0, 0, `Scanning started for Book 2003-04`, 0, 0, 0, 0, abs);
+  })
+
+  // Function to display the stats for 29 November 22
+  twentyNineNovember22.addEventListener("click", () => {
+    let chetanPdf = datas["2022"]["chetan"]["november"]["pdf"][21];
+    let kishanScan = datas["2022"]["kishan"]["november"]["scan"][21];
+    let poukinScan = datas["2022"]["poukin"]["november"]["scan"][21];
+    let rohelScan = datas["2022"]["rohel"]["november"]["scan"][21];
+    progress(0, 0, 0, 0, other, 0, 0, chetanPdf, 0, em, kishanScan, 0, 0, 0, `Scanning started for Book 2004-05`, poukinScan, 0, 0, 0, em, rohelScan, 0, 0, 0, `Scanning started for Book 2005-06`);
+  })
+
+  // Function to display the stats for 30 November 22
+  thirtyNovember22.addEventListener("click", () => {
+    let poukinScan = datas["2022"]["poukin"]["november"]["scan"][22];
+    let poukinEntry = datas["2022"]["poukin"]["november"]["entry"][22];
+    progress(0, 0, 0, 0, abs, 0, 0, 0, 0, abs, 0, 0, 0, 0, abs, poukinScan, poukinEntry, 0, 0, `Entry started for Book 2003-04`, 0, 0, 0, 0, abs);
   })
 }
 
