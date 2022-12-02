@@ -4283,3 +4283,12 @@ Poukin : Scan - 150, Entry - 26
 Rohel : Absent
 
 =======================================================
+
+# Date : 01/12/22
+Angoucha : PDF - 210
+Chetan : PDF - 376; Print - 206
+Kishan : Scan - 648
+Poukin : Scan - 426
+Rohel : Scan - 224
+
+=======================================================
