@@ -4319,3 +4319,12 @@ Poukin : Entry - 85
 Rohel : Scan - 226
 
 =======================================================
+
+# Date : 06/12/22
+Angoucha : PDF - 480
+Chetan : PDF - 504
+Kishan : Scan - 456 `Completed`
+Poukin : Entry - 87
+Rohel : Scan - 324
+
+=======================================================
