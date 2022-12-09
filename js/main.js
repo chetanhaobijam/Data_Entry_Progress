@@ -250,6 +250,8 @@ const twoDecember22 = document.querySelector("#two-december-22");
 const threeDecember22 = document.querySelector("#three-december-22");
 const fiveDecember22 = document.querySelector("#five-december-22");
 const sixDecember22 = document.querySelector("#six-december-22");
+const sevenDecember22 = document.querySelector("#seven-december-22");
+const eightDecember22 = document.querySelector("#eight-december-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2439,6 +2441,25 @@ async function getData() {
     let poukinEntry = datas["2022"]["poukin"]["december"]["entry"][4];
     let rohelScan = datas["2022"]["rohel"]["december"]["scan"][4];
     progress(0, 0, angouchaPdf, 0, em, 0, 0, chetanPdf, 0, em, kishanScan, 0, 0, 0, `Scan completed for Book 2006-07`, 0, poukinEntry, 0, 0, em, rohelScan, 0, 0, 0, em);
+  })
+
+  // Function to display the stats for 07 December 22
+  sevenDecember22.addEventListener("click", () => {
+    let angouchaPdf = datas["2022"]["angoucha"]["december"]["pdf"][5];
+    let chetanPdf = datas["2022"]["chetan"]["december"]["pdf"][5];
+    let poukinEntry = datas["2022"]["poukin"]["december"]["entry"][5];
+    let rohelScan = datas["2022"]["rohel"]["december"]["scan"][5];
+    progress(0, 0, angouchaPdf, 0, em, 0, 0, chetanPdf, 0, em, 0, 0, 0, 0, abs, 0, poukinEntry, 0, 0, em, rohelScan, 0, 0, 0, em);
+  })
+
+  // Function to display the stats for 08 December 22
+  eightDecember22.addEventListener("click", () => {
+    let angouchaPdf = datas["2022"]["angoucha"]["december"]["pdf"][6];
+    let kishanEntry = datas["2022"]["kishan"]["december"]["entry"][6];
+    let poukinScan = datas["2022"]["poukin"]["december"]["scan"][6];
+    let poukinEntry = datas["2022"]["poukin"]["december"]["entry"][6];
+    let rohelScan = datas["2022"]["rohel"]["december"]["scan"][6];
+    progress(0, 0, angouchaPdf, 0, em, 0, 0, 0, 0, abs, 0, kishanEntry, 0, 0, `Entry started for Book 2004-05`, poukinScan, poukinEntry, 0, 0, em, rohelScan, 0, 0, 0, `Scan completed for Book 2005-06`);
   })
 }
 
