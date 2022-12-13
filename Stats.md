@@ -4338,11 +4338,20 @@ Rohel : Scan - 410
 
 =======================================================
 
-# Date : 09/12/22
+# Date : 08/12/22
 Angoucha : PDF - 318
 Chetan : Absent
 Kishan : Entry - 114
 Poukin : Scan - 266; Entry - 53
 Rohel : Scan - 166
+
+=======================================================
+
+# Date : 09/12/22
+Angoucha : PDF - 6
+Chetan : PDF - 566
+Kishan : Entry - 105
+Poukin : Entry - 95
+Rohel : Scan - 390
 
 =======================================================
