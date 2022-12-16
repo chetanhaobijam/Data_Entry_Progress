@@ -4373,3 +4373,12 @@ Poukin : Scan - 470
 Rohel : Scan - 478
 
 =======================================================
+
+# Date : 15/12/22
+Angoucha : PDF - 350
+Chetan : PDF - 316; Print - 216
+Kishan : Scan - 588
+Poukin : Scan - 306 (Completed)
+Rohel : Scan - 512
+
+=======================================================
