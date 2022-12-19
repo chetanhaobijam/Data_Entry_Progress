@@ -257,6 +257,8 @@ const thirteenDecember22 = document.querySelector("#thirteen-december-22");
 const fourteenDecember22 = document.querySelector("#fourteen-december-22");
 const fifteenDecember22 = document.querySelector("#fifteen-december-22");
 const sixteenDecember22 = document.querySelector("#sixteen-december-22");
+const seventeenDecember22 = document.querySelector("#seventeen-december-22");
+const nineteenDecember22 = document.querySelector("#nineteen-december-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2519,6 +2521,24 @@ async function getData() {
     let poukinEntry = datas["2022"]["poukin"]["december"]["entry"][11];
     let rohelScan = datas["2022"]["rohel"]["december"]["scan"][11];
     progress(0, 0, angouchaPdf, 0, em, 0, chetanEntry, 0, chetanPrint, `Print completed for Book 2003-04; Print started for Book 2004-05`, kishanScan, 0, 0, 0, em, 0, poukinEntry, 0, 0, em, rohelScan, 0, 0, 0, em);
+  })
+
+  // Function to display the stats for 17 December 22
+  seventeenDecember22.addEventListener("click", () => {
+    let chetanPrint = datas["2022"]["chetan"]["december"]["print"][12];
+    let kishanScan = datas["2022"]["kishan"]["december"]["scan"][12];
+    let poukinEntry = datas["2022"]["poukin"]["december"]["entry"][12];
+    progress(0, 0, 0, 0, elec, 0, 0, 0, chetanPrint, elec, kishanScan, 0, 0, 0, elec, 0, poukinEntry, 0, 0, elec, 0, 0, 0, 0, elec);
+  })
+
+  // Function to display the stats for 19 December 22
+  nineteenDecember22.addEventListener("click", () => {
+    let angouchaPdf = datas["2022"]["angoucha"]["december"]["pdf"][13];
+    let chetanEntry = datas["2022"]["chetan"]["december"]["entry"][13];
+    let chetanPrint = datas["2022"]["chetan"]["december"]["print"][13];
+    let poukinEntry = datas["2022"]["poukin"]["december"]["entry"][13];
+    let rohelScan = datas["2022"]["rohel"]["december"]["scan"][13];
+    progress(0, 0, angouchaPdf, 0, em, 0, chetanEntry, 0, chetanPrint, `Print completed for Book 2004-05; Entry started for Book 2006-07`, 0, 0, 0, 0, abs, 0, poukinEntry, 0, 0, em, rohelScan, 0, 0, 0, `Scan completed for Book 2008-09`);
   })
 }
 
