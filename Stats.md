@@ -4408,3 +4408,11 @@ Kishan : Absent
 Poukin : Entry - 75
 Rohel : Scan - 446 `Completed`
 =======================================================
+
+# Date : 20/12/22
+Angoucha : PDF - 512
+Chetan : Entry - 61; PDF - 478
+Kishan : Scan - 720 `Completed`
+Poukin : Entry - 100
+Rohel : Entry - 101
+=======================================================
