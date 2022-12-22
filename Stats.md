@@ -4416,3 +4416,11 @@ Kishan : Scan - 720 `Completed`
 Poukin : Entry - 100
 Rohel : Entry - 101
 =======================================================
+
+# Date : 21/12/22
+Angoucha : PDF - 400
+Chetan : Entry - 52; PDF - 588
+Kishan : Entry - 136
+Poukin : Entry - 95 `Completed`
+Rohel : Entry - 77
+=======================================================

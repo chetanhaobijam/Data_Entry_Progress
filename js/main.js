@@ -260,6 +260,7 @@ const sixteenDecember22 = document.querySelector("#sixteen-december-22");
 const seventeenDecember22 = document.querySelector("#seventeen-december-22");
 const nineteenDecember22 = document.querySelector("#nineteen-december-22");
 const twentyDecember22 = document.querySelector("#twenty-december-22");
+const twentyOneDecember22 = document.querySelector("#twenty-one-december-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2551,6 +2552,17 @@ async function getData() {
     let poukinEntry = datas["2022"]["poukin"]["december"]["entry"][14];
     let rohelEntry = datas["2022"]["rohel"]["december"]["entry"][14];
     progress(0, 0, angouchaPdf, 0, em, 0, chetanEntry, chetanPdf, 0, em, kishanScan, 0, 0, 0, `Scan completed for Book 2009-10`, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
+  })
+
+  // Function to display the stats for 21 December 22
+  twentyOneDecember22.addEventListener("click", () => {
+    let angouchaPdf = datas["2022"]["angoucha"]["december"]["pdf"][15];
+    let chetanEntry = datas["2022"]["chetan"]["december"]["entry"][15];
+    let chetanPdf = datas["2022"]["chetan"]["december"]["pdf"][15];
+    let kishanEntry = datas["2022"]["kishan"]["december"]["entry"][15];
+    let poukinEntry = datas["2022"]["poukin"]["december"]["entry"][15];
+    let rohelEntry = datas["2022"]["rohel"]["december"]["entry"][15];
+    progress(0, 0, angouchaPdf, 0, em, 0, chetanEntry, chetanPdf, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, `Entry completed for 2005-06`, 0, rohelEntry, 0, 0, em);
   })
 }
 
