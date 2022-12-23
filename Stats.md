@@ -4424,3 +4424,11 @@ Kishan : Entry - 136
 Poukin : Entry - 95 `Completed`
 Rohel : Entry - 77
 =======================================================
+
+# Date : 22/12/22
+Angoucha : Absent
+Chetan : Print - 270
+Kishan : Entry - 71
+Poukin : Entry - 55
+Rohel : Entry - 32
+=======================================================
