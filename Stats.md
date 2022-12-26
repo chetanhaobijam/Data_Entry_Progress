@@ -4440,3 +4440,11 @@ Kishan : Entry - 200
 Poukin : Entry - 105
 Rohel : Entry - 102
 =======================================================
+
+# Date : 24/12/22
+Angoucha : PDF - 720
+Chetan : Scan - 2; Entry - 55; Print - 324
+Kishan : Entry - 187
+Poukin : Entry - 121
+Rohel : Entry - 132
+=======================================================
