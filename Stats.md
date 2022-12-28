@@ -4456,3 +4456,11 @@ Kishan : Entry - 136
 Poukin : Scan - 480
 Rohel : Scan - 568
 =======================================================
+
+# Date : 27/12/22
+Angoucha : Absent
+Chetan : PDF - 200; Print - 434
+Kishan : Entry - 215
+Poukin : Scan - 326
+Rohel : Scan - 530
+=======================================================
