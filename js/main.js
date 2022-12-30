@@ -267,6 +267,7 @@ const twentyFourDecember22 = document.querySelector("#twenty-four-december-22");
 const twentySixDecember22 = document.querySelector("#twenty-six-december-22");
 const twentySevenDecember22 = document.querySelector("#twenty-seven-december-22");
 const twentyEightDecember22 = document.querySelector("#twenty-eight-december-22");
+const twentyNineDecember22 = document.querySelector("#twenty-nine-december-22");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2637,7 +2638,19 @@ async function getData() {
     let kishanPdf = datas["2022"]["kishan"]["december"]["pdf"][21];
     let poukinEntry = datas["2022"]["poukin"]["december"]["entry"][21];
     let rohelEntry = datas["2022"]["rohel"]["december"]["entry"][21];
-    progress(0, 0, angouchaPdf, 0, em, 0, chetanEntry, chetanPdf, chetanPrint, `Print completed for Book 2008-09`, 0, kishanEntry, kishanPdf, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
+    progress(0, 0, angouchaPdf, 0, em, 0, chetanEntry, chetanPdf, chetanPrint, `Print completed for Book 2007-09`, 0, kishanEntry, kishanPdf, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
+  })
+
+  // Function to display the stats for 29 December 22
+  twentyNineDecember22.addEventListener("click", () => {
+    let angouchaPdf = datas["2022"]["angoucha"]["december"]["pdf"][22];
+    let angouchaPrint = datas["2022"]["angoucha"]["december"]["print"][22];
+    let chetanEntry = datas["2022"]["chetan"]["december"]["entry"][22];
+    let chetanPrint = datas["2022"]["chetan"]["december"]["print"][22];
+    let kishanEntry = datas["2022"]["kishan"]["december"]["entry"][22];
+    let poukinEntry = datas["2022"]["poukin"]["december"]["entry"][22];
+    let rohelEntry = datas["2022"]["rohel"]["december"]["entry"][22];
+    progress(0, 0, angouchaPdf, angouchaPrint, em, 0, chetanEntry, 0, chetanPrint, `Print completed for Book 2008-09`, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 }
 
