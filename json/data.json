@@ -300,5 +300,47 @@
         "print" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       }
     }
+  },
+  "2023": {
+    "angoucha": {
+      "january": {
+        "scan": [0],
+        "entry": [0],
+        "pdf": [0],
+        "print": [0]
+      }
+    },
+    "chetan": {
+      "january": {
+        "scan": [0],
+        "entry": [0],
+        "pdf": [0],
+        "print": [0]
+      }
+    },
+    "kishan": {
+      "january": {
+        "scan": [0],
+        "entry": [0],
+        "pdf": [0],
+        "print": [0]
+      }
+    },
+    "poukin": {
+      "january": {
+        "scan": [0],
+        "entry": [0],
+        "pdf": [0],
+        "print": [0]
+      }
+    },
+    "rohel": {
+      "january": {
+        "scan": [0],
+        "entry": [0],
+        "pdf": [0],
+        "print": [0]
+      }
+    }
   }
 }

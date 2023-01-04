@@ -4488,3 +4488,19 @@ Kishan : Print - 212 + 313 = 525
 Poukin : Scan - 66; Print - 61
 Rohel : Absent
 =======================================================
+
+# Date : 31/12/22
+Angoucha : No-work
+Chetan : No-work
+Kishan : No-work
+Poukin : No-work
+Rohel : No-work
+=======================================================
+
+# Date : 02/01/23
+Angoucha : No-work
+Chetan : Absent
+Kishan : Absent
+Poukin : No-work
+Rohel : Absent
+=======================================================
