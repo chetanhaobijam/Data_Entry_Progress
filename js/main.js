@@ -275,6 +275,7 @@ const thirtyOneDecember22 = document.querySelector("#thirty-one-december-22");
 const january23 = document.querySelector("#january-23");
 const january23Content = document.querySelector("#january-23-content");
 const twoJanuary23 = document.querySelector("#two-january-23");
+const fiveJanuary23 = document.querySelector("#five-january-23");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2710,6 +2711,12 @@ async function getData() {
   // Function to display the stats for 02 January 23
   twoJanuary23.addEventListener("click", () => {
     progress(0, 0, 0, 0, nwd, 0, 0, 0, 0, abs, 0, 0, 0, 0, abs, 0, 0, 0, 0, nwd, 0, 0, 0, 0, abs);
+  })
+
+  // Function to display the stats for 05 January 23
+  fiveJanuary23.addEventListener("click", () => {
+    let kishanEntry = datas["2023"]["kishan"]["january"]["entry"][0];
+    progress(0, 0, 0, 0, other, 0, 0, 0, 0, `Downloading Gazettes`, 0, kishanEntry, 0, 0, `Gazette Collection`, 0, 0, 0, 0, abs, 0, 0, 0, 0, `Gazette Collection`);
   })
 }
 

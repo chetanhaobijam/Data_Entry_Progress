@@ -4504,3 +4504,11 @@ Kishan : Absent
 Poukin : No-work
 Rohel : Absent
 =======================================================
+
+# Date : 05/01/23
+Angoucha : Other-work
+Chetan : Downloading Gazettes
+Kishan : Entry - 3; Gazette Collection
+Poukin : Absent
+Rohel : Gazette Collection
+=======================================================
