@@ -276,6 +276,7 @@ const january23 = document.querySelector("#january-23");
 const january23Content = document.querySelector("#january-23-content");
 const twoJanuary23 = document.querySelector("#two-january-23");
 const fiveJanuary23 = document.querySelector("#five-january-23");
+const sixJanuary23 = document.querySelector("#six-january-23");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2717,6 +2718,15 @@ async function getData() {
   fiveJanuary23.addEventListener("click", () => {
     let kishanEntry = datas["2023"]["kishan"]["january"]["entry"][0];
     progress(0, 0, 0, 0, other, 0, 0, 0, 0, `Downloading Gazettes`, 0, kishanEntry, 0, 0, `Gazette Collection`, 0, 0, 0, 0, abs, 0, 0, 0, 0, `Gazette Collection`);
+  })
+
+  // Function to display the stats for 06 January 23
+  sixJanuary23.addEventListener("click", () => {
+    let chetanEntry = datas["2023"]["chetan"]["january"]["entry"][1];
+    let kishanEntry = datas["2023"]["kishan"]["january"]["entry"][1];
+    let poukinEntry = datas["2023"]["poukin"]["january"]["entry"][1];
+    let rohelEntry = datas["2023"]["rohel"]["january"]["entry"][1];
+    progress(0, 0, 0, 0, other, 0, chetanEntry, 0, 0, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 }
 

@@ -4512,3 +4512,11 @@ Kishan : Entry - 3; Gazette Collection
 Poukin : Absent
 Rohel : Gazette Collection
 =======================================================
+
+# Date : 06/01/23
+Angoucha : Other-work
+Chetan : Entry - 80
+Kishan : Entry - 80
+Poukin : Entry - 80
+Rohel : Entry - 50
+=======================================================
