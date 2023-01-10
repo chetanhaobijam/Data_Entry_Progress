@@ -4520,3 +4520,11 @@ Kishan : Entry - 80
 Poukin : Entry - 80
 Rohel : Entry - 50
 =======================================================
+
+# Date : 07/01/23
+Angoucha : Other-work
+Chetan : Entry - 92
+Kishan : Absent
+Poukin : Entry - 85
+Rohel : Entry - 80
+=======================================================
