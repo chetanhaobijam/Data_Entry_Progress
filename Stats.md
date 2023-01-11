@@ -4528,3 +4528,11 @@ Kishan : Absent
 Poukin : Entry - 85
 Rohel : Entry - 80
 =======================================================
+
+# Date : 10/01/23
+Angoucha : Other-work
+Chetan : Entry - 68
+Kishan : Absent
+Poukin : Other-work
+Rohel : Other-work
+=======================================================
