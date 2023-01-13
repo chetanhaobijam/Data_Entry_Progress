@@ -4536,3 +4536,19 @@ Kishan : Absent
 Poukin : Other-work
 Rohel : Other-work
 =======================================================
+
+# Date : 11/01/23
+Angoucha : Other-work
+Chetan : Entry - 80
+Kishan : Entry - 80
+Poukin : Absent
+Rohel : Entry - 20; Other-work
+=======================================================
+
+# Date : 12/01/23
+Angoucha : Electricity Outage
+Chetan : Electricity Outage
+Kishan : Electricity Outage
+Poukin : Electricity Outage
+Rohel : Electricity Outage
+=======================================================

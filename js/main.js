@@ -279,6 +279,8 @@ const fiveJanuary23 = document.querySelector("#five-january-23");
 const sixJanuary23 = document.querySelector("#six-january-23");
 const sevenJanuary23 = document.querySelector("#seven-january-23");
 const tenJanuary23 = document.querySelector("#ten-january-23");
+const elevenJanuary23 = document.querySelector("#eleven-january-23");
+const twelveJanuary23 = document.querySelector("#twelve-january-23");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2743,6 +2745,19 @@ async function getData() {
   tenJanuary23.addEventListener("click", () => {
     let chetanEntry = datas["2023"]["chetan"]["january"]["entry"][3];
     progress(0, 0, 0, 0, other, 0, chetanEntry, 0, 0, em, 0, 0, 0, 0, abs, 0, 0, 0, 0, other, 0, 0, 0, 0, other);
+  })
+
+  // Function to display the stats for 11 January 23
+  elevenJanuary23.addEventListener("click", () => {
+    let chetanEntry = datas["2023"]["chetan"]["january"]["entry"][4];
+    let kishanEntry = datas["2023"]["kishan"]["january"]["entry"][4];
+    let rohelEntry = datas["2023"]["rohel"]["january"]["entry"][4];
+    progress(0, 0, 0, 0, other, 0, chetanEntry, 0, 0, em, 0, kishanEntry, 0, 0, em, 0, 0, 0, 0, em, 0, rohelEntry, 0, 0, other);
+  })
+
+  // Function to display the stats for 12 January 23
+  twelveJanuary23.addEventListener("click", () => {
+    progress(0, 0, 0, 0, elec, 0, 0, 0, 0, elec, 0, 0, 0, 0, elec, 0, 0, 0, 0, elec, 0, 0, 0, 0, elec);
   })
 }
 
