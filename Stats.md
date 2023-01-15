@@ -4552,3 +4552,11 @@ Kishan : Electricity Outage
 Poukin : Electricity Outage
 Rohel : Electricity Outage
 =======================================================
+
+# Date : 13/01/23
+Angoucha : Absent
+Chetan : Entry - 55
+Kishan : Entry - 65
+Poukin : Entry - 65
+Rohel : Entry - 33
+=======================================================

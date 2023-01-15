@@ -281,6 +281,7 @@ const sevenJanuary23 = document.querySelector("#seven-january-23");
 const tenJanuary23 = document.querySelector("#ten-january-23");
 const elevenJanuary23 = document.querySelector("#eleven-january-23");
 const twelveJanuary23 = document.querySelector("#twelve-january-23");
+const thirteenJanuary23 = document.querySelector("#thirteen-january-23");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2758,6 +2759,15 @@ async function getData() {
   // Function to display the stats for 12 January 23
   twelveJanuary23.addEventListener("click", () => {
     progress(0, 0, 0, 0, elec, 0, 0, 0, 0, elec, 0, 0, 0, 0, elec, 0, 0, 0, 0, elec, 0, 0, 0, 0, elec);
+  })
+
+  // Function to display the stats for 13 January 23
+  thirteenJanuary23.addEventListener("click", () => {
+    let chetanEntry = datas["2023"]["chetan"]["january"]["entry"][5];
+    let kishanEntry = datas["2023"]["kishan"]["january"]["entry"][5];
+    let poukinEntry = datas["2023"]["poukin"]["january"]["entry"][5];
+    let rohelEntry = datas["2023"]["rohel"]["january"]["entry"][5];
+    progress(0, 0, 0, 0, abs, 0, chetanEntry, 0, 0, `No entry left`, 0, kishanEntry, 0, 0, `No entry left`, 0, poukinEntry, 0, 0, `No entry left`, 0, rohelEntry, 0, 0, `No entry left`);
   })
 }
 
