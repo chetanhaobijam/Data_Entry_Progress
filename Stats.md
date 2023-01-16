@@ -4560,3 +4560,11 @@ Kishan : Entry - 65
 Poukin : Entry - 65
 Rohel : Entry - 33
 =======================================================
+
+# Date : 16/01/23
+Angoucha : Other work
+Chetan : No-work
+Kishan : Scan - 300
+Poukin : Scan - 120
+Rohel : No-work
+=======================================================
