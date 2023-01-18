@@ -283,6 +283,7 @@ const elevenJanuary23 = document.querySelector("#eleven-january-23");
 const twelveJanuary23 = document.querySelector("#twelve-january-23");
 const thirteenJanuary23 = document.querySelector("#thirteen-january-23");
 const sixteenJanuary23 = document.querySelector("#sixteen-january-23");
+const seventeenJanuary23 = document.querySelector("#seventeen-january-23");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2775,7 +2776,15 @@ async function getData() {
   sixteenJanuary23.addEventListener("click", () => {
     let kishanScan = datas["2023"]["kishan"]["january"]["scan"][6];
     let poukinScan = datas["2023"]["poukin"]["january"]["scan"][6];
-    progress(0, 0, 0, 0, other, 0, 0, 0, 0, `No work done`, kishanScan, 0, 0, 0, em, poukinScan, 0, 0, 0, em, 0, 0, 0, 0, `No work done`);
+    progress(0, 0, 0, 0, other, 0, 0, 0, 0, `No work available`, kishanScan, 0, 0, 0, em, poukinScan, 0, 0, 0, em, 0, 0, 0, 0, `No work done`);
+  })
+
+  // Function to display the stats for 17 January 23
+  seventeenJanuary23.addEventListener("click", () => {
+    let chetanScan = datas["2023"]["chetan"]["january"]["scan"][7];
+    let chetanPdf = datas["2023"]["chetan"]["january"]["pdf"][7];
+    let poukinScan = datas["2023"]["poukin"]["january"]["scan"][7];
+    progress(0, 0, 0, 0, other, chetanScan, 0, chetanPdf, 0, `No work left`, 0, 0, 0, 0, abs, poukinScan, 0, 0, 0, em, 0, 0, 0, 0, abs);
   })
 }
 
