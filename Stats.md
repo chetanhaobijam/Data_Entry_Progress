@@ -4576,3 +4576,11 @@ Kishan : Absent
 Poukin : Scan - 366
 Rohel : Absent
 =======================================================
+
+# Date : 18/01/23
+Angoucha : Other work
+Chetan : PDF - 366
+Kishan : Scan - 364
+Poukin : Scan - 410
+Rohel : Scan - 300
+=======================================================
