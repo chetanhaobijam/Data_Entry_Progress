@@ -4584,3 +4584,11 @@ Kishan : Scan - 364
 Poukin : Scan - 410
 Rohel : Scan - 300
 =======================================================
+
+# Date : 19/01/23
+Angoucha : Absent
+Chetan : Scan - 2; PDF - 410
+Kishan : Absent
+Poukin : Scan - 422
+Rohel : Scan - 304
+=======================================================

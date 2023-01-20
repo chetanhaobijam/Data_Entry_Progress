@@ -285,6 +285,7 @@ const thirteenJanuary23 = document.querySelector("#thirteen-january-23");
 const sixteenJanuary23 = document.querySelector("#sixteen-january-23");
 const seventeenJanuary23 = document.querySelector("#seventeen-january-23");
 const eighteenJanuary23 = document.querySelector("#eighteen-january-23");
+const nineteenJanuary23 = document.querySelector("#nineteen-january-23");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2795,6 +2796,15 @@ async function getData() {
     let poukinScan = datas["2023"]["poukin"]["january"]["scan"][8];
     let rohelScan = datas["2023"]["rohel"]["january"]["scan"][8];
     progress(0, 0, 0, 0, other, 0, 0, chetanPdf, 0, `No work left`, kishanScan, 0, 0, 0, em, poukinScan, 0, 0, 0, em, rohelScan, 0, 0, 0, em);
+  })
+
+  // Function to display the stats for 19 January 23
+  nineteenJanuary23.addEventListener("click", () => {
+    let chetanScan = datas["2023"]["chetan"]["january"]["scan"][9];
+    let chetanPdf = datas["2023"]["chetan"]["january"]["pdf"][9];
+    let poukinScan = datas["2023"]["poukin"]["january"]["scan"][9];
+    let rohelScan = datas["2023"]["rohel"]["january"]["scan"][9];
+    progress(0, 0, 0, 0, abs, chetanScan, 0, chetanPdf, 0, em, 0, 0, 0, 0, abs, poukinScan, 0, 0, 0, em, rohelScan, 0, 0, 0, `Scan completed for Book 2013-14`);
   })
 }
 
