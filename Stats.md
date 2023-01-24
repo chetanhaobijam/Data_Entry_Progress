@@ -4600,3 +4600,19 @@ Kishan : Scan - 142; Entry - 56
 Poukin : Scan - 362
 Rohel : Scan - 311
 =======================================================
+
+# Date : 21/01/23
+Angoucha : Absent
+Chetan : PDF - 422
+Kishan : Entry - 89
+Poukin : Scan - 364
+Rohel : Scan - 326
+=======================================================
+
+# Date : 23/01/23
+Angoucha : Absent
+Chetan : Absent
+Kishan : Absent
+Poukin : Entry - 60
+Rohel : Absent
+=======================================================
