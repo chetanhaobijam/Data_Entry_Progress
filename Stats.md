@@ -4616,3 +4616,11 @@ Kishan : Absent
 Poukin : Entry - 60
 Rohel : Absent
 =======================================================
+
+# Date : 24/01/23
+Angoucha : PDF - 300
+Chetan : Entry - 1; PDF - 362
+Kishan : Absent
+Poukin : Entry - 80
+Rohel : Other work
+=======================================================
