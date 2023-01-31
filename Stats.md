@@ -4640,3 +4640,19 @@ Kishan : Absent
 Poukin : Entry - 80
 Rohel : Entry - 86
 =======================================================
+
+# Date : 28/01/23
+Angoucha : Absent
+Chetan : Entry - 12; Presentation Work
+Kishan : Entry - 80
+Poukin : Entry - 65
+Rohel : Entry - 40
+=======================================================
+
+# Date : 30/01/23
+Angoucha : Presentation Work
+Chetan : Presentation Work
+Kishan : Presentation Work
+Poukin : No work done
+Rohel : Entry - 14
+=======================================================
