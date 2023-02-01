@@ -4656,3 +4656,11 @@ Kishan : Presentation Work
 Poukin : No work done
 Rohel : Entry - 14
 =======================================================
+
+# Date : 31/01/23
+Angoucha : Other Work
+Chetan : Gazette Training
+Kishan : Absent
+Poukin : Entry - 31
+Rohel : Entry - 19 (Demo 7 included)
+=======================================================

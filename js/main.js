@@ -294,6 +294,7 @@ const twentyFiveJanuary23 = document.querySelector("#twenty-five-january-23");
 const twentySevenJanuary23 = document.querySelector("#twenty-seven-january-23");
 const twentyEightJanuary23 = document.querySelector("#twenty-eight-january-23");
 const thirtyJanuary23 = document.querySelector("#thirty-january-23");
+const thirtyOneJanuary23 = document.querySelector("#thirty-one-january-23");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2879,6 +2880,13 @@ async function getData() {
   thirtyJanuary23.addEventListener("click", () => {
     let rohelEntry = datas["2023"]["rohel"]["january"]["entry"][17];
     progress(0, 0, 0, 0, `Presentation Work`, 0, 0, 0, 0, `Presentation Work`, 0, 0, 0, 0, `Presentation Work`, 0, 0, 0, 0, `No Work Done`, 0, rohelEntry, 0, 0, em);
+  })
+
+  // Function to display the stats for 31 January 23
+  thirtyOneJanuary23.addEventListener("click", () => {
+    let poukinEntry = datas["2023"]["poukin"]["january"]["entry"][18];
+    let rohelEntry = datas["2023"]["rohel"]["january"]["entry"][18];
+    progress(0, 0, 0, 0, other, 0, 0, 0, 0, `Gazette Training`, 0, 0, 0, 0, abs, 0, poukinEntry, 0, 0, `Gazette Training`, 0, rohelEntry, 0, 0, `Gazette Training`);
   })
 }
 
