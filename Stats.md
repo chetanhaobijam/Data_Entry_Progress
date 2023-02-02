@@ -4664,3 +4664,11 @@ Kishan : Absent
 Poukin : Entry - 31
 Rohel : Entry - 19 (Demo 7 included)
 =======================================================
+
+# Date : 01/02/23
+Angoucha : Other Work
+Chetan : Other Work
+Kishan : Entry - 16
+Poukin : Entry - 9
+Rohel : Entry - 1; Scan - 228
+=======================================================
