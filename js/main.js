@@ -300,6 +300,7 @@ const thirtyOneJanuary23 = document.querySelector("#thirty-one-january-23");
 const february23 = document.querySelector("#february-23");
 const february23Content = document.querySelector("#february-23-content");
 const oneFebruary23 = document.querySelector("#one-february-23");
+const twoFebruary23 = document.querySelector("#two-february-23");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -2931,6 +2932,16 @@ async function getData() {
     let rohelScan = datas["2023"]["rohel"]["february"]["scan"][0];
     let rohelEntry = datas["2023"]["rohel"]["february"]["entry"][0];
     progress(0, 0, 0, 0, other, 0, 0, 0, 0, other, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, rohelScan, rohelEntry, 0, 0, em);
+  })
+
+  // Function to display the stats for 02 February 23
+  twoFebruary23.addEventListener("click", () => {
+    let angouchaPrint = datas["2023"]["angoucha"]["february"]["print"][1];
+    let chetanPdf = datas["2023"]["chetan"]["february"]["pdf"][1];
+    let chetanPrint = datas["2023"]["chetan"]["february"]["print"][1];
+    let kishanScan = datas["2023"]["kishan"]["february"]["scan"][1];
+    let rohelScan = datas["2023"]["rohel"]["february"]["scan"][1];
+    progress(0, 0, 0, angouchaPrint, em, 0, 0, chetanPdf, chetanPrint, em, kishanScan, 0, 0, 0, em, 0, 0, 0, 0, nwd, rohelScan, 0, 0, 0, other);
   })
 }
 

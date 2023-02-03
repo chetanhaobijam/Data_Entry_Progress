@@ -4672,3 +4672,11 @@ Kishan : Entry - 16
 Poukin : Entry - 9
 Rohel : Entry - 1; Scan - 228
 =======================================================
+
+# Date : 02/02/23
+Angoucha : Print - 150
+Chetan : PDF - 228; Print - 68
+Kishan : Scan - 300
+Poukin : NO WORK DONE
+Rohel : Scan - 228; Other work
+=======================================================
