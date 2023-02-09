@@ -4704,3 +4704,19 @@ Kishan : Absent
 Poukin : Scan - 428
 Rohel : Absent
 =======================================================
+
+# Date : 07/02/23 {Electricity outage}
+Angoucha : Other work
+Chetan : Absent
+Kishan : Scan - 358
+Poukin : Scan - 314
+Rohel : NO WORK DONE
+=======================================================
+
+# Date : 08/02/23
+Angoucha : Absent
+Chetan : PDF - 458; Print - 128
+Kishan : Scan - 324
+Poukin : Scan - 198
+Rohel : Absent
+=======================================================
