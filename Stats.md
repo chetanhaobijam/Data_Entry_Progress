@@ -4720,3 +4720,11 @@ Kishan : Scan - 324
 Poukin : Scan - 198
 Rohel : Absent
 =======================================================
+
+# Date : 09/02/23
+Angoucha : Electricity Outage
+Chetan : Electricity Outage
+Kishan : Electricity Outage
+Poukin : Absent
+Rohel : Electricity Outage
+=======================================================
