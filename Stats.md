@@ -4725,7 +4725,7 @@ Rohel : Absent
 Angoucha : Electricity Outage
 Chetan : Electricity Outage
 Kishan : Electricity Outage
-Poukin : Absent
+Poukin : Electricity Outage
 Rohel : Electricity Outage
 =======================================================
 
@@ -4735,4 +4735,20 @@ Chetan : PDF - 358 + 324 = 682
 Kishan : Scan - 464
 Poukin : Scan - 366
 Rohel : Scan - 352
+=======================================================
+
+# Date : 13/02/23
+Angoucha : Electricity Outage
+Chetan : Absent
+Kishan : Electricity Outage
+Poukin : Scan - 212; Electricity Outage
+Rohel : Electricity Outage
+=======================================================
+
+# Date : 14/02/23
+Angoucha : Electricity outage
+Chetan : PDF - 220; Electricity outage
+Kishan : Scan - 326; Electricity outage
+Poukin : Scan - 254; Electricity outage
+Rohel : Scan - 320; Electricity outage
 =======================================================
