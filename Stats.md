@@ -4768,3 +4768,19 @@ Kishan : Scan - 424
 Poukin : Scan - 450
 Rohel : Scan - 232
 =======================================================
+
+# Date : 17/02/23
+Angoucha : Other work
+Chetan : PDF - 610
+Kishan : Scan - 424
+Poukin : Scan - 450
+Rohel : Scan - 232
+=======================================================
+
+# Date : 18/02/23
+Angoucha : Other work
+Chetan : PDF - 344
+Kishan : Scan - 270
+Poukin : Scan - 268
+Rohel : Scan - 136
+=======================================================
