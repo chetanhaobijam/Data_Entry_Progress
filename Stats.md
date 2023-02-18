@@ -4760,3 +4760,11 @@ Kishan : Scan - 308; Electricity outage
 Poukin : Scan - 306; Electricity outage
 Rohel : Scan - 304; Electricity outage
 =======================================================
+
+# Date : 17/02/23
+Angoucha : Other work
+Chetan : PDF - 610
+Kishan : Scan - 424
+Poukin : Scan - 450
+Rohel : Scan - 232
+=======================================================
