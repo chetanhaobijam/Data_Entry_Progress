@@ -4784,3 +4784,19 @@ Kishan : Scan - 270
 Poukin : Scan - 268
 Rohel : Scan - 136
 =======================================================
+
+# Date : 20/02/23
+Angoucha : Other work
+Chetan : Absent
+Kishan : Scan - 324
+Poukin : Scan - 316
+Rohel : Scan - 300
+=======================================================
+
+# Date : 21/02/23
+Angoucha : PDF - 428
+Chetan : PDF - 336
+Kishan : Scan - 214
+Poukin : Scan - 362
+Rohel : Scan - 102
+=======================================================
