@@ -4809,10 +4809,18 @@ Poukin : Absent
 Rohel : Absent
 =======================================================
 
-# Date : 21/02/23
+# Date : 23/02/23
 Angoucha : Other
 Chetan : PDF - 522
 Kishan : Scan - 426
 Poukin : Scan - 178
 Rohel : Scan - 154
+=======================================================
+
+# Date : 24/02/23
+Angoucha : Other
+Chetan : PDF - 562
+Kishan : Scan - 488
+Poukin : Print - 202
+Rohel : Print - 155; Other work
 =======================================================
