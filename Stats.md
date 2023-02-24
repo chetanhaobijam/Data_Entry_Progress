@@ -4800,3 +4800,19 @@ Kishan : Scan - 214
 Poukin : Scan - 362
 Rohel : Scan - 102
 =======================================================
+
+# Date : 22/02/23
+Angoucha : Absent
+Chetan : Absent
+Kishan : Absent
+Poukin : Absent
+Rohel : Absent
+=======================================================
+
+# Date : 21/02/23
+Angoucha : Other
+Chetan : PDF - 522
+Kishan : Scan - 426
+Poukin : Scan - 178
+Rohel : Scan - 154
+=======================================================
