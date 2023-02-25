@@ -4824,3 +4824,11 @@ Kishan : Scan - 488
 Poukin : Print - 202
 Rohel : Print - 155; Other work
 =======================================================
+
+# Date : 25/02/23
+Angoucha : PDF - 304
+Chetan : PDF - 656; Print - 98
+Kishan : PDF Creation
+Poukin : No work done
+Rohel : Print - 164
+=======================================================
