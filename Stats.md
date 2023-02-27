@@ -4832,3 +4832,11 @@ Kishan : PDF Creation
 Poukin : No work done
 Rohel : Print - 164
 =======================================================
+
+# Date : 27/02/23
+Angoucha : Absent
+Chetan : PDF - 606
+Kishan : PDF - 630
+Poukin : No work done
+Rohel : No work done
+=======================================================
