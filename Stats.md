@@ -4840,3 +4840,11 @@ Kishan : PDF - 630
 Poukin : No work done
 Rohel : No work done
 =======================================================
+
+# Date : 28/02/23
+Angoucha : Other work
+Chetan : PDF - 600
+Kishan : PDF - 238
+Poukin : Absent
+Rohel : Entry - 1
+=======================================================
