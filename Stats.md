@@ -4856,3 +4856,12 @@ Kishan : Absent
 Poukin : Entry - 50
 Rohel : Entry - 29
 =======================================================
+
+# Date : 02/03/23
+(Network Error)
+Angoucha : PDF - 178
+Chetan : Entry - 15; PDF - 246
+Kishan : Entry - 46
+Poukin : Entry - 59
+Rohel : Entry - 49
+=======================================================
