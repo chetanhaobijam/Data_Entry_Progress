@@ -4865,3 +4865,17 @@ Kishan : Entry - 46
 Poukin : Entry - 59
 Rohel : Entry - 49
 =======================================================
+
+# Date : 03/03/23
+(Server Error)
+Angoucha : Absent
+Chetan : Entry - 71; Print - 146
+Kishan : Entry - 32
+Poukin : Entry - 60
+Rohel : Entry - 51
+=======================================================
+
+# Date : 04/03/23
+(Electricity Outage)
+Poukin : Entry - 5
+=======================================================
