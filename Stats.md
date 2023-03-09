@@ -4879,3 +4879,11 @@ Rohel : Entry - 51
 (Electricity Outage)
 Poukin : Entry - 5
 =======================================================
+
+# Date : 06/03/23
+Angoucha : Other work
+Chetan : Entry - 80
+Kishan : Absent
+Poukin : Entry - 80
+Rohel : Other work
+=======================================================

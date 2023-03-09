@@ -329,6 +329,7 @@ const oneMarch23 = document.querySelector("#one-march-23");
 const twoMarch23 = document.querySelector("#two-march-23");
 const threeMarch23 = document.querySelector("#three-march-23");
 const fourMarch23 = document.querySelector("#four-march-23");
+const sixMarch23 = document.querySelector("#six-march-23");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -3197,6 +3198,13 @@ async function getData() {
   fourMarch23.addEventListener("click", () => {
     let poukinEntry = datas["2023"]["poukin"]["march"]["entry"][3];
     progress(0, 0, 0, 0, abs, 0, 0, 0, 0, `Electricity outage`, 0, 0, 0, 0, `Electricity outage`, 0, poukinEntry, 0, 0, `Electricity outage`, 0, 0, 0, 0, `Electricity outage`);
+  })
+
+  // Function to display the stats for 06 March 23
+  sixMarch23.addEventListener("click", () => {
+    let chetanEntry = datas["2023"]["chetan"]["march"]["entry"][4];
+    let poukinEntry = datas["2023"]["poukin"]["march"]["entry"][4];
+    progress(0, 0, 0, 0, other, 0, chetanEntry, 0, 0, em, 0, 0, 0, 0, abs, 0, poukinEntry, 0, 0, em, 0, 0, 0, 0, other);
   })
 }
 
