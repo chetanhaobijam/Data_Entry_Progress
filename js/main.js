@@ -331,6 +331,7 @@ const threeMarch23 = document.querySelector("#three-march-23");
 const fourMarch23 = document.querySelector("#four-march-23");
 const sixMarch23 = document.querySelector("#six-march-23");
 const thirteenMarch23 = document.querySelector("#thirteen-march-23");
+const fourteenMarch23 = document.querySelector("#fourteen-march-23");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -3214,6 +3215,18 @@ async function getData() {
     let kishanEntry = datas["2023"]["kishan"]["march"]["entry"][5];
     let poukinEntry = datas["2023"]["poukin"]["march"]["entry"][5];
     progress(0, 0, 0, 0, other, 0, chetanEntry, 0, 0, other, 0, kishanEntry, 0, 0, other, 0, poukinEntry, 0, 0, em, 0, 0, 0, 0, other);
+  })
+
+  // Function to display the stats for 14 March 23
+  fourteenMarch23.addEventListener("click", () => {
+    let angouchaPdf = datas["2023"]["angoucha"]["march"]["pdf"][6];
+    let angouchaPrint = datas["2023"]["angoucha"]["march"]["print"][6];
+    let chetanEntry = datas["2023"]["chetan"]["march"]["entry"][6];
+    let chetanPrint = datas["2023"]["chetan"]["march"]["print"][6];
+    let kishanEntry = datas["2023"]["kishan"]["march"]["entry"][6];
+    let poukinEntry = datas["2023"]["poukin"]["march"]["entry"][6];
+    let rohelEntry = datas["2023"]["rohel"]["march"]["entry"][6];
+    progress(0, 0, angouchaPdf, angouchaPrint, em, 0, chetanEntry, 0, chetanPrint, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 }
 

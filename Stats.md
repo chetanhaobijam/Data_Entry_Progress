@@ -4895,3 +4895,11 @@ Kishan : Entry - 64; Other work
 Poukin : Entry - 70
 Rohel : Other work
 =======================================================
+
+# Date : 14/03/23
+Angoucha : PDF - 488; Print - 152
+Chetan : Entry - 80; Print - 152
+Kishan : Entry - 80
+Poukin : Entry - 80
+Rohel : Entry - 56
+=======================================================
