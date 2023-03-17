@@ -4911,3 +4911,11 @@ Kishan : Entry - 80
 Poukin : Entry - 80
 Rohel : Entry - 80
 =======================================================
+
+# Date : 16/03/23
+Angoucha : Other work
+Chetan : Entry - 30; Network Error
+Kishan : Entry - 18; Network Error
+Poukin : Entry - 60; Network Error
+Rohel : Entry - 23; Network Error
+=======================================================

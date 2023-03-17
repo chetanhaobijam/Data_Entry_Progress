@@ -333,6 +333,7 @@ const sixMarch23 = document.querySelector("#six-march-23");
 const thirteenMarch23 = document.querySelector("#thirteen-march-23");
 const fourteenMarch23 = document.querySelector("#fourteen-march-23");
 const fifteenMarch23 = document.querySelector("#fifteen-march-23");
+const sixteenMarch23 = document.querySelector("#sixteen-march-23");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -3239,6 +3240,15 @@ async function getData() {
     let poukinEntry = datas["2023"]["poukin"]["march"]["entry"][7];
     let rohelEntry = datas["2023"]["rohel"]["march"]["entry"][7];
     progress(0, 0, 0, angouchaPrint, em, 0, chetanEntry, 0, chetanPrint, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
+  })
+
+  // Function to display the stats for 16 March 23
+  sixteenMarch23.addEventListener("click", () => {
+    let chetanEntry = datas["2023"]["chetan"]["march"]["entry"][8];
+    let kishanEntry = datas["2023"]["kishan"]["march"]["entry"][8];
+    let poukinEntry = datas["2023"]["poukin"]["march"]["entry"][8];
+    let rohelEntry = datas["2023"]["rohel"]["march"]["entry"][8];
+    progress(0, 0, 0, 0, other, 0, chetanEntry, 0, 0, `Network Error, Electricity Outage`, 0, kishanEntry, 0, 0, `Network Error, Electricity Outage`, 0, poukinEntry, 0, 0, `Network Error, Electricity Outage`, 0, rohelEntry, 0, 0, `Network Error, Electricity Outage`);
   })
 }
 
