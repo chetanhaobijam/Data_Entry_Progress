@@ -4919,3 +4919,11 @@ Kishan : Entry - 18; Network Error
 Poukin : Entry - 60; Network Error
 Rohel : Entry - 23; Network Error
 =======================================================
+
+# Date : 17/03/23
+Angoucha : Other work
+Chetan : Entry - 70; Server Error
+Kishan : Entry - 50; Server Error
+Poukin : Entry - 70; Server Error
+Rohel : Entry - 24; Server Error; Hardware Problem
+=======================================================
