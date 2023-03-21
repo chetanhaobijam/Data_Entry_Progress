@@ -3282,7 +3282,7 @@ async function getData() {
     let kishanEntry = datas["2023"]["kishan"]["march"]["entry"][11];
     let poukinEntry = datas["2023"]["poukin"]["march"]["entry"][11];
     let rohelEntry = datas["2023"]["rohel"]["march"]["entry"][11];
-    progress(0, 0, 0, angouchaPrint, em, 0, chetanEntry, 0, chetanPrint, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
+    progress(0, 0, 0, angouchaPrint, em, 0, chetanEntry, 0, chetanPrint, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, other);
   })
 }
 
