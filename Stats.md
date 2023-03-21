@@ -4928,10 +4928,18 @@ Poukin : Entry - 70; Server Error
 Rohel : Entry - 24; Server Error; Hardware Problem
 =======================================================
 
-# Date : 17/03/23
+# Date : 18/03/23
 Angoucha : Print - 454
 Chetan : Entry - 80; Pdf - 268
 Kishan : Entry - 74
 Poukin : Entry - 45
 Rohel : Entry - 34
+=======================================================
+
+# Date : 20/03/23
+Angoucha : Print - 224
+Chetan : Entry - 80; Print - 100
+Kishan : Entry - 80
+Poukin : Entry - 80
+Rohel : Entry - 14
 =======================================================
