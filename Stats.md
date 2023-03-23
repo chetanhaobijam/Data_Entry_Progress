@@ -4941,5 +4941,13 @@ Angoucha : Print - 224
 Chetan : Entry - 80; Print - 100
 Kishan : Entry - 80
 Poukin : Entry - 80
-Rohel : Entry - 14
+Rohel : Entry - 14; Other work
+=======================================================
+
+# Date : 21/03/23
+Angoucha : Print - 272
+Chetan : Scan - 2; Entry - 20; Print - 405
+Kishan : Entry - 81
+Poukin : Entry - 79
+Rohel : Entry - 66
 =======================================================

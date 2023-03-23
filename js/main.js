@@ -337,6 +337,7 @@ const sixteenMarch23 = document.querySelector("#sixteen-march-23");
 const seventeenMarch23 = document.querySelector("#seventeen-march-23");
 const eighteenMarch23 = document.querySelector("#eighteen-march-23");
 const twentyMarch23 = document.querySelector("#twenty-march-23");
+const twentyOneMarch23 = document.querySelector("#twenty-one-march-23");
 
 const holiday = document.querySelectorAll(".holiday");
 const otherWork = document.querySelectorAll(".other-work");
@@ -3283,6 +3284,18 @@ async function getData() {
     let poukinEntry = datas["2023"]["poukin"]["march"]["entry"][11];
     let rohelEntry = datas["2023"]["rohel"]["march"]["entry"][11];
     progress(0, 0, 0, angouchaPrint, em, 0, chetanEntry, 0, chetanPrint, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, other);
+  })
+
+  // Function to display the stats for 21 March 23
+  twentyOneMarch23.addEventListener("click", () => {
+    let angouchaPrint = datas["2023"]["angoucha"]["march"]["print"][12];
+    let chetanScan = datas["2023"]["chetan"]["march"]["scan"][12];
+    let chetanEntry = datas["2023"]["chetan"]["march"]["entry"][12];
+    let chetanPrint = datas["2023"]["chetan"]["march"]["print"][12];
+    let kishanEntry = datas["2023"]["kishan"]["march"]["entry"][12];
+    let poukinEntry = datas["2023"]["poukin"]["march"]["entry"][12];
+    let rohelEntry = datas["2023"]["rohel"]["march"]["entry"][12];
+    progress(0, 0, 0, angouchaPrint, em, chetanScan, chetanEntry, 0, chetanPrint, em, 0, kishanEntry, 0, 0, em, 0, poukinEntry, 0, 0, em, 0, rohelEntry, 0, 0, em);
   })
 }
 
